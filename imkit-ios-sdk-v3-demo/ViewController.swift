@@ -30,13 +30,15 @@ class ViewController: UIViewController {
     @IBAction func go(_ sender: Any) {
         let uid = nameTextField.text ?? ""
         let chatroom = chatroomTextField.text ?? ""
-        FetchTokenTask().perform(uid: uid).then { token -> Promise<IMRoom> in
+        print(uid)
+        print(chatroom)
+        IMKit.logout()
+        IMFetchTokenTask().perform(uid: uid).then { token -> Promise<IMRoom> in
             IMKit.token = token
             IMKit.uid = uid
-            IMSocketManager.shared.connect()
-            return CreateRoomTask().perform(id: chatroom, name: chatroom)
+            return IMCreateRoomTask().perform(id: chatroom, name: chatroom)
             }.then({ room -> Promise<IMRoom> in
-                return JoinRoomTask().perform(id: room.id)
+                return IMJoinRoomTask().perform(id: room.id)
             }).done({ _ in
                 let vc = UINavigationController(rootViewController: IMRoomsViewController())
                 self.present(vc, animated: true)
