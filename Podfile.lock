@@ -1,0 +1,116 @@
+PODS:
+  - ActiveLabel (1.1.0)
+  - Alamofire (4.9.0)
+  - CryptoSwift (1.0.0)
+  - Hero (1.4.0)
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+  - IMKit (0.163.0):
+    - ActiveLabel (~> 1.1.0)
+    - Alamofire (~> 4.9.0)
+    - CryptoSwift (~> 1.0.0)
+    - Hero (~> 1.4.0)
+    - IGListKit (~> 3.4.0)
+    - Kingfisher (~> 5.7.1)
+    - Moya (~> 13.0.1)
+    - PromiseKit (~> 6.11.0)
+    - RealmSwift (~> 3.17.1)
+    - SnapKit (~> 5.0.1)
+    - Socket.IO-Client-Swift (~> 15.1.0)
+    - SwiftLinkPreview (~> 3.0.0)
+    - SwiftyJSON (~> 5.0.0)
+  - Kingfisher (5.7.1)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - PromiseKit (6.11.0):
+    - PromiseKit/CorePromise (= 6.11.0)
+    - PromiseKit/Foundation (= 6.11.0)
+    - PromiseKit/UIKit (= 6.11.0)
+  - PromiseKit/CorePromise (6.11.0)
+  - PromiseKit/Foundation (6.11.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.11.0):
+    - PromiseKit/CorePromise
+  - Realm (3.17.3):
+    - Realm/Headers (= 3.17.3)
+  - Realm/Headers (3.17.3)
+  - RealmSwift (3.17.3):
+    - Realm (= 3.17.3)
+  - Result (4.1.0)
+  - SnapKit (5.0.1)
+  - Socket.IO-Client-Swift (15.1.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.0)
+  - SwiftLinkPreview (3.0.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - IGListKit (from `https://github.com/imkit/IGListKit.git`)
+  - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.1`)
+  - SwiftLinkPreview (from `https://github.com/imkit/SwiftLinkPreview.git`)
+
+SPEC REPOS:
+  trunk:
+    - ActiveLabel
+    - Alamofire
+    - CryptoSwift
+    - Hero
+    - Kingfisher
+    - Moya
+    - PromiseKit
+    - Realm
+    - RealmSwift
+    - Result
+    - SnapKit
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  IGListKit:
+    :git: https://github.com/imkit/IGListKit.git
+  IMKit:
+    :branch: swift5.1
+    :git: https://github.com/imkit/imkit-ios-framework-v3.git
+  SwiftLinkPreview:
+    :git: https://github.com/imkit/SwiftLinkPreview.git
+
+CHECKOUT OPTIONS:
+  IGListKit:
+    :commit: 5c1a42c6d9c3fbc2c16831e0de75b5da776bd017
+    :git: https://github.com/imkit/IGListKit.git
+  IMKit:
+    :commit: f9a4c717987e021dbefb9f4b7460ad202e9a4eb6
+    :git: https://github.com/imkit/imkit-ios-framework-v3.git
+  SwiftLinkPreview:
+    :commit: f78d6fa5f6e8f707371b546af20b114c0d83d6fc
+    :git: https://github.com/imkit/SwiftLinkPreview.git
+
+SPEC CHECKSUMS:
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  IMKit: a503606bc3d39006c292cfaea5e3bd9bf8f5c241
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
+  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
+  RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Socket.IO-Client-Swift: 7cb44c0ffb86e158cee32d0642d30ec5fdcf8f61
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+  SwiftLinkPreview: 703ea0cc24300a0a9011e3b677d98df050b85036
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 5e3f6af964ca95e31df3f13db631de3039758abc
+
+COCOAPODS: 1.8.0

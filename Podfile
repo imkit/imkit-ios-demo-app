@@ -6,7 +6,7 @@ target 'imkit-ios-sdk-v3-demo' do
   use_frameworks!
 
   # Pods for imkit-ios-sdk-v3-demo
-  pod 'IMKit', :git => 'https://github.com/imkit/imkit-ios-framework-v3.git', :branch => 'swift5.0'
+  pod 'IMKit', :git => 'https://github.com/imkit/imkit-ios-framework-v3.git', :branch => 'swift5.1'
   pod 'IGListKit', :git => 'https://github.com/imkit/IGListKit.git'
   pod 'SwiftLinkPreview', :git => 'https://github.com/imkit/SwiftLinkPreview.git'
 end
