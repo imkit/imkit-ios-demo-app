@@ -40,7 +40,12 @@ class ViewController: UIViewController {
             }.then({ room -> Promise<IMRoom> in
                 return IMJoinRoomTask().perform(id: room.id)
             }).done({ _ in
+                
+                // default IMKit rooms view controller
                 let vc = UINavigationController(rootViewController: IMRoomsViewController())
+                
+                // customized rooms view controller
+                // let vc = UINavigationController(rootViewController: RoomsViewController())
                 self.present(vc, animated: true)
             }).catch { error in
                 print(error)
