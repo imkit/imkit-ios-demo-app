@@ -19,6 +19,8 @@ class UtilityInputViewController: IMUtilityInputViewController {
            (viewController as? IMMessagesViewController)?.presentLocationPicker()
         case .File:
            (viewController as? IMMessagesViewController)?.presentDocumentPicker()
+        default:
+            break
         }
         
         // handle your extra utilities
