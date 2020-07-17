@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         let chatroom = chatroomTextField.text ?? ""
         print(uid)
         print(chatroom)
-        IMKit.logout()
+        IMKit.clear()
         IMFetchTokenTask().perform(uid: uid).then { token -> Promise<IMRoom> in
             IMKit.token = token
             IMKit.uid = uid

@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        IMKit.configure(apiKey: "", clientKey: "fangho_imkit_0412_2018_001_clientkey", chatServerURL: URL(string: "https://chat.fangho.com")!, authServerURL: URL(string: "https://auth.fangho.com")!, bucket: "chatserver-upload")
+        IMKit.authServerURL = URL(string: "https://chat.fangho.com/auth")!
+        IMKit.configure(clientKey: "fangho_imkit_0412_2018_001_clientkey", chatServerURL: URL(string: "https://chat.fangho.com")!)
         return true
     }
 
