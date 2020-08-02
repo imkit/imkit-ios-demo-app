@@ -23,5 +23,16 @@ class MessagesViewController: IMMessagesViewController {
         }
         set {}
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        IMTextMessageCollectionViewCell.urlTapHandler = { url in
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    override func avatarDidTapped(user: IMUser) {
+        
+    }
 }
 
