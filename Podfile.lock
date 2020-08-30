@@ -11,13 +11,13 @@ PODS:
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
-  - IMKit (0.254.0):
+  - IMKit (0.267.0):
     - ActiveLabel (~> 1.1.0)
     - Alamofire (~> 4.9.1)
     - DifferenceKit (= 1.1.5)
     - Hero (~> 1.5.0)
     - IGListKit (~> 4.0.0)
-    - Kingfisher (~> 5.14.1)
+    - Kingfisher (~> 5.15.0)
     - Moya (~> 13.0.1)
     - PromiseKit (~> 6.13.1)
     - RealmSwift (~> 4.4.1)
@@ -25,9 +25,9 @@ PODS:
     - Socket.IO-Client-Swift (~> 15.2.0)
     - SwiftLinkPreview (~> 3.1.0)
     - SwiftyJSON (~> 5.0.0)
-  - Kingfisher (5.14.1):
-    - Kingfisher/Core (= 5.14.1)
-  - Kingfisher/Core (5.14.1)
+  - Kingfisher (5.15.0):
+    - Kingfisher/Core (= 5.15.0)
+  - Kingfisher/Core (5.15.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -92,7 +92,7 @@ CHECKOUT OPTIONS:
     :commit: aad468b6de8315ae7403410f17724c8f8d5eff20
     :git: https://github.com/imkit/IGListKit.git
   IMKit:
-    :commit: 0d745efd8799847b8c4a3e184594a3f0374e9516
+    :commit: 25f2379bb1dfa68aea199e2260f2c5d99549fb06
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: e2ce261315113df4e63dc1053cb747a6e5f06afc
@@ -105,8 +105,8 @@ SPEC CHECKSUMS:
   Hero: b7385b75e7259da62f4f85462f59a5082d66b058
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IMKit: c85dcdd794bb8fba9c6716520245cc17ec5c5db2
-  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  IMKit: 4ed2ca1c8f942b03a3c6e247f74312d51a26416f
+  Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
