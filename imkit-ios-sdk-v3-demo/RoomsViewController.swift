@@ -11,6 +11,21 @@ import IMKit
 
 class RoomsViewController: IMRoomsViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登出", style: .plain, target: self, action: #selector(logout))
+    }
+    
+    @objc func logout() {
+        IMUnsubscribeTask().perform().done { _ in
+            IMSocketManager.shared.disconnect()
+            IMKit.clear()
+            self.dismiss(animated: true, completion: nil)
+        }.catch { error in
+            print(error)
+        }
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let element = viewModel.sections[indexPath.section].elements[indexPath.row]
         if let room = element.base as? IMRoom {

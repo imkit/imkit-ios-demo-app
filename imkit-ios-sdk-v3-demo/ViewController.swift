@@ -42,8 +42,8 @@ class ViewController: UIViewController {
             }).done({ _ in
                 
                 // default IMKit rooms view controller
-                let vc = UINavigationController(rootViewController: IMRoomsViewController())
-                
+                let vc = UINavigationController(rootViewController: RoomsViewController())
+                vc.modalPresentationStyle = .overFullScreen
                 // customized rooms view controller
                 // let vc = UINavigationController(rootViewController: RoomsViewController())
                 self.present(vc, animated: true)
