@@ -7,27 +7,28 @@ PODS:
   - DifferenceKit/Core (1.1.5)
   - DifferenceKit/UIKitExtension (1.1.5):
     - DifferenceKit/Core
-  - Hero (1.5.0)
+  - FloatingPanel (2.3.0)
+  - Hero (1.6.1)
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
-  - IMKit (0.320.0):
+  - IMKit (0.324.0):
     - ActiveLabel (~> 1.1.0)
     - Alamofire (~> 4.9.1)
     - DifferenceKit (= 1.1.5)
-    - Hero (~> 1.5.0)
+    - FloatingPanel (= 2.3.0)
+    - Hero (~> 1.6.1)
     - IGListKit (~> 4.0.0)
-    - Kingfisher (~> 5.15.7)
+    - Kingfisher (~> 6.3.0)
     - Moya (~> 13.0.1)
     - PromiseKit (~> 6.13.1)
-    - RealmSwift (~> 4.4.1)
+    - RealmSwift (~> 10.7.4)
     - SnapKit (~> 5.0.1)
-    - Socket.IO-Client-Swift (~> 15.2.0)
+    - Socket.IO-Client-Swift (~> 16.0.1)
     - SwiftLinkPreview (~> 3.1.0)
-    - SwiftyJSON (~> 5.0.0)
-  - Kingfisher (5.15.8):
-    - Kingfisher/Core (= 5.15.8)
-  - Kingfisher/Core (5.15.8)
+    - SwiftyJSON (~> 5.0.1)
+    - TagListView (= 1.4.1)
+  - Kingfisher (6.3.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -42,22 +43,23 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.13.1):
     - PromiseKit/CorePromise
-  - Realm (4.4.1):
-    - Realm/Headers (= 4.4.1)
-  - Realm/Headers (4.4.1)
-  - RealmSwift (4.4.1):
-    - Realm (= 4.4.1)
+  - Realm (10.7.4):
+    - Realm/Headers (= 10.7.4)
+  - Realm/Headers (10.7.4)
+  - RealmSwift (10.7.4):
+    - Realm (= 10.7.4)
   - Result (4.1.0)
   - SnapKit (5.0.1)
-  - Socket.IO-Client-Swift (15.2.0):
-    - Starscream (~> 3.1)
-  - Starscream (3.1.1)
+  - Socket.IO-Client-Swift (16.0.1):
+    - Starscream (~> 4.0)
+  - Starscream (4.0.4)
   - SwiftLinkPreview (3.1.0)
-  - SwiftyJSON (5.0.0)
+  - SwiftyJSON (5.0.1)
+  - TagListView (1.4.1)
 
 DEPENDENCIES:
   - IGListKit (from `https://github.com/imkit/IGListKit.git`)
-  - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `refactor-chatroom`)
+  - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.4`)
   - SwiftLinkPreview (from `https://github.com/imkit/SwiftLinkPreview.git`)
 
 SPEC REPOS:
@@ -65,6 +67,7 @@ SPEC REPOS:
     - ActiveLabel
     - Alamofire
     - DifferenceKit
+    - FloatingPanel
     - Hero
     - IGListDiffKit
     - Kingfisher
@@ -77,12 +80,13 @@ SPEC REPOS:
     - Socket.IO-Client-Swift
     - Starscream
     - SwiftyJSON
+    - TagListView
 
 EXTERNAL SOURCES:
   IGListKit:
     :git: https://github.com/imkit/IGListKit.git
   IMKit:
-    :branch: refactor-chatroom
+    :branch: swift5.4
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :git: https://github.com/imkit/SwiftLinkPreview.git
@@ -92,7 +96,7 @@ CHECKOUT OPTIONS:
     :commit: aad468b6de8315ae7403410f17724c8f8d5eff20
     :git: https://github.com/imkit/IGListKit.git
   IMKit:
-    :commit: ebd02c00786797e6cbb38dd339e6d82aee8e2fab
+    :commit: f4922722003a363bb30bf18d43fd3a54dc8d71fd
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: e2ce261315113df4e63dc1053cb747a6e5f06afc
@@ -102,22 +106,24 @@ SPEC CHECKSUMS:
   ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   DifferenceKit: 516f12e336ed65a3a0665847b5c3cb5cad4bd4ea
-  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  FloatingPanel: 373478513a197cf140abd219ca9a9c049967332b
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IMKit: a7e490a0960ef1e2417d55e555dd815ca15d92b7
-  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  IMKit: e9b6ed296ab0720f1525247c7b26bdfcc3a75f9f
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
-  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
-  RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
+  Realm: f08ce1a85649a41303ecfe1cbd914c62e9e6d710
+  RealmSwift: 60ec49d165f23d040ab48811d8dd177e09baf4d3
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
-  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   SwiftLinkPreview: 3d924eeaae8d17410a827a4b37675713af1a0a8a
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: cc6f54526968794e522c77ae2c278312da8fd081
+PODFILE CHECKSUM: 26811dec0c25e0ee430f2e0e0115d45c3001a14e
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
