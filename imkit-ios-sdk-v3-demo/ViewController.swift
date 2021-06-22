@@ -12,21 +12,28 @@ import PromiseKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var chatroomTextField: UITextField!
-    @IBOutlet weak var goButton: UIButton!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var clientIdTextfield: UITextField!
+    @IBOutlet weak var nicknameTextfield: UITextField!
+    @IBOutlet weak var signinButton: UIButton!
+    @IBOutlet weak var nicknameWrapper: UIView!
+    @IBOutlet weak var clientIdWrapper: UIView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        // IMKit.configure(clientKey: "", chatServerURL: URL(string: "")!, authServerURL: URL(string: "")!)
+        signinButton.layer.cornerRadius = signinButton.bounds.height / 2.0
+        
+        clientIdWrapper.layer.cornerRadius = 28.0
+        clientIdWrapper.layer.borderWidth = 1.0
+        clientIdWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
+        nicknameWrapper.layer.cornerRadius = 28.0
+        nicknameWrapper.layer.borderWidth = 1.0
+        nicknameWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor                
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
+    
+    
+/*
     @IBAction func go(_ sender: Any) {
         let uid = nameTextField.text ?? ""
         let chatroom = chatroomTextField.text ?? ""
@@ -51,6 +58,7 @@ class ViewController: UIViewController {
                 print(error)
         }
     }
+ */
     
 }
 
