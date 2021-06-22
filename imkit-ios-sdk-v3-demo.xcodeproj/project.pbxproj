@@ -10,6 +10,8 @@
 		0F2CE7D81E4D0DCF7FC80640 /* Pods_imkit_ios_sdk_v3_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125358B8D7CAD24FDC55F30C /* Pods_imkit_ios_sdk_v3_demo.framework */; };
 		145885C52680D01F00C17CA4 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */; };
 		145885C72682130B00C17CA4 /* SelectAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */; };
+		145885C9268222A000C17CA4 /* SampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885C8268222A000C17CA4 /* SampleListViewController.swift */; };
+		145885CB2682268900C17CA4 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */; };
 		891F97842365B61F007BC5FD /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97832365B61F007BC5FD /* RoomsViewController.swift */; };
 		891F97862365B69A007BC5FD /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97852365B69A007BC5FD /* MessagesViewController.swift */; };
 		891F97882365B6DA007BC5FD /* UtilityInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */; };
@@ -24,6 +26,8 @@
 		125358B8D7CAD24FDC55F30C /* Pods_imkit_ios_sdk_v3_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imkit_ios_sdk_v3_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
 		145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAvatarViewController.swift; sourceTree = "<group>"; };
+		145885C8268222A000C17CA4 /* SampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListViewController.swift; sourceTree = "<group>"; };
+		145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		1B7847CACECE0D905668580C /* Pods-imkit-ios-sdk-v3-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imkit-ios-sdk-v3-demo/Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		891F97832365B61F007BC5FD /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		891F97852365B69A007BC5FD /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -75,11 +79,13 @@
 				891F97852365B69A007BC5FD /* MessagesViewController.swift */,
 				891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */,
 				893000062152A51400FFD1E8 /* Main.storyboard */,
+				145885C8268222A000C17CA4 /* SampleListViewController.swift */,
 				145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */,
 				893000092152A51500FFD1E8 /* Assets.xcassets */,
 				8930000B2152A51500FFD1E8 /* LaunchScreen.storyboard */,
 				8930000E2152A51500FFD1E8 /* Info.plist */,
 				145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */,
+				145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */,
 			);
 			path = "imkit-ios-sdk-v3-demo";
 			sourceTree = "<group>";
@@ -167,6 +173,7 @@
 				8930000A2152A51500FFD1E8 /* Assets.xcassets in Resources */,
 				893000082152A51400FFD1E8 /* Main.storyboard in Resources */,
 				145885C52680D01F00C17CA4 /* Nunito-ExtraBold.ttf in Resources */,
+				145885CB2682268900C17CA4 /* Nunito-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +227,7 @@
 				893000052152A51400FFD1E8 /* ViewController.swift in Sources */,
 				891F97882365B6DA007BC5FD /* UtilityInputViewController.swift in Sources */,
 				891F97862365B69A007BC5FD /* MessagesViewController.swift in Sources */,
+				145885C9268222A000C17CA4 /* SampleListViewController.swift in Sources */,
 				893000032152A51400FFD1E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

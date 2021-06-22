@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CWu-0f-m3k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZKa-8M-ztg">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,6 +12,9 @@
     <customFonts key="customFonts">
         <array key="Nunito-ExtraBold.ttf">
             <string>Nunito-ExtraBold</string>
+        </array>
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -72,7 +75,7 @@
                                 <rect key="frame" x="137.5" y="120.5" width="100" height="100"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMKIT Sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKI-FM-Zze">
-                                <rect key="frame" x="108" y="228.5" width="159" height="33"/>
+                                <rect key="frame" x="108" y="228.5" width="159.5" height="33"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="24"/>
                                 <color key="textColor" name="themeColor"/>
                                 <nil key="highlightedColor"/>
@@ -120,7 +123,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your avatar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmS-em-kVm">
-                                <rect key="frame" x="77.5" y="112" width="220.5" height="33"/>
+                                <rect key="frame" x="77.5" y="120" width="220.5" height="33"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="24"/>
                                 <color key="textColor" name="themeColor"/>
                                 <nil key="highlightedColor"/>
@@ -251,6 +254,7 @@
                             <constraint firstItem="Y7b-TB-11e" firstAttribute="width" secondItem="JTh-ML-IMq" secondAttribute="width" id="L2k-L3-sty"/>
                             <constraint firstItem="6hs-5y-dGI" firstAttribute="centerY" secondItem="Z5A-Ok-JTF" secondAttribute="centerY" id="OCn-EH-7JC"/>
                             <constraint firstItem="6hs-5y-dGI" firstAttribute="width" secondItem="ZFZ-h0-Fkp" secondAttribute="width" id="PCg-Tt-fpK"/>
+                            <constraint firstItem="wmS-em-kVm" firstAttribute="top" secondItem="iNG-Mg-5tt" secondAttribute="top" constant="120" id="Vxj-rd-bMn"/>
                             <constraint firstItem="ZFZ-h0-Fkp" firstAttribute="centerY" secondItem="Z5A-Ok-JTF" secondAttribute="centerY" id="aXH-we-15d"/>
                             <constraint firstItem="Z5A-Ok-JTF" firstAttribute="height" secondItem="ZFZ-h0-Fkp" secondAttribute="height" id="car-QN-TE5"/>
                             <constraint firstItem="iNG-Mg-5tt" firstAttribute="trailing" secondItem="uwS-JC-5vr" secondAttribute="trailing" constant="40" id="fS9-oC-cvc"/>
@@ -259,7 +263,6 @@
                             <constraint firstItem="Z5A-Ok-JTF" firstAttribute="width" secondItem="ZFZ-h0-Fkp" secondAttribute="width" id="jAD-Ap-UJV"/>
                             <constraint firstItem="uwS-JC-5vr" firstAttribute="leading" secondItem="iNG-Mg-5tt" secondAttribute="leading" constant="40" id="jTC-Hp-OFz"/>
                             <constraint firstItem="wmS-em-kVm" firstAttribute="centerX" secondItem="iNG-Mg-5tt" secondAttribute="centerX" id="nYz-KO-DUe"/>
-                            <constraint firstItem="ZFZ-h0-Fkp" firstAttribute="top" secondItem="wmS-em-kVm" secondAttribute="bottom" constant="148.5" id="nrw-e5-l0o"/>
                             <constraint firstItem="Z5A-Ok-JTF" firstAttribute="leading" secondItem="ZFZ-h0-Fkp" secondAttribute="trailing" constant="20" id="qWW-h6-ORH"/>
                             <constraint firstItem="Xgd-aj-1Xn" firstAttribute="height" secondItem="JTh-ML-IMq" secondAttribute="height" id="t3J-Lk-Zqn"/>
                             <constraint firstItem="6hs-5y-dGI" firstAttribute="leading" secondItem="Z5A-Ok-JTF" secondAttribute="trailing" constant="20" id="uWR-fZ-Bho"/>
@@ -277,6 +280,126 @@
             </objects>
             <point key="canvasLocation" x="876" y="133.5832083958021"/>
         </scene>
+        <!--Sample List View Controller-->
+        <scene sceneID="h0N-g2-Kw5">
+            <objects>
+                <viewController id="ZKa-8M-ztg" customClass="SampleListViewController" customModule="imkit_ios_sdk_v3_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="90F-cy-Kcy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDS-EW-wou" userLabel="sampleButton1">
+                                <rect key="frame" x="37" y="188.5" width="301" height="62"/>
+                                <state key="normal" image="sampleButton1"/>
+                                <connections>
+                                    <action selector="sampleButton1Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="FBo-if-fHb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yx-Ns-uf9" userLabel="sampleButton2">
+                                <rect key="frame" x="37" y="270.5" width="301" height="62"/>
+                                <state key="normal" image="sampleButton2"/>
+                                <connections>
+                                    <action selector="sampleButton2Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="AZ9-xG-oqe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3p-Lv-qIl" userLabel="sampleButton4">
+                                <rect key="frame" x="37" y="434.5" width="301" height="62"/>
+                                <state key="normal" image="sampleButton4"/>
+                                <connections>
+                                    <action selector="sampleButton4Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="TCo-Z7-n5I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgR-QT-hN8" userLabel="sampleButton3">
+                                <rect key="frame" x="37" y="352.5" width="301" height="62"/>
+                                <state key="normal" image="sampleButton3"/>
+                                <connections>
+                                    <action selector="sampleButton3Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="gvc-Km-voG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading platform" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heB-er-1HO" userLabel="sampleButtonTitle1">
+                                <rect key="frame" x="126.5" y="208.5" width="122.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" name="tradingPlatformThemeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat in banking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYc-bc-ZId" userLabel="sampleButtonTitle2">
+                                <rect key="frame" x="130.5" y="290.5" width="114.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" name="businessChatThemeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networking chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-GL-Lnk" userLabel="sampleButtonTitle3">
+                                <rect key="frame" x="127" y="372.5" width="121.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" name="networkingChatThemeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXU-pP-tQf" userLabel="sampleButtonTitle4">
+                                <rect key="frame" x="137.5" y="454.5" width="100.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" name="chatInBankingThemeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g27-5T-SuF">
+                                <rect key="frame" x="40" y="533" width="295" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="kzT-Qo-3yF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="18"/>
+                                <state key="normal" title="Sign out"/>
+                                <connections>
+                                    <action selector="signOutButtonPressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="3KE-kD-aFU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7O-BL-1F1">
+                                <rect key="frame" x="120.5" y="120" width="134.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="24"/>
+                                <color key="textColor" name="themeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SDK v3.1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krz-wj-SMd">
+                                <rect key="frame" x="147" y="605" width="81.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N1a-R9-ij9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3yx-Ns-uf9" firstAttribute="top" secondItem="YDS-EW-wou" secondAttribute="bottom" constant="20" id="4Fz-fn-Ys9"/>
+                            <constraint firstItem="oXU-pP-tQf" firstAttribute="centerY" secondItem="e3p-Lv-qIl" secondAttribute="centerY" id="4n1-Rz-rYe"/>
+                            <constraint firstItem="heB-er-1HO" firstAttribute="centerX" secondItem="YDS-EW-wou" secondAttribute="centerX" id="4ou-Xh-xnB"/>
+                            <constraint firstItem="WgR-QT-hN8" firstAttribute="centerY" secondItem="N1a-R9-ij9" secondAttribute="centerY" constant="50" id="5wo-gR-Kbd"/>
+                            <constraint firstItem="3yx-Ns-uf9" firstAttribute="centerX" secondItem="WgR-QT-hN8" secondAttribute="centerX" id="7gy-Lt-jqc"/>
+                            <constraint firstItem="sYc-bc-ZId" firstAttribute="centerY" secondItem="3yx-Ns-uf9" secondAttribute="centerY" id="BU9-ny-meC"/>
+                            <constraint firstItem="N1a-R9-ij9" firstAttribute="bottom" secondItem="krz-wj-SMd" secondAttribute="bottom" constant="40" id="Cut-73-Pzb"/>
+                            <constraint firstItem="h7O-BL-1F1" firstAttribute="centerX" secondItem="N1a-R9-ij9" secondAttribute="centerX" id="DIi-1u-N1k"/>
+                            <constraint firstItem="e3p-Lv-qIl" firstAttribute="top" secondItem="WgR-QT-hN8" secondAttribute="bottom" constant="20" id="GYQ-UI-caO"/>
+                            <constraint firstItem="WgR-QT-hN8" firstAttribute="centerX" secondItem="N1a-R9-ij9" secondAttribute="centerX" id="Gtx-iA-GRO"/>
+                            <constraint firstItem="krz-wj-SMd" firstAttribute="top" secondItem="g27-5T-SuF" secondAttribute="bottom" constant="16" id="Jy9-Vw-a9r"/>
+                            <constraint firstItem="g27-5T-SuF" firstAttribute="leading" secondItem="N1a-R9-ij9" secondAttribute="leading" constant="40" id="UfP-sf-ztR"/>
+                            <constraint firstItem="h7O-BL-1F1" firstAttribute="top" secondItem="N1a-R9-ij9" secondAttribute="top" constant="120" id="a7y-qq-fVq"/>
+                            <constraint firstItem="e3p-Lv-qIl" firstAttribute="centerX" secondItem="N1a-R9-ij9" secondAttribute="centerX" id="avq-Ic-22R"/>
+                            <constraint firstItem="sYc-bc-ZId" firstAttribute="centerX" secondItem="3yx-Ns-uf9" secondAttribute="centerX" id="bQA-jb-coM"/>
+                            <constraint firstItem="Z1g-GL-Lnk" firstAttribute="centerY" secondItem="WgR-QT-hN8" secondAttribute="centerY" id="hTq-Te-6Py"/>
+                            <constraint firstItem="N1a-R9-ij9" firstAttribute="trailing" secondItem="g27-5T-SuF" secondAttribute="trailing" constant="40" id="pbE-sM-4AG"/>
+                            <constraint firstItem="heB-er-1HO" firstAttribute="centerY" secondItem="YDS-EW-wou" secondAttribute="centerY" id="q7q-mg-9qZ"/>
+                            <constraint firstItem="krz-wj-SMd" firstAttribute="centerX" secondItem="N1a-R9-ij9" secondAttribute="centerX" id="qeh-tb-l2Q"/>
+                            <constraint firstItem="Z1g-GL-Lnk" firstAttribute="centerX" secondItem="WgR-QT-hN8" secondAttribute="centerX" id="sd8-xf-lzI"/>
+                            <constraint firstItem="WgR-QT-hN8" firstAttribute="top" secondItem="3yx-Ns-uf9" secondAttribute="bottom" constant="20" id="vjn-L3-9dm"/>
+                            <constraint firstItem="oXU-pP-tQf" firstAttribute="centerX" secondItem="e3p-Lv-qIl" secondAttribute="centerX" id="xcr-WA-0VY"/>
+                            <constraint firstItem="YDS-EW-wou" firstAttribute="centerX" secondItem="N1a-R9-ij9" secondAttribute="centerX" id="zgD-Ip-6qg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signoutButton" destination="g27-5T-SuF" id="LHU-Zc-1XC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qc-L2-GEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="134"/>
+        </scene>
     </scenes>
     <resources>
         <image name="avatar1" width="80" height="80"/>
@@ -284,8 +407,24 @@
         <image name="avatar3" width="80" height="80"/>
         <image name="check" width="20" height="20"/>
         <image name="logo" width="100" height="100"/>
+        <image name="sampleButton1" width="301" height="62"/>
+        <image name="sampleButton2" width="301" height="62"/>
+        <image name="sampleButton3" width="301" height="62"/>
+        <image name="sampleButton4" width="301" height="62"/>
+        <namedColor name="businessChatThemeColor">
+            <color red="0.89411764705882357" green="0.46274509803921571" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="chatInBankingThemeColor">
+            <color red="0.0078431372549019607" green="0.69411764705882351" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="networkingChatThemeColor">
+            <color red="0.050980392156862744" green="0.61960784313725492" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="themeColor">
             <color red="0.0" green="0.46666666666666667" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tradingPlatformThemeColor">
+            <color red="0.80784313725490198" green="0.77647058823529413" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
