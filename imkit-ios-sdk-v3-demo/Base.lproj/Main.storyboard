@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZKa-8M-ztg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -108,11 +108,12 @@
                         <outlet property="nicknameTextfield" destination="z8h-28-maT" id="aiX-Tr-fAU"/>
                         <outlet property="nicknameWrapper" destination="vDi-Ul-yDr" id="7KO-q6-SvU"/>
                         <outlet property="signinButton" destination="6zh-De-DAG" id="AB8-Z1-JMd"/>
+                        <segue destination="CWu-0f-m3k" kind="presentation" identifier="goSelectAvatar" modalPresentationStyle="fullScreen" id="kWV-7G-cG9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-42" y="134"/>
         </scene>
         <!--Select Avatar View Controller-->
         <scene sceneID="tFh-jq-uxF">
@@ -274,6 +275,7 @@
                         <outlet property="check2" destination="Xgd-aj-1Xn" id="xKC-Uw-4WV"/>
                         <outlet property="check3" destination="Y7b-TB-11e" id="DfZ-Bc-Lj8"/>
                         <outlet property="nextButton" destination="uwS-JC-5vr" id="YxR-Rx-V43"/>
+                        <segue destination="plI-FU-4gi" kind="presentation" id="4eg-xE-sMl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zM-ET-rkV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -285,63 +287,63 @@
             <objects>
                 <viewController id="ZKa-8M-ztg" customClass="SampleListViewController" customModule="imkit_ios_sdk_v3_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="90F-cy-Kcy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDS-EW-wou" userLabel="sampleButton1">
-                                <rect key="frame" x="37" y="188.5" width="301" height="62"/>
+                                <rect key="frame" x="37" y="206.5" width="301" height="62"/>
                                 <state key="normal" image="sampleButton1"/>
                                 <connections>
                                     <action selector="sampleButton1Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="FBo-if-fHb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yx-Ns-uf9" userLabel="sampleButton2">
-                                <rect key="frame" x="37" y="270.5" width="301" height="62"/>
+                                <rect key="frame" x="37" y="288.5" width="301" height="62"/>
                                 <state key="normal" image="sampleButton2"/>
                                 <connections>
                                     <action selector="sampleButton2Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="AZ9-xG-oqe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3p-Lv-qIl" userLabel="sampleButton4">
-                                <rect key="frame" x="37" y="434.5" width="301" height="62"/>
+                                <rect key="frame" x="37" y="452.5" width="301" height="62"/>
                                 <state key="normal" image="sampleButton4"/>
                                 <connections>
                                     <action selector="sampleButton4Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="TCo-Z7-n5I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgR-QT-hN8" userLabel="sampleButton3">
-                                <rect key="frame" x="37" y="352.5" width="301" height="62"/>
+                                <rect key="frame" x="37" y="370.5" width="301" height="62"/>
                                 <state key="normal" image="sampleButton3"/>
                                 <connections>
                                     <action selector="sampleButton3Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="gvc-Km-voG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading platform" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heB-er-1HO" userLabel="sampleButtonTitle1">
-                                <rect key="frame" x="126.5" y="208.5" width="122.5" height="22"/>
+                                <rect key="frame" x="126.5" y="226.5" width="122.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="tradingPlatformThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat in banking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYc-bc-ZId" userLabel="sampleButtonTitle2">
-                                <rect key="frame" x="130.5" y="290.5" width="114.5" height="22"/>
+                                <rect key="frame" x="130.5" y="308.5" width="114.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="businessChatThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networking chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-GL-Lnk" userLabel="sampleButtonTitle3">
-                                <rect key="frame" x="127" y="372.5" width="121.5" height="22"/>
+                                <rect key="frame" x="127" y="390.5" width="121.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="networkingChatThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXU-pP-tQf" userLabel="sampleButtonTitle4">
-                                <rect key="frame" x="137.5" y="454.5" width="100.5" height="22"/>
+                                <rect key="frame" x="137.5" y="472.5" width="100.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="chatInBankingThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g27-5T-SuF">
-                                <rect key="frame" x="40" y="533" width="295" height="56"/>
+                                <rect key="frame" x="40" y="513" width="295" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="kzT-Qo-3yF"/>
                                 </constraints>
@@ -352,13 +354,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7O-BL-1F1">
-                                <rect key="frame" x="120.5" y="120" width="134.5" height="33"/>
+                                <rect key="frame" x="120.5" y="176" width="134.5" height="33"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="24"/>
                                 <color key="textColor" name="themeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SDK v3.1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krz-wj-SMd">
-                                <rect key="frame" x="147" y="605" width="81.5" height="22"/>
+                                <rect key="frame" x="147" y="585" width="81.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -392,13 +394,81 @@
                             <constraint firstItem="YDS-EW-wou" firstAttribute="centerX" secondItem="N1a-R9-ij9" secondAttribute="centerX" id="zgD-Ip-6qg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TFL-ss-ZKE"/>
                     <connections>
                         <outlet property="signoutButton" destination="g27-5T-SuF" id="LHU-Zc-1XC"/>
+                        <segue destination="fEM-m0-pyO" kind="show" id="bHe-YS-7Zf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6qc-L2-GEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1602" y="134"/>
+            <point key="canvasLocation" x="1818" y="940"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xtJ-Bb-QQQ">
+            <objects>
+                <navigationController id="plI-FU-4gi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="og4-B3-jdk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZKa-8M-ztg" kind="relationship" relationship="rootViewController" id="JLR-OH-np2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DyF-Ua-Ipb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="941"/>
+        </scene>
+        <!--Scenario Intro View Controller-->
+        <scene sceneID="Llf-e9-NDk">
+            <objects>
+                <viewController id="fEM-m0-pyO" customClass="ScenarioIntroViewController" customModule="imkit_ios_sdk_v3_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xyr-Xl-MLc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N5J-xF-hEa">
+                                <rect key="frame" x="67" y="155" width="240" height="309"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P3-OH-BaS">
+                                <rect key="frame" x="40" y="491" width="295" height="56"/>
+                                <color key="backgroundColor" name="themeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="xs2-qI-wX3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="18"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qLX-3A-xFU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qLX-3A-xFU" firstAttribute="bottom" secondItem="0P3-OH-BaS" secondAttribute="bottom" constant="100" id="2EP-Ub-zWr"/>
+                            <constraint firstItem="N5J-xF-hEa" firstAttribute="top" secondItem="qLX-3A-xFU" secondAttribute="top" constant="99" id="3LI-Mi-anV"/>
+                            <constraint firstItem="N5J-xF-hEa" firstAttribute="leading" secondItem="qLX-3A-xFU" secondAttribute="leading" constant="67" id="BTN-ZC-9wh"/>
+                            <constraint firstItem="0P3-OH-BaS" firstAttribute="top" secondItem="N5J-xF-hEa" secondAttribute="bottom" constant="27" id="DvR-fL-jnt"/>
+                            <constraint firstItem="qLX-3A-xFU" firstAttribute="trailing" secondItem="0P3-OH-BaS" secondAttribute="trailing" constant="40" id="SxO-yK-zIR"/>
+                            <constraint firstItem="0P3-OH-BaS" firstAttribute="centerX" secondItem="qLX-3A-xFU" secondAttribute="centerX" id="Zkn-xA-IiB"/>
+                            <constraint firstItem="0P3-OH-BaS" firstAttribute="leading" secondItem="qLX-3A-xFU" secondAttribute="leading" constant="40" id="hNr-CP-5Fb"/>
+                            <constraint firstItem="qLX-3A-xFU" firstAttribute="trailing" secondItem="N5J-xF-hEa" secondAttribute="trailing" constant="68" id="ttd-wy-7Cw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GWs-ba-1Kq"/>
+                    <connections>
+                        <outlet property="startButton" destination="0P3-OH-BaS" id="qY7-2i-mD5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjd-yu-CFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2711" y="940"/>
         </scene>
     </scenes>
     <resources>
@@ -426,6 +496,9 @@
         <namedColor name="tradingPlatformThemeColor">
             <color red="0.80784313725490198" green="0.77647058823529413" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
