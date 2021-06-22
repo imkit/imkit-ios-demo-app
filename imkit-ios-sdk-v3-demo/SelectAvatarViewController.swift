@@ -35,6 +35,10 @@ class SelectAvatarViewController: UIViewController {
         selectAvatar(index: 2)
     }
     @IBAction func nextButtonPressed(_ sender: UIButton) {
+        showSampleListViewController()
+    }
+    func showSampleListViewController() {
+        performSegue(withIdentifier: "goSampleList", sender: nil)
     }
 }
 

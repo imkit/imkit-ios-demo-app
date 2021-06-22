@@ -31,6 +31,15 @@ class ViewController: UIViewController {
         nicknameWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor                
     }
     
+    @IBAction func signinButtonPressed(_ sender: UIButton) {
+        //kimuranow: check does user typed client id
+        //kimuranow: check does user typed username
+        showSelectAvatarViewController()
+    }
+    
+    func showSelectAvatarViewController() {
+        performSegue(withIdentifier: "goSelectAvatar", sender: nil)
+    }
     
     
 /*

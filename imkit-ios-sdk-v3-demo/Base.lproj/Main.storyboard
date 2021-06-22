@@ -36,6 +36,9 @@
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L0a-zc-asa"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDi-Ul-yDr" userLabel="nicknameWrapper">
                                 <rect key="frame" x="40" y="375.5" width="295" height="56"/>
@@ -275,7 +278,7 @@
                         <outlet property="check2" destination="Xgd-aj-1Xn" id="xKC-Uw-4WV"/>
                         <outlet property="check3" destination="Y7b-TB-11e" id="DfZ-Bc-Lj8"/>
                         <outlet property="nextButton" destination="uwS-JC-5vr" id="YxR-Rx-V43"/>
-                        <segue destination="plI-FU-4gi" kind="presentation" id="4eg-xE-sMl"/>
+                        <segue destination="plI-FU-4gi" kind="presentation" identifier="goSampleList" modalPresentationStyle="fullScreen" id="iSl-6p-1K5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zM-ET-rkV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -287,63 +290,63 @@
             <objects>
                 <viewController id="ZKa-8M-ztg" customClass="SampleListViewController" customModule="imkit_ios_sdk_v3_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="90F-cy-Kcy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDS-EW-wou" userLabel="sampleButton1">
-                                <rect key="frame" x="37" y="206.5" width="301" height="62"/>
+                                <rect key="frame" x="37" y="210.5" width="301" height="62"/>
                                 <state key="normal" image="sampleButton1"/>
                                 <connections>
                                     <action selector="sampleButton1Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="FBo-if-fHb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yx-Ns-uf9" userLabel="sampleButton2">
-                                <rect key="frame" x="37" y="288.5" width="301" height="62"/>
+                                <rect key="frame" x="37" y="292.5" width="301" height="62"/>
                                 <state key="normal" image="sampleButton2"/>
                                 <connections>
                                     <action selector="sampleButton2Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="AZ9-xG-oqe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3p-Lv-qIl" userLabel="sampleButton4">
-                                <rect key="frame" x="37" y="452.5" width="301" height="62"/>
+                                <rect key="frame" x="37" y="456.5" width="301" height="62"/>
                                 <state key="normal" image="sampleButton4"/>
                                 <connections>
                                     <action selector="sampleButton4Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="TCo-Z7-n5I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgR-QT-hN8" userLabel="sampleButton3">
-                                <rect key="frame" x="37" y="370.5" width="301" height="62"/>
+                                <rect key="frame" x="37" y="374.5" width="301" height="62"/>
                                 <state key="normal" image="sampleButton3"/>
                                 <connections>
                                     <action selector="sampleButton3Pressed:" destination="ZKa-8M-ztg" eventType="touchUpInside" id="gvc-Km-voG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading platform" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heB-er-1HO" userLabel="sampleButtonTitle1">
-                                <rect key="frame" x="126.5" y="226.5" width="122.5" height="22"/>
+                                <rect key="frame" x="126.5" y="230.5" width="122.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="tradingPlatformThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat in banking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYc-bc-ZId" userLabel="sampleButtonTitle2">
-                                <rect key="frame" x="130.5" y="308.5" width="114.5" height="22"/>
+                                <rect key="frame" x="130.5" y="312.5" width="114.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="businessChatThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networking chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-GL-Lnk" userLabel="sampleButtonTitle3">
-                                <rect key="frame" x="127" y="390.5" width="121.5" height="22"/>
+                                <rect key="frame" x="127" y="394.5" width="121.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="networkingChatThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXU-pP-tQf" userLabel="sampleButtonTitle4">
-                                <rect key="frame" x="137.5" y="472.5" width="100.5" height="22"/>
+                                <rect key="frame" x="137.5" y="476.5" width="100.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="chatInBankingThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g27-5T-SuF">
-                                <rect key="frame" x="40" y="513" width="295" height="56"/>
+                                <rect key="frame" x="40" y="533" width="295" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="kzT-Qo-3yF"/>
                                 </constraints>
@@ -354,13 +357,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7O-BL-1F1">
-                                <rect key="frame" x="120.5" y="176" width="134.5" height="33"/>
+                                <rect key="frame" x="120.5" y="164" width="134.5" height="33"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="24"/>
                                 <color key="textColor" name="themeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SDK v3.1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krz-wj-SMd">
-                                <rect key="frame" x="147" y="585" width="81.5" height="22"/>
+                                <rect key="frame" x="147" y="605" width="81.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -397,7 +400,7 @@
                     <navigationItem key="navigationItem" id="TFL-ss-ZKE"/>
                     <connections>
                         <outlet property="signoutButton" destination="g27-5T-SuF" id="LHU-Zc-1XC"/>
-                        <segue destination="fEM-m0-pyO" kind="show" id="bHe-YS-7Zf"/>
+                        <segue destination="fEM-m0-pyO" kind="show" identifier="goScenarioIntro" id="bHe-YS-7Zf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6qc-L2-GEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -408,8 +411,9 @@
         <scene sceneID="xtJ-Bb-QQQ">
             <objects>
                 <navigationController id="plI-FU-4gi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="W0U-l4-KdU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="og4-B3-jdk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -418,18 +422,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DyF-Ua-Ipb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876" y="941"/>
+            <point key="canvasLocation" x="918" y="940"/>
         </scene>
         <!--Scenario Intro View Controller-->
         <scene sceneID="Llf-e9-NDk">
             <objects>
                 <viewController id="fEM-m0-pyO" customClass="ScenarioIntroViewController" customModule="imkit_ios_sdk_v3_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xyr-Xl-MLc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N5J-xF-hEa">
-                                <rect key="frame" x="67" y="155" width="240" height="309"/>
+                                <rect key="frame" x="40" y="143" width="295" height="341"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -437,7 +441,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P3-OH-BaS">
-                                <rect key="frame" x="40" y="491" width="295" height="56"/>
+                                <rect key="frame" x="40" y="511" width="295" height="56"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="xs2-qI-wX3"/>
@@ -453,16 +457,17 @@
                         <constraints>
                             <constraint firstItem="qLX-3A-xFU" firstAttribute="bottom" secondItem="0P3-OH-BaS" secondAttribute="bottom" constant="100" id="2EP-Ub-zWr"/>
                             <constraint firstItem="N5J-xF-hEa" firstAttribute="top" secondItem="qLX-3A-xFU" secondAttribute="top" constant="99" id="3LI-Mi-anV"/>
-                            <constraint firstItem="N5J-xF-hEa" firstAttribute="leading" secondItem="qLX-3A-xFU" secondAttribute="leading" constant="67" id="BTN-ZC-9wh"/>
+                            <constraint firstItem="N5J-xF-hEa" firstAttribute="leading" secondItem="qLX-3A-xFU" secondAttribute="leading" constant="40" id="BTN-ZC-9wh"/>
                             <constraint firstItem="0P3-OH-BaS" firstAttribute="top" secondItem="N5J-xF-hEa" secondAttribute="bottom" constant="27" id="DvR-fL-jnt"/>
                             <constraint firstItem="qLX-3A-xFU" firstAttribute="trailing" secondItem="0P3-OH-BaS" secondAttribute="trailing" constant="40" id="SxO-yK-zIR"/>
                             <constraint firstItem="0P3-OH-BaS" firstAttribute="centerX" secondItem="qLX-3A-xFU" secondAttribute="centerX" id="Zkn-xA-IiB"/>
                             <constraint firstItem="0P3-OH-BaS" firstAttribute="leading" secondItem="qLX-3A-xFU" secondAttribute="leading" constant="40" id="hNr-CP-5Fb"/>
-                            <constraint firstItem="qLX-3A-xFU" firstAttribute="trailing" secondItem="N5J-xF-hEa" secondAttribute="trailing" constant="68" id="ttd-wy-7Cw"/>
+                            <constraint firstItem="qLX-3A-xFU" firstAttribute="trailing" secondItem="N5J-xF-hEa" secondAttribute="trailing" constant="40" id="ttd-wy-7Cw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GWs-ba-1Kq"/>
                     <connections>
+                        <outlet property="contentTextView" destination="N5J-xF-hEa" id="MWI-ao-iJl"/>
                         <outlet property="startButton" destination="0P3-OH-BaS" id="qY7-2i-mD5"/>
                     </connections>
                 </viewController>

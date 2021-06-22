@@ -10,6 +10,9 @@ import UIKit
 
 class ScenarioIntroViewController: UIViewController {
 
+    var model: ScenarioIntroDto?
+    
+    @IBOutlet weak var contentTextView: UITextView!
     @IBOutlet weak var startButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,17 +23,14 @@ class ScenarioIntroViewController: UIViewController {
         super.viewWillAppear(animated)
         
         startButton.layer.cornerRadius = startButton.bounds.height / 2.0
+        if let model = model {
+            title = model.title
+            contentTextView.text = model.content
+        }
+        
+     
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }
