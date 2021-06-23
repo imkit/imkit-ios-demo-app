@@ -18,6 +18,41 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var nicknameWrapper: UIView!
     @IBOutlet weak var clientIdWrapper: UIView!
     
+    private var clientIdUserTyped: String? {
+        if let content = clientIdTextfield.text {
+            return content.trimmed()
+        } else {
+            return nil
+        }
+    }
+    
+    private var isClientIdValid: Bool {
+        //kimuranow
+        if let clientId = clientIdUserTyped {
+            return clientId.count >= 4
+        } else {
+            return false
+        }
+    }
+    
+    private var nicknameUserTyped: String? {
+        if let content = nicknameTextfield.text {
+            return content.trimmed()
+        } else {
+            return nil
+        }
+    }
+    
+    private var isNicknameValid: Bool {
+        //kimuranow
+        if let nickname = nicknameUserTyped {
+            return nickname.count >= 4
+        } else {
+            return false
+        }
+    }
+
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -31,9 +66,33 @@ class FirstViewController: UIViewController {
         nicknameWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor                
     }
     
+        
+    
     @IBAction func signinButtonPressed(_ sender: UIButton) {
-        //kimuranow: check does user typed client id
-        //kimuranow: check does user typed username
+        clientIdWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
+        nicknameWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
+        guard let clientId = clientIdUserTyped, !clientId.isEmpty else {
+            //kimuranow: error-handling
+            clientIdWrapper.layer.borderColor = UIColor.red.cgColor
+            return
+        }
+        guard isClientIdValid else {
+            //kimuranow: error-handling
+            clientIdWrapper.layer.borderColor = UIColor.red.cgColor
+            return
+        }
+        
+        guard let nickname = nicknameUserTyped, !nickname.isEmpty else {
+            //kimuranow: error-handling
+            nicknameWrapper.layer.borderColor = UIColor.red.cgColor
+            return
+        }
+        
+        guard isNicknameValid else {
+            //kimuranow: error-handling
+            nicknameWrapper.layer.borderColor = UIColor.red.cgColor
+            return
+        }
         showSelectAvatarViewController()
     }
     
@@ -71,3 +130,8 @@ class FirstViewController: UIViewController {
     
 }
 
+extension String {
+    func trimmed() -> String {
+        self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+}
