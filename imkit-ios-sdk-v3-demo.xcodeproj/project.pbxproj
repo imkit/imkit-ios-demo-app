@@ -13,6 +13,7 @@
 		145885C9268222A000C17CA4 /* SampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885C8268222A000C17CA4 /* SampleListViewController.swift */; };
 		145885CB2682268900C17CA4 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */; };
 		145885CD26822DA900C17CA4 /* ScenarioIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885CC26822DA900C17CA4 /* ScenarioIntroViewController.swift */; };
+		14EC7BE526838BB300C1CF20 /* TradingPlatformProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BE426838BB300C1CF20 /* TradingPlatformProductViewController.swift */; };
 		891F97842365B61F007BC5FD /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97832365B61F007BC5FD /* RoomsViewController.swift */; };
 		891F97862365B69A007BC5FD /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97852365B69A007BC5FD /* MessagesViewController.swift */; };
 		891F97882365B6DA007BC5FD /* UtilityInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */; };
@@ -30,6 +31,7 @@
 		145885C8268222A000C17CA4 /* SampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListViewController.swift; sourceTree = "<group>"; };
 		145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		145885CC26822DA900C17CA4 /* ScenarioIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioIntroViewController.swift; sourceTree = "<group>"; };
+		14EC7BE426838BB300C1CF20 /* TradingPlatformProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingPlatformProductViewController.swift; sourceTree = "<group>"; };
 		1B7847CACECE0D905668580C /* Pods-imkit-ios-sdk-v3-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imkit-ios-sdk-v3-demo/Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		891F97832365B61F007BC5FD /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		891F97852365B69A007BC5FD /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				893000022152A51400FFD1E8 /* AppDelegate.swift */,
 				893000042152A51400FFD1E8 /* FirstViewController.swift */,
+				14EC7BE426838BB300C1CF20 /* TradingPlatformProductViewController.swift */,
 				891F97832365B61F007BC5FD /* RoomsViewController.swift */,
 				891F97852365B69A007BC5FD /* MessagesViewController.swift */,
 				891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */,
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EC7BE526838BB300C1CF20 /* TradingPlatformProductViewController.swift in Sources */,
 				145885C72682130B00C17CA4 /* SelectAvatarViewController.swift in Sources */,
 				145885CD26822DA900C17CA4 /* ScenarioIntroViewController.swift in Sources */,
 				891F97842365B61F007BC5FD /* RoomsViewController.swift in Sources */,
