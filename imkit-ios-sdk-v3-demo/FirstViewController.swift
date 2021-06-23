@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  imkit-ios-sdk-v3-demo
 //
 //  Created by Howard Sun on 2018/9/19.
@@ -10,7 +10,7 @@ import UIKit
 import IMKit
 import PromiseKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     @IBOutlet weak var clientIdTextfield: UITextField!
     @IBOutlet weak var nicknameTextfield: UITextField!
