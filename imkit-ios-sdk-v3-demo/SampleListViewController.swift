@@ -10,6 +10,7 @@ import UIKit
 
 class SampleListViewController: UIViewController {
 
+    var user: User?
     @IBOutlet weak var signoutButton: UIButton!
     private var selectedIndex: Int?
     override func viewDidLoad() {
@@ -53,7 +54,8 @@ class SampleListViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let selectedIndex = selectedIndex else { return }
         guard let vc = segue.destination as? ScenarioIntroViewController else { return }
-        vc.model = scenarioIntroDtos()[selectedIndex]       
+        vc.model = scenarioIntroDtos()[selectedIndex]
+        vc.user = user
     }
 }
 
@@ -61,6 +63,7 @@ private extension SampleListViewController {
     func scenarioIntroDtos() -> [ScenarioIntroDto] {
         [
             ScenarioIntroDto(
+                type: .tradingPlatform,
                 title: "Trading platform",
                 content: """
             1. custom navigation bar color
@@ -69,6 +72,7 @@ private extension SampleListViewController {
             """
             ),
             ScenarioIntroDto(
+                type: .chatInBanking,
                 title: "Chat in banking",
                 content: """
                         1. 官方帳號聊天室
@@ -79,6 +83,7 @@ private extension SampleListViewController {
             """
             ),
             ScenarioIntroDto(
+                type: .networkingChat,
                 title: "Networking chat",
                 content: """
                         1. custom navigation bar 內容
@@ -86,6 +91,7 @@ private extension SampleListViewController {
             """
             ),
             ScenarioIntroDto(
+                type: .businessChat,
                 title: "Business chat",
                 content: """
                 1. Search bar
@@ -102,6 +108,14 @@ private extension SampleListViewController {
 }
 
 struct ScenarioIntroDto {
+    let type: DemoScenarioType
     let title: String
     let content: String
+}
+
+enum DemoScenarioType {
+    case tradingPlatform
+    case chatInBanking
+    case networkingChat
+    case businessChat
 }

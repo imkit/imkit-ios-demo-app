@@ -10,6 +10,8 @@ import UIKit
 
 class SelectAvatarViewController: UIViewController {
 
+    var user: User?
+    private var selectedIndex: Int = 0
 
     @IBOutlet weak var check1: UIImageView!
     @IBOutlet weak var check2: UIImageView!
@@ -40,10 +42,18 @@ class SelectAvatarViewController: UIViewController {
     func showSampleListViewController() {
         performSegue(withIdentifier: "goSampleList", sender: nil)
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {        
+        if let navi = segue.destination as? UINavigationController,
+           let vc = navi.viewControllers.first as? SampleListViewController {
+            user?.avatarIndex = selectedIndex
+            vc.user = user
+        }
+    }
 }
 
 private extension SelectAvatarViewController {
     func selectAvatar(index: Int) {
+        selectedIndex = index
         check1.isHidden = true
         check2.isHidden = true
         check3.isHidden = true

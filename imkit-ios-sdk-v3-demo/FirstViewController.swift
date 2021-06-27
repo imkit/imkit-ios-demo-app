@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import IMKit
+
 import PromiseKit
 
 class FirstViewController: UIViewController {
@@ -100,6 +100,16 @@ class FirstViewController: UIViewController {
         performSegue(withIdentifier: "goSelectAvatar", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? SelectAvatarViewController,
+           let clientIdUserTyped = clientIdUserTyped,
+           let nicknameUserTyped = nicknameUserTyped {
+            vc.user = User(
+                uuid: clientIdUserTyped,
+                nickname: nicknameUserTyped
+            )
+        }
+    }
     
 /*
     @IBAction func go(_ sender: Any) {

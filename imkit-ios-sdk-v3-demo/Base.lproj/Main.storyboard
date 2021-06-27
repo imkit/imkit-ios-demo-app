@@ -451,7 +451,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2XY-tB-HmD" kind="show" id="ngJ-eo-WcA"/>
+                                    <action selector="startButtonPressed:" destination="fEM-m0-pyO" eventType="touchUpInside" id="dPt-nQ-hxJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -472,6 +472,7 @@
                     <connections>
                         <outlet property="contentTextView" destination="N5J-xF-hEa" id="MWI-ao-iJl"/>
                         <outlet property="startButton" destination="0P3-OH-BaS" id="qY7-2i-mD5"/>
+                        <segue destination="2XY-tB-HmD" kind="show" identifier="goTradingPlatform" id="FIP-6I-kcB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjd-yu-CFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -563,6 +564,9 @@ Cabriolet : Plastic rear window can be opened using a zip</mutableString>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDF-2J-BtZ">
                                 <rect key="frame" x="155" y="545" width="170" height="62"/>
                                 <state key="normal" image="chatButton"/>
+                                <connections>
+                                    <action selector="chatButtonPressed:" destination="2XY-tB-HmD" eventType="touchUpInside" id="a2l-ad-CFv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FB2-xC-6vF"/>
@@ -582,7 +586,7 @@ Cabriolet : Plastic rear window can be opened using a zip</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQM-TC-3fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3944.8000000000002" y="373.76311844077964"/>
+            <point key="canvasLocation" x="3782" y="233"/>
         </scene>
     </scenes>
     <resources>
