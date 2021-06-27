@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import IMKit
+import PromiseKit
 
 class ScenarioIntroViewController: UIViewController {
 
@@ -38,11 +40,36 @@ class ScenarioIntroViewController: UIViewController {
         case .tradingPlatform:
             performSegue(withIdentifier: "goTradingPlatform", sender: nil)
             break
-        case .chatInBanking:
-            break
-        case .networkingChat:
-            break
-        case .businessChat:
+//        case .chatInBanking:
+//            break
+//        case .networkingChat:
+//            break
+//        case .businessChat:
+//            break
+        
+        default:
+            guard let user = user else { return }
+            IMKit.clear()
+            
+            IMFetchTokenTask().perform(uid: user.uuid)
+                .then({ token -> Promise<IMRoom> in
+                    IMKit.token = token
+                    IMKit.uid = user.uuid
+                    return IMCreateRoomTask().perform(
+                        id: "room",   //kimuranow
+                        name: "room"  //kimuranow
+                    )
+                })
+                .then({ room -> Promise<IMRoom> in
+                    return IMJoinRoomTask().perform(id: room.id)
+                })
+                .done({ _ in
+                    let roomList = IMRoomsViewController()
+                    self.navigationController?.pushViewController(roomList, animated: true)
+                })
+                .catch({ error in
+                    print(error)
+                })
             break
         }
     }
