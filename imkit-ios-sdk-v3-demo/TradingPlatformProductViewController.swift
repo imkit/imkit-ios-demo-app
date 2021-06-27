@@ -7,24 +7,35 @@
 //
 
 import UIKit
+import IMKit
+import PromiseKit
 
 class TradingPlatformProductViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
+    var user: User?
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func chatButtonPressed(_ sender: UIButton) {
+        guard let user = user else { return }
+        IMKit.clear()
+        
+        IMFetchTokenTask().perform(uid: user.uuid)
+            .then({ token -> Promise<IMRoom> in
+                IMKit.token = token
+                IMKit.uid = user.uuid
+                return IMCreateRoomTask().perform(
+                    id: "room",   //kimuranow
+                    name: "room"  //kimuranow
+                )
+            })
+            .then({ room -> Promise<IMRoom> in
+                return IMJoinRoomTask().perform(id: room.id)
+            })
+            .done({ room in                
+                let room = IMRoomViewController(roomID: room.id)
+                self.navigationController?.pushViewController(room, animated: true)
+            })
+            .catch({ error in
+                print(error)
+            })
     }
-    */
-
 }
