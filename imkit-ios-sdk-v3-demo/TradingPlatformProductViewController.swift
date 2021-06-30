@@ -31,7 +31,7 @@ class TradingPlatformProductViewController: UIViewController {
                 return IMJoinRoomTask().perform(id: room.id)
             })
             .done({ room in                
-                let room = IMRoomViewController(roomID: room.id)
+                let room = IMChatRoomViewController(roomID: room.id)
                 self.navigationController?.pushViewController(room, animated: true)
             })
             .catch({ error in
