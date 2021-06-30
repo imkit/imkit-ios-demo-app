@@ -30,8 +30,26 @@ class TradingPlatformProductViewController: UIViewController {
             .then({ room -> Promise<IMRoom> in
                 return IMJoinRoomTask().perform(id: room.id)
             })
-            .done({ room in                
+            .then({ room -> Promise<IMRoom> in
+                return IMUpdateRoomTask().perform(
+                    id: room.id,
+                    
+                    coverURL: URL(string: "https://upload.wikimedia.org/wikipedia/en/3/34/Fallout_New_Vegas.jpg"),
+                    description: "HELLO, WORLD"
+                    
+                )
+            })
+            .done({ room in
                 let room = IMChatRoomViewController(roomID: room.id)
+                // imkit-customized: 1. custom navigation bar color
+                self.navigationController?.navigationBar.barTintColor = DemoScenarioType.tradingPlatform.subColor
+                
+                // imkit-customized: 整個聊天室背景
+//                IMStyle.messages.backgroundColor = .red
+                IMStyle.messages.textCell.response.backgroundColor = .red
+                
+                
+                
                 self.navigationController?.pushViewController(room, animated: true)
             })
             .catch({ error in

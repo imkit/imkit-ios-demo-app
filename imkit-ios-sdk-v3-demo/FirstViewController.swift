@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import IMKit
 import PromiseKit
 
 class FirstViewController: UIViewController {
@@ -63,8 +63,11 @@ class FirstViewController: UIViewController {
         clientIdWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
         nicknameWrapper.layer.cornerRadius = 28.0
         nicknameWrapper.layer.borderWidth = 1.0
-        nicknameWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor                
+        nicknameWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
+        
+        
     }
+    
     
         
     

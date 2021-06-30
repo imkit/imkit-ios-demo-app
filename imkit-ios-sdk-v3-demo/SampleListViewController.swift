@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import IMKit
+import PromiseKit
 
 class SampleListViewController: UIViewController {
 
@@ -26,6 +28,58 @@ class SampleListViewController: UIViewController {
         signoutButton.layer.borderColor = UIColor(named: "themeColor")?.cgColor
         
         navigationController?.isNavigationBarHidden = true
+        
+        //kimuranow: dev routes
+        IMKit.clear()
+        
+        IMFetchTokenTask().perform(uid: "sean135")
+            .then({ token -> Promise<IMRoom> in
+                IMKit.token = token
+                IMKit.uid = "sean135"
+                return IMCreateRoomTask().perform(
+                    id: "room",   //kimuranow
+                    name: "room"  //kimuranow
+                )
+            })
+            .then({ room -> Promise<IMRoom> in
+                return IMJoinRoomTask().perform(id: room.id)
+            })
+            .then({ room -> Promise<IMRoom> in
+                return IMUpdateRoomTask().perform(
+                    id: room.id,
+                    
+                    coverURL: URL(string: "https://upload.wikimedia.org/wikipedia/en/3/34/Fallout_New_Vegas.jpg"),
+                    description: "HELLO, WORLD"
+                    
+                )
+            })
+            .done({ room in
+                let room = IMChatRoomViewController(roomID: room.id)
+                // imkit-customized: 1. custom navigation bar color
+                self.navigationController?.navigationBar.barTintColor = DemoScenarioType.tradingPlatform.subColor
+                
+                // imkit-customized: 整個聊天室背景
+                IMStyle.messages.backgroundColor = .white
+                IMStyle.messages.textCell.response.backgroundColor = .red
+                
+                IMStyle.navigationBar.tintColor = .black
+                
+                // imkit-customized: 對方的訊息泡泡
+                IMStyle.messages.incomingCell.backgroundColor = DemoScenarioType.tradingPlatform.subColor
+                // imkit-customized: 自己的訊息泡泡
+                IMStyle.messages.outgoingCell.backgroundColor = UIColor(named: "tradingPlatformGrayColor")!
+                
+                room.inputBarView.sendButton.setImage(UIImage(named: "tradingPlatformSend"), for: .normal)
+                room.inputBarView.imageButton.setImage(UIImage(named: "tradingPlatformImage"), for: .normal)
+                room.inputBarView.cameraButton.setImage(UIImage(named: "tradingPlatformCamera"), for: .normal)
+                
+                
+                
+                self.navigationController?.pushViewController(room, animated: true)
+            })
+            .catch({ error in
+                print(error)
+            })
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -118,4 +172,30 @@ enum DemoScenarioType {
     case chatInBanking
     case networkingChat
     case businessChat
+    
+    var themeColor: UIColor {
+        switch self {
+        case .tradingPlatform:
+            return UIColor(named: "tradingPlatformThemeColor")!
+            break
+        case .chatInBanking:
+            return .red
+        case .networkingChat:
+            return .red
+        case .businessChat:
+            return .red
+        }
+    }
+    var subColor: UIColor {
+        switch self {
+        case .tradingPlatform:
+            return UIColor(named: "tradingPlatformSubColor")!           
+        case .chatInBanking:
+            return .red
+        case .networkingChat:
+            return .red
+        case .businessChat:
+            return .red
+        }
+    }
 }
