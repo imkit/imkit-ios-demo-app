@@ -45,8 +45,19 @@ class TradingPlatformProductViewController: UIViewController {
                 self.navigationController?.navigationBar.barTintColor = DemoScenarioType.tradingPlatform.subColor
                 
                 // imkit-customized: 整個聊天室背景
-//                IMStyle.messages.backgroundColor = .red
+                IMStyle.messages.backgroundColor = .white
                 IMStyle.messages.textCell.response.backgroundColor = .red
+                
+                IMStyle.navigationBar.tintColor = .black
+                
+                // imkit-customized: 對方的訊息泡泡
+                IMStyle.messages.incomingCell.backgroundColor = DemoScenarioType.tradingPlatform.subColor
+                // imkit-customized: 自己的訊息泡泡
+                IMStyle.messages.outgoingCell.backgroundColor = UIColor(named: "tradingPlatformGrayColor")!
+                
+                room.inputBarView.sendButton.setImage(UIImage(named: "tradingPlatformSend"), for: .normal)
+                room.inputBarView.imageButton.setImage(UIImage(named: "tradingPlatformImage"), for: .normal)
+                room.inputBarView.cameraButton.setImage(UIImage(named: "tradingPlatformCamera"), for: .normal)
                 
                 
                 
