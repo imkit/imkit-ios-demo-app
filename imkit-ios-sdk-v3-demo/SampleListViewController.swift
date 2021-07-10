@@ -29,26 +29,11 @@ class SampleListViewController: UIViewController {
         
         navigationController?.isNavigationBarHidden = true
         
-        goChatroomList()
+//        goChatInBankingScenarioChatroomList()
+        goNetworkingChatScenarioChatroomList()
     }
     
-    func goChatroomList() {
-        IMFetchTokenTask().perform(uid: "sean111", nickname: "sean")
-            .then { token -> Promise<[IMRoom]> in
-                IMKit.token = token
-                IMKit.uid = "sean111"
-                return when(fulfilled: [
-                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
-                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
-                    IMCreateDirectChatTask().perform(invitee: "charle_id")
-                ])
-            }.done { rooms in
-                let rooms = ChatInBankingRoomsViewController()
-                self.navigationController?.pushViewController(rooms, animated: true)
-            }.catch { error in
-                print(error)
-            }
-    }
+    
    
     func textView() -> UIView {
         let v = UIView()
@@ -198,4 +183,42 @@ extension UIColor {
       alpha: CGFloat(1.0)
     )
   }
+}
+extension SampleListViewController {
+    func goChatInBankingScenarioChatroomList() {
+        IMKit.clear()
+        IMFetchTokenTask().perform(uid: "sean111", nickname: "sean")
+            .then { token -> Promise<[IMRoom]> in
+                IMKit.token = token
+                IMKit.uid = "sean111"
+                return when(fulfilled: [
+                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
+                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
+                    IMCreateDirectChatTask().perform(invitee: "charle_id")
+                ])
+            }.done { rooms in
+                let rooms = ChatInBankingRoomsViewController()
+                self.navigationController?.pushViewController(rooms, animated: true)
+            }.catch { error in
+                print(error)
+            }
+    }
+    func goNetworkingChatScenarioChatroomList() {
+        IMKit.clear()
+        IMFetchTokenTask().perform(uid: "sean135Networking", nickname: "sean135")
+            .then { token -> Promise<[IMRoom]> in
+                IMKit.token = token
+                IMKit.uid = "sean135Networking"
+                return when(fulfilled: [
+                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
+//                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
+//                    IMCreateDirectChatTask().perform(invitee: "charle_id")
+                ])
+            }.done { rooms in
+                let rooms = NetworkingChatScenarioRoomsViewController()
+                self.navigationController?.pushViewController(rooms, animated: true)
+            }.catch { error in
+                print(error)
+            }
+    }
 }
