@@ -18,10 +18,10 @@ class TradingPlatformProductViewController: UIViewController {
         guard let user = user else { return }
         IMKit.clear()
         
-        IMFetchTokenTask().perform(uid: user.uuid)
+        IMFetchTokenTask().perform(uid: "sean135")
             .then({ token -> Promise<IMRoom> in
                 IMKit.token = token
-                IMKit.uid = user.uuid
+                IMKit.uid = "sean135"
                 return IMCreateRoomTask().perform(
                     id: "room",   //kimuranow
                     name: "room"  //kimuranow
@@ -67,4 +67,5 @@ class TradingPlatformProductViewController: UIViewController {
                 print(error)
             })
     }
+    
 }

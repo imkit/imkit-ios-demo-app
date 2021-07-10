@@ -11,6 +11,9 @@ import IMKit
 
 @objc public class ChatInBankingUtilityInputViewController: IMUtilityInputViewController {
     
+    var transferButtonAction: (() -> Void)?
+    var paymentRequestButtonAction: (() -> Void)?
+    
     enum UtilityItem {
         case transfer
         case paymentRequest
@@ -76,8 +79,14 @@ extension ChatInBankingUtilityInputViewController {
 extension ChatInBankingUtilityInputViewController {
     func transferButtonPressed() {
         //kimuranow
+        if let action = transferButtonAction {
+            action()
+        }
     }
     func paymentRequestButtonPressed() {
         //kimuranow
+        if let action = paymentRequestButtonAction {
+            action()
+        }
     }
 }
