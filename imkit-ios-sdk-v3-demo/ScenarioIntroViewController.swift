@@ -40,37 +40,71 @@ class ScenarioIntroViewController: UIViewController {
         case .tradingPlatform:
             performSegue(withIdentifier: "goTradingPlatform", sender: nil)
             break
-//        case .chatInBanking:
-//            break
-//        case .networkingChat:
-//            break
-//        case .businessChat:
-//            break
-        
-        default:
-            guard let user = user else { return }
-            IMKit.clear()
-            
-            IMFetchTokenTask().perform(uid: user.uuid)
-                .then({ token -> Promise<IMRoom> in
-                    IMKit.token = token
-                    IMKit.uid = user.uuid
-                    return IMCreateRoomTask().perform(
-                        id: "room",   //kimuranow
-                        name: "room"  //kimuranow
-                    )
-                })
-                .then({ room -> Promise<IMRoom> in
-                    return IMJoinRoomTask().perform(id: room.id)
-                })
-                .done({ _ in
-                    let roomList = IMRoomsViewController()
-                    self.navigationController?.pushViewController(roomList, animated: true)
-                })
-                .catch({ error in
-                    print(error)
-                })
+        case .chatInBanking:
+            goChatInBankingScenarioChatroomList()
             break
+        case .networkingChat:
+            goNetworkingChatScenarioChatroomList()
+            break
+        case .businessChat:
+            goBusinessChatScenarioChatroomList()
+            break                
         }
+    }
+}
+extension ScenarioIntroViewController {
+    func goChatInBankingScenarioChatroomList() {
+        IMKit.clear()
+        IMFetchTokenTask().perform(uid: "sean111", nickname: "sean")
+            .then { token -> Promise<[IMRoom]> in
+                IMKit.token = token
+                IMKit.uid = "sean111"
+                return when(fulfilled: [
+                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
+                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
+                    IMCreateDirectChatTask().perform(invitee: "charle_id")
+                ])
+            }.done { rooms in
+                let rooms = ChatInBankingRoomsViewController()
+                self.navigationController?.pushViewController(rooms, animated: true)
+            }.catch { error in
+                print(error)
+            }
+    }
+    func goNetworkingChatScenarioChatroomList() {
+        IMKit.clear()
+        IMFetchTokenTask().perform(uid: "sean135Networking", nickname: "sean135")
+            .then { token -> Promise<[IMRoom]> in
+                IMKit.token = token
+                IMKit.uid = "sean135Networking"
+                return when(fulfilled: [
+                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
+                    //                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
+                    //                    IMCreateDirectChatTask().perform(invitee: "charle_id")
+                ])
+            }.done { rooms in
+                let rooms = NetworkingChatScenarioRoomsViewController()
+                self.navigationController?.pushViewController(rooms, animated: true)
+            }.catch { error in
+                print(error)
+            }
+    }
+    func goBusinessChatScenarioChatroomList() {
+        IMKit.clear()
+        IMFetchTokenTask().perform(uid: "sean135Business", nickname: "sean")
+            .then { token -> Promise<[IMRoom]> in
+                IMKit.token = token
+                IMKit.uid = "sean135Business"
+                return when(fulfilled: [
+                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
+                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
+                    IMCreateDirectChatTask().perform(invitee: "charle_id")
+                ])
+            }.done { rooms in
+                let rooms = BusinessChatScenarioRoomsViewController()
+                self.navigationController?.pushViewController(rooms, animated: true)
+            }.catch { error in
+                print(error)
+            }
     }
 }
