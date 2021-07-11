@@ -48,63 +48,78 @@ class ScenarioIntroViewController: UIViewController {
             break
         case .businessChat:
             goBusinessChatScenarioChatroomList()
-            break                
+            break
         }
     }
 }
 extension ScenarioIntroViewController {
     func goChatInBankingScenarioChatroomList() {
+        guard let user = user else { return }
+        let normalizedUserId: String = "\(user.uuid)chatInBanking"
         IMKit.clear()
-        IMFetchTokenTask().perform(uid: "sean111", nickname: "sean")
-            .then { token -> Promise<[IMRoom]> in
-                IMKit.token = token
-                IMKit.uid = "sean111"
-                return when(fulfilled: [
-                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
-                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
-                    IMCreateDirectChatTask().perform(invitee: "charle_id")
-                ])
-            }.done { rooms in
-                let rooms = ChatInBankingRoomsViewController()
-                self.navigationController?.pushViewController(rooms, animated: true)
-            }.catch { error in
-                print(error)
-            }
+        IMFetchTokenTask().perform(
+            uid: normalizedUserId,
+            nickname: user.nickname
+        )
+        .then { token -> Promise<[IMRoom]> in
+            IMKit.token = token
+            IMKit.uid = normalizedUserId
+            return when(fulfilled: [
+                IMCreateDirectChatTask().perform(invitee: User.mockUserCoco.uuid),
+                IMCreateDirectChatTask().perform(invitee: User.mockUserLora.uuid),
+                IMCreateDirectChatTask().perform(invitee: User.mockUserCharle.uuid)
+            ])
+        }.done { rooms in
+            let rooms = ChatInBankingRoomsViewController()
+            self.navigationController?.pushViewController(rooms, animated: true)
+        }.catch { error in
+            print(error)
+        }
     }
     func goNetworkingChatScenarioChatroomList() {
+        guard let user = user else { return }
+        let normalizedUserId: String = "\(user.uuid)networkingChat"
         IMKit.clear()
-        IMFetchTokenTask().perform(uid: "sean135Networking", nickname: "sean135")
-            .then { token -> Promise<[IMRoom]> in
-                IMKit.token = token
-                IMKit.uid = "sean135Networking"
-                return when(fulfilled: [
-                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
-                    //                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
-                    //                    IMCreateDirectChatTask().perform(invitee: "charle_id")
-                ])
-            }.done { rooms in
-                let rooms = NetworkingChatScenarioRoomsViewController()
-                self.navigationController?.pushViewController(rooms, animated: true)
-            }.catch { error in
-                print(error)
-            }
+        IMFetchTokenTask().perform(
+            uid: normalizedUserId,
+            nickname: user.nickname
+        )
+        .then { token -> Promise<[IMRoom]> in
+            IMKit.token = token
+            IMKit.uid = normalizedUserId
+            return when(fulfilled: [
+                IMCreateDirectChatTask().perform(invitee: User.mockUserCoco.uuid),
+//                IMCreateDirectChatTask().perform(invitee: User.mockUserLora.uuid),
+//                IMCreateDirectChatTask().perform(invitee: User.mockUserCharle.uuid)
+            ])
+        }.done { rooms in
+            let rooms = NetworkingChatScenarioRoomsViewController()
+            self.navigationController?.pushViewController(rooms, animated: true)
+        }.catch { error in
+            print(error)
+        }
     }
     func goBusinessChatScenarioChatroomList() {
+        guard let user = user else { return }
+        let normalizedUserId: String = "\(user.uuid)businessChat"
         IMKit.clear()
-        IMFetchTokenTask().perform(uid: "sean135Business", nickname: "sean")
-            .then { token -> Promise<[IMRoom]> in
-                IMKit.token = token
-                IMKit.uid = "sean135Business"
-                return when(fulfilled: [
-                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
-                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
-                    IMCreateDirectChatTask().perform(invitee: "charle_id")
-                ])
-            }.done { rooms in
-                let rooms = BusinessChatScenarioRoomsViewController()
-                self.navigationController?.pushViewController(rooms, animated: true)
-            }.catch { error in
-                print(error)
-            }
+        IMFetchTokenTask().perform(
+            uid: normalizedUserId,
+            nickname: user.nickname
+        )
+        .then { token -> Promise<[IMRoom]> in
+            IMKit.token = token
+            IMKit.uid = normalizedUserId
+            return when(fulfilled: [
+                IMCreateDirectChatTask().perform(invitee: User.mockUserCoco.uuid),
+                IMCreateDirectChatTask().perform(invitee: User.mockUserLora.uuid),
+                IMCreateDirectChatTask().perform(invitee: User.mockUserCharle.uuid)
+            ])
+        }.done { rooms in
+            let rooms = BusinessChatScenarioRoomsViewController()
+            self.navigationController?.pushViewController(rooms, animated: true)
+        }.catch { error in
+            print(error)
+        }
     }
 }
