@@ -63,8 +63,11 @@ class FirstViewController: UIViewController {
         clientIdWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
         nicknameWrapper.layer.cornerRadius = 28.0
         nicknameWrapper.layer.borderWidth = 1.0
-        nicknameWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor                
+        nicknameWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
+        
+        
     }
+    
     
         
     
@@ -100,6 +103,16 @@ class FirstViewController: UIViewController {
         performSegue(withIdentifier: "goSelectAvatar", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? SelectAvatarViewController,
+           let clientIdUserTyped = clientIdUserTyped,
+           let nicknameUserTyped = nicknameUserTyped {
+            vc.user = User(
+                uuid: clientIdUserTyped,
+                nickname: nicknameUserTyped
+            )
+        }
+    }
     
 /*
     @IBAction func go(_ sender: Any) {

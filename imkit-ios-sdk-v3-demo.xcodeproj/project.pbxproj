@@ -13,6 +13,20 @@
 		145885C9268222A000C17CA4 /* SampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885C8268222A000C17CA4 /* SampleListViewController.swift */; };
 		145885CB2682268900C17CA4 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */; };
 		145885CD26822DA900C17CA4 /* ScenarioIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885CC26822DA900C17CA4 /* ScenarioIntroViewController.swift */; };
+		14EC7BE526838BB300C1CF20 /* TradingPlatformProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BE426838BB300C1CF20 /* TradingPlatformProductViewController.swift */; };
+		14EC7BE72684B12700C1CF20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BE62684B12700C1CF20 /* User.swift */; };
+		14EC7BE9269486B100C1CF20 /* TradingPlatformProductChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BE8269486B100C1CF20 /* TradingPlatformProductChatRoomViewController.swift */; };
+		14EC7BEB269486BC00C1CF20 /* ChatInBankingRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BEA269486BC00C1CF20 /* ChatInBankingRoomsViewController.swift */; };
+		14EC7BED269486C500C1CF20 /* ChatInBankingChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BEC269486C500C1CF20 /* ChatInBankingChatRoomViewController.swift */; };
+		14EC7BEF269486CC00C1CF20 /* NetworkingChatScenarioRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BEE269486CC00C1CF20 /* NetworkingChatScenarioRoomsViewController.swift */; };
+		14EC7BF1269486D300C1CF20 /* NetworkingChatScenarioChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BF0269486D300C1CF20 /* NetworkingChatScenarioChatRoomViewController.swift */; };
+		14EC7BF3269486DB00C1CF20 /* BusinessChatScenarioRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BF2269486DB00C1CF20 /* BusinessChatScenarioRoomsViewController.swift */; };
+		14EC7BF5269486E300C1CF20 /* BusinessChatScenarioChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BF4269486E300C1CF20 /* BusinessChatScenarioChatRoomViewController.swift */; };
+		14EC7BFC26949C4400C1CF20 /* ChatInBankingInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BFB26949C4400C1CF20 /* ChatInBankingInputAccessoryView.swift */; };
+		14EC7BFE2694B9B500C1CF20 /* ChatInBankingUtilityInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BFD2694B9B500C1CF20 /* ChatInBankingUtilityInputViewController.swift */; };
+		14EC7C00269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BFF269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift */; };
+		14EC7C0226974D5500C1CF20 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */; };
+		14EC7C042699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7C032699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift */; };
 		891F97842365B61F007BC5FD /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97832365B61F007BC5FD /* RoomsViewController.swift */; };
 		891F97862365B69A007BC5FD /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97852365B69A007BC5FD /* MessagesViewController.swift */; };
 		891F97882365B6DA007BC5FD /* UtilityInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */; };
@@ -30,6 +44,20 @@
 		145885C8268222A000C17CA4 /* SampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListViewController.swift; sourceTree = "<group>"; };
 		145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		145885CC26822DA900C17CA4 /* ScenarioIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioIntroViewController.swift; sourceTree = "<group>"; };
+		14EC7BE426838BB300C1CF20 /* TradingPlatformProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingPlatformProductViewController.swift; sourceTree = "<group>"; };
+		14EC7BE62684B12700C1CF20 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		14EC7BE8269486B100C1CF20 /* TradingPlatformProductChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingPlatformProductChatRoomViewController.swift; sourceTree = "<group>"; };
+		14EC7BEA269486BC00C1CF20 /* ChatInBankingRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInBankingRoomsViewController.swift; sourceTree = "<group>"; };
+		14EC7BEC269486C500C1CF20 /* ChatInBankingChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInBankingChatRoomViewController.swift; sourceTree = "<group>"; };
+		14EC7BEE269486CC00C1CF20 /* NetworkingChatScenarioRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingChatScenarioRoomsViewController.swift; sourceTree = "<group>"; };
+		14EC7BF0269486D300C1CF20 /* NetworkingChatScenarioChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingChatScenarioChatRoomViewController.swift; sourceTree = "<group>"; };
+		14EC7BF2269486DB00C1CF20 /* BusinessChatScenarioRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessChatScenarioRoomsViewController.swift; sourceTree = "<group>"; };
+		14EC7BF4269486E300C1CF20 /* BusinessChatScenarioChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessChatScenarioChatRoomViewController.swift; sourceTree = "<group>"; };
+		14EC7BFB26949C4400C1CF20 /* ChatInBankingInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInBankingInputAccessoryView.swift; sourceTree = "<group>"; };
+		14EC7BFD2694B9B500C1CF20 /* ChatInBankingUtilityInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInBankingUtilityInputViewController.swift; sourceTree = "<group>"; };
+		14EC7BFF269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInBankingMessageTableViewCell.swift; sourceTree = "<group>"; };
+		14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		14EC7C032699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInBankingRecordListViewController.swift; sourceTree = "<group>"; };
 		1B7847CACECE0D905668580C /* Pods-imkit-ios-sdk-v3-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imkit-ios-sdk-v3-demo/Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		891F97832365B61F007BC5FD /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		891F97852365B69A007BC5FD /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +84,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14EC7BF7269486F300C1CF20 /* 4_BusinessChat */ = {
+			isa = PBXGroup;
+			children = (
+				14EC7BF2269486DB00C1CF20 /* BusinessChatScenarioRoomsViewController.swift */,
+				14EC7BF4269486E300C1CF20 /* BusinessChatScenarioChatRoomViewController.swift */,
+			);
+			path = 4_BusinessChat;
+			sourceTree = "<group>";
+		};
+		14EC7BF82694871100C1CF20 /* 3_NetworkingChat */ = {
+			isa = PBXGroup;
+			children = (
+				14EC7BEE269486CC00C1CF20 /* NetworkingChatScenarioRoomsViewController.swift */,
+				14EC7BF0269486D300C1CF20 /* NetworkingChatScenarioChatRoomViewController.swift */,
+			);
+			path = 3_NetworkingChat;
+			sourceTree = "<group>";
+		};
+		14EC7BF92694871A00C1CF20 /* 2_ChatInBanking */ = {
+			isa = PBXGroup;
+			children = (
+				14EC7BEA269486BC00C1CF20 /* ChatInBankingRoomsViewController.swift */,
+				14EC7BEC269486C500C1CF20 /* ChatInBankingChatRoomViewController.swift */,
+				14EC7C032699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift */,
+				14EC7BFB26949C4400C1CF20 /* ChatInBankingInputAccessoryView.swift */,
+				14EC7BFD2694B9B500C1CF20 /* ChatInBankingUtilityInputViewController.swift */,
+				14EC7BFF269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift */,
+			);
+			path = 2_ChatInBanking;
+			sourceTree = "<group>";
+		};
+		14EC7BFA2694872400C1CF20 /* 1_TradingPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				14EC7BE8269486B100C1CF20 /* TradingPlatformProductChatRoomViewController.swift */,
+			);
+			path = 1_TradingPlatform;
+			sourceTree = "<group>";
+		};
 		5E0D5E412AE57EF700349655 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +144,8 @@
 			children = (
 				893000022152A51400FFD1E8 /* AppDelegate.swift */,
 				893000042152A51400FFD1E8 /* FirstViewController.swift */,
+				14EC7BE426838BB300C1CF20 /* TradingPlatformProductViewController.swift */,
+				14EC7BE62684B12700C1CF20 /* User.swift */,
 				891F97832365B61F007BC5FD /* RoomsViewController.swift */,
 				891F97852365B69A007BC5FD /* MessagesViewController.swift */,
 				891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */,
@@ -84,11 +153,16 @@
 				145885CC26822DA900C17CA4 /* ScenarioIntroViewController.swift */,
 				145885C8268222A000C17CA4 /* SampleListViewController.swift */,
 				145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */,
+				14EC7BFA2694872400C1CF20 /* 1_TradingPlatform */,
+				14EC7BF92694871A00C1CF20 /* 2_ChatInBanking */,
+				14EC7BF82694871100C1CF20 /* 3_NetworkingChat */,
+				14EC7BF7269486F300C1CF20 /* 4_BusinessChat */,
 				893000092152A51500FFD1E8 /* Assets.xcassets */,
 				8930000B2152A51500FFD1E8 /* LaunchScreen.storyboard */,
 				8930000E2152A51500FFD1E8 /* Info.plist */,
 				145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */,
 				145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */,
+				14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */,
 			);
 			path = "imkit-ios-sdk-v3-demo";
 			sourceTree = "<group>";
@@ -172,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EC7C0226974D5500C1CF20 /* Nunito-Regular.ttf in Resources */,
 				8930000D2152A51500FFD1E8 /* LaunchScreen.storyboard in Resources */,
 				8930000A2152A51500FFD1E8 /* Assets.xcassets in Resources */,
 				893000082152A51400FFD1E8 /* Main.storyboard in Resources */,
@@ -225,14 +300,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EC7BE526838BB300C1CF20 /* TradingPlatformProductViewController.swift in Sources */,
 				145885C72682130B00C17CA4 /* SelectAvatarViewController.swift in Sources */,
 				145885CD26822DA900C17CA4 /* ScenarioIntroViewController.swift in Sources */,
+				14EC7BED269486C500C1CF20 /* ChatInBankingChatRoomViewController.swift in Sources */,
+				14EC7BE9269486B100C1CF20 /* TradingPlatformProductChatRoomViewController.swift in Sources */,
 				891F97842365B61F007BC5FD /* RoomsViewController.swift in Sources */,
+				14EC7BFC26949C4400C1CF20 /* ChatInBankingInputAccessoryView.swift in Sources */,
 				893000052152A51400FFD1E8 /* FirstViewController.swift in Sources */,
+				14EC7BF3269486DB00C1CF20 /* BusinessChatScenarioRoomsViewController.swift in Sources */,
 				891F97882365B6DA007BC5FD /* UtilityInputViewController.swift in Sources */,
 				891F97862365B69A007BC5FD /* MessagesViewController.swift in Sources */,
+				14EC7BEF269486CC00C1CF20 /* NetworkingChatScenarioRoomsViewController.swift in Sources */,
 				145885C9268222A000C17CA4 /* SampleListViewController.swift in Sources */,
+				14EC7BEB269486BC00C1CF20 /* ChatInBankingRoomsViewController.swift in Sources */,
+				14EC7C042699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift in Sources */,
+				14EC7BE72684B12700C1CF20 /* User.swift in Sources */,
 				893000032152A51400FFD1E8 /* AppDelegate.swift in Sources */,
+				14EC7BF1269486D300C1CF20 /* NetworkingChatScenarioChatRoomViewController.swift in Sources */,
+				14EC7BFE2694B9B500C1CF20 /* ChatInBankingUtilityInputViewController.swift in Sources */,
+				14EC7BF5269486E300C1CF20 /* BusinessChatScenarioChatRoomViewController.swift in Sources */,
+				14EC7C00269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -322,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -377,6 +467,7 @@
 			baseConfigurationReference = 1B7847CACECE0D905668580C /* Pods-imkit-ios-sdk-v3-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UVWN4YM84;
 				INFOPLIST_FILE = "imkit-ios-sdk-v3-demo/Info.plist";
@@ -397,6 +488,7 @@
 			baseConfigurationReference = DFEF1199C44C4A61A37DB841 /* Pods-imkit-ios-sdk-v3-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UVWN4YM84;
 				INFOPLIST_FILE = "imkit-ios-sdk-v3-demo/Info.plist";

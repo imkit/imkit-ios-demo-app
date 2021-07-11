@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="plI-FU-4gi">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -27,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zh-De-DAG">
-                                <rect key="frame" x="40" y="459.5" width="295" height="56"/>
+                                <rect key="frame" x="40" y="454.5" width="295" height="56"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="mOa-SA-43A"/>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDi-Ul-yDr" userLabel="nicknameWrapper">
-                                <rect key="frame" x="40" y="375.5" width="295" height="56"/>
+                                <rect key="frame" x="40" y="370.5" width="295" height="56"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z8h-28-maT">
                                         <rect key="frame" x="26" y="0.0" width="243" height="56"/>
@@ -57,7 +57,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9a-8a-Ukb" userLabel="clientIdWrapper">
-                                <rect key="frame" x="40" y="305.5" width="295" height="56"/>
+                                <rect key="frame" x="40" y="300.5" width="295" height="56"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Client ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5L-0m-SHK">
                                         <rect key="frame" x="26" y="0.0" width="243" height="56"/>
@@ -78,7 +78,7 @@
                                 <rect key="frame" x="137.5" y="120.5" width="100" height="100"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMKIT Sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKI-FM-Zze">
-                                <rect key="frame" x="108" y="228.5" width="159.5" height="33"/>
+                                <rect key="frame" x="112" y="228.5" width="151.5" height="28"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="24"/>
                                 <color key="textColor" name="themeColor"/>
                                 <nil key="highlightedColor"/>
@@ -127,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your avatar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmS-em-kVm">
-                                <rect key="frame" x="77.5" y="120" width="220.5" height="33"/>
+                                <rect key="frame" x="82.5" y="120" width="210" height="28"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="24"/>
                                 <color key="textColor" name="themeColor"/>
                                 <nil key="highlightedColor"/>
@@ -322,31 +322,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading platform" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heB-er-1HO" userLabel="sampleButtonTitle1">
-                                <rect key="frame" x="126.5" y="230.5" width="122.5" height="22"/>
+                                <rect key="frame" x="129" y="232" width="117" height="19"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="tradingPlatformThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat in banking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYc-bc-ZId" userLabel="sampleButtonTitle2">
-                                <rect key="frame" x="130.5" y="312.5" width="114.5" height="22"/>
+                                <rect key="frame" x="131.5" y="314" width="112.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="businessChatThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networking chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-GL-Lnk" userLabel="sampleButtonTitle3">
-                                <rect key="frame" x="127" y="394.5" width="121.5" height="22"/>
+                                <rect key="frame" x="129" y="396" width="117.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="networkingChatThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXU-pP-tQf" userLabel="sampleButtonTitle4">
-                                <rect key="frame" x="137.5" y="476.5" width="100.5" height="22"/>
+                                <rect key="frame" x="137.5" y="478" width="100.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" name="chatInBankingThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g27-5T-SuF">
-                                <rect key="frame" x="40" y="533" width="295" height="56"/>
+                                <rect key="frame" x="40" y="536" width="295" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="kzT-Qo-3yF"/>
                                 </constraints>
@@ -357,13 +357,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7O-BL-1F1">
-                                <rect key="frame" x="120.5" y="164" width="134.5" height="33"/>
+                                <rect key="frame" x="124.5" y="164" width="126.5" height="28"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="24"/>
                                 <color key="textColor" name="themeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SDK v3.1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krz-wj-SMd">
-                                <rect key="frame" x="147" y="605" width="81.5" height="22"/>
+                                <rect key="frame" x="147.5" y="608" width="80.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -450,6 +450,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="fEM-m0-pyO" eventType="touchUpInside" id="dPt-nQ-hxJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qLX-3A-xFU"/>
@@ -469,23 +472,135 @@
                     <connections>
                         <outlet property="contentTextView" destination="N5J-xF-hEa" id="MWI-ao-iJl"/>
                         <outlet property="startButton" destination="0P3-OH-BaS" id="qY7-2i-mD5"/>
+                        <segue destination="2XY-tB-HmD" kind="show" identifier="goTradingPlatform" id="FIP-6I-kcB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjd-yu-CFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2711" y="940"/>
         </scene>
+        <!--Trading Platform Product View Controller-->
+        <scene sceneID="n31-PO-7ds">
+            <objects>
+                <viewController id="2XY-tB-HmD" customClass="TradingPlatformProductViewController" customModule="imkit_ios_sdk_v3_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9yx-Cy-LnU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zP8-ue-pKy">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqy-zh-QAd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="676"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleProduct" translatesAutoresizingMaskIntoConstraints="NO" id="0JQ-Jl-m3E">
+                                                <rect key="frame" x="20" y="20" width="335" height="233.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0JQ-Jl-m3E" secondAttribute="height" multiplier="337:235" id="Upt-aW-040"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porsche 356 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiG-Wc-Bw7">
+                                                <rect key="frame" x="20" y="268.5" width="335" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="mtK-dF-izS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NT$ 2,909,855" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNt-aK-ONN">
+                                                <rect key="frame" x="20" y="313.5" width="335" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="Gb6-ia-Fdd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="14"/>
+                                                <color key="textColor" red="0.72156862745098038" green="0.019607843137254902" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh5-a1-Up4">
+                                                <rect key="frame" x="20" y="350.5" width="335" height="275.5"/>
+                                                <mutableString key="text">Features 
+Raised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional " 90 " // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing 
+Cabriolet : Plastic rear window can be opened using a zipFeatures 
+Raised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional " 90 " // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing 
+Cabriolet : Plastic rear window can be opened using a zipFeatures 
+Raised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional " 90 " // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing 
+Cabriolet : Plastic rear window can be opened using a zipFeatures 
+Raised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional " 90 " // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing 
+Cabriolet : Plastic rear window can be opened using a zip</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="XNt-aK-ONN" firstAttribute="top" secondItem="qiG-Wc-Bw7" secondAttribute="bottom" constant="15" id="1Uv-uY-2NX"/>
+                                            <constraint firstItem="qiG-Wc-Bw7" firstAttribute="width" secondItem="0JQ-Jl-m3E" secondAttribute="width" id="LrH-1D-9yb"/>
+                                            <constraint firstAttribute="height" constant="676" id="NtI-1O-tK4"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gh5-a1-Up4" secondAttribute="bottom" constant="50" id="TTH-wQ-ITF"/>
+                                            <constraint firstItem="Gh5-a1-Up4" firstAttribute="top" secondItem="XNt-aK-ONN" secondAttribute="bottom" constant="15" id="UMJ-iG-enW"/>
+                                            <constraint firstItem="0JQ-Jl-m3E" firstAttribute="leading" secondItem="Zqy-zh-QAd" secondAttribute="leading" constant="20" id="UNb-56-ptr"/>
+                                            <constraint firstItem="qiG-Wc-Bw7" firstAttribute="top" secondItem="0JQ-Jl-m3E" secondAttribute="bottom" constant="15" id="UQq-Y4-Jnf"/>
+                                            <constraint firstItem="qiG-Wc-Bw7" firstAttribute="centerX" secondItem="0JQ-Jl-m3E" secondAttribute="centerX" id="WCH-Y0-PsV"/>
+                                            <constraint firstItem="Gh5-a1-Up4" firstAttribute="width" secondItem="0JQ-Jl-m3E" secondAttribute="width" id="bsp-B8-NBa"/>
+                                            <constraint firstItem="XNt-aK-ONN" firstAttribute="width" secondItem="0JQ-Jl-m3E" secondAttribute="width" id="dE3-JR-Y7V"/>
+                                            <constraint firstItem="0JQ-Jl-m3E" firstAttribute="top" secondItem="Zqy-zh-QAd" secondAttribute="top" constant="20" id="hdX-xk-NG5"/>
+                                            <constraint firstAttribute="trailing" secondItem="0JQ-Jl-m3E" secondAttribute="trailing" constant="20" id="i59-QO-GE3"/>
+                                            <constraint firstItem="Gh5-a1-Up4" firstAttribute="centerX" secondItem="0JQ-Jl-m3E" secondAttribute="centerX" id="osv-Oq-cPr"/>
+                                            <constraint firstItem="XNt-aK-ONN" firstAttribute="centerX" secondItem="0JQ-Jl-m3E" secondAttribute="centerX" id="udr-HQ-sgN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zqy-zh-QAd" firstAttribute="leading" secondItem="zP8-ue-pKy" secondAttribute="leading" id="5hO-u3-BeH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zqy-zh-QAd" secondAttribute="trailing" id="HC2-NC-xqz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zqy-zh-QAd" secondAttribute="bottom" constant="-9" id="iZt-oG-FUq"/>
+                                    <constraint firstItem="Zqy-zh-QAd" firstAttribute="top" secondItem="zP8-ue-pKy" secondAttribute="top" id="wrG-Y9-6TP"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Jnz-UJ-ocD"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="uOn-uq-7HF"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDF-2J-BtZ">
+                                <rect key="frame" x="155" y="545" width="170" height="62"/>
+                                <state key="normal" image="chatButton"/>
+                                <connections>
+                                    <action selector="chatButtonPressed:" destination="2XY-tB-HmD" eventType="touchUpInside" id="a2l-ad-CFv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FB2-xC-6vF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zqy-zh-QAd" firstAttribute="width" secondItem="9yx-Cy-LnU" secondAttribute="width" id="2M4-w4-sTk"/>
+                            <constraint firstItem="FB2-xC-6vF" firstAttribute="bottom" secondItem="zP8-ue-pKy" secondAttribute="bottom" id="4My-jG-wbQ"/>
+                            <constraint firstItem="zP8-ue-pKy" firstAttribute="centerX" secondItem="FB2-xC-6vF" secondAttribute="centerX" id="8LY-Nt-Phg"/>
+                            <constraint firstItem="zP8-ue-pKy" firstAttribute="top" secondItem="FB2-xC-6vF" secondAttribute="top" id="9c0-3m-g8k"/>
+                            <constraint firstItem="Zqy-zh-QAd" firstAttribute="centerX" secondItem="FB2-xC-6vF" secondAttribute="centerX" id="K42-TD-8NQ"/>
+                            <constraint firstItem="zP8-ue-pKy" firstAttribute="width" secondItem="9yx-Cy-LnU" secondAttribute="width" id="O7p-q2-B3h"/>
+                            <constraint firstItem="FB2-xC-6vF" firstAttribute="trailing" secondItem="sDF-2J-BtZ" secondAttribute="trailing" constant="50" id="WFo-0c-M3e"/>
+                            <constraint firstItem="FB2-xC-6vF" firstAttribute="bottom" secondItem="sDF-2J-BtZ" secondAttribute="bottom" constant="60" id="wHn-3C-kpi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xPk-6s-PL8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQM-TC-3fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3782" y="233"/>
+        </scene>
     </scenes>
     <resources>
         <image name="avatar1" width="80" height="80"/>
         <image name="avatar2" width="80" height="80"/>
         <image name="avatar3" width="80" height="80"/>
+        <image name="chatButton" width="170" height="62"/>
         <image name="check" width="20" height="20"/>
         <image name="logo" width="100" height="100"/>
         <image name="sampleButton1" width="301" height="62"/>
         <image name="sampleButton2" width="301" height="62"/>
         <image name="sampleButton3" width="301" height="62"/>
         <image name="sampleButton4" width="301" height="62"/>
+        <image name="sampleProduct" width="337" height="235"/>
         <namedColor name="businessChatThemeColor">
             <color red="0.89411764705882357" green="0.46274509803921571" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
