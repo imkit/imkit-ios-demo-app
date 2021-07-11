@@ -28,6 +28,7 @@ PODS:
     - SwiftLinkPreview (~> 3.3.0)
     - SwiftyJSON (~> 5.0.1)
     - TagListView (= 1.4.1)
+  - IQKeyboardManagerSwift (6.5.6)
   - Kingfisher (6.3.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
@@ -60,6 +61,7 @@ PODS:
 DEPENDENCIES:
   - IGListKit (from `https://github.com/imkit/IGListKit.git`)
   - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.4`)
+  - IQKeyboardManagerSwift (= 6.5.6)
   - SwiftLinkPreview (from `https://github.com/imkit/SwiftLinkPreview.git`)
 
 SPEC REPOS:
@@ -70,6 +72,7 @@ SPEC REPOS:
     - FloatingPanel
     - Hero
     - IGListDiffKit
+    - IQKeyboardManagerSwift
     - Kingfisher
     - Moya
     - PromiseKit
@@ -111,6 +114,7 @@ SPEC CHECKSUMS:
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   IMKit: 0c56f064f0c24af5400e586baa827ea65ab6ff39
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
@@ -124,6 +128,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: 26811dec0c25e0ee430f2e0e0115d45c3001a14e
+PODFILE CHECKSUM: 786a3ae44cd1970120c3979b0a6a3837b3d6021d
 
 COCOAPODS: 1.10.1

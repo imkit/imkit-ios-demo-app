@@ -9,6 +9,7 @@
 import UIKit
 import IMKit
 import PromiseKit
+import IQKeyboardManagerSwift
 
 class FirstViewController: UIViewController {
 
@@ -51,10 +52,17 @@ class FirstViewController: UIViewController {
             return false
         }
     }
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
+
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         
         signinButton.layer.cornerRadius = signinButton.bounds.height / 2.0
         
@@ -67,7 +75,11 @@ class FirstViewController: UIViewController {
         
         
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        IQKeyboardManager.shared.enable = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = false
+    }
     
         
     

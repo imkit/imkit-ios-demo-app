@@ -9,12 +9,15 @@
 import UIKit
 import IMKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+
         
         // remove back-button-title of navi-bar
         // ref: https://stackoverflow.com/a/29912585
