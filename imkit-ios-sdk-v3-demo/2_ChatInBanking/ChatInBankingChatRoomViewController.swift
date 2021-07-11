@@ -11,8 +11,6 @@ import IMKit
 
 class ChatInBankingChatRoomViewController: IMChatRoomViewController {
     lazy var showRecordButton: UIBarButtonItem = {
-//        chatInBankingShowRecordButtonIcon
-//        let btn = UIBarButtonItem(title: "test", style: .done, target: self, action: #selector(showRecordButtonTapped))
         let btn = UIBarButtonItem(image: UIImage(named: "chatInBankingShowRecordButtonIcon"), style: .done, target: self, action: #selector(showRecordButtonTapped))
         return btn
     }()
@@ -68,6 +66,8 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
         
         navigationController?.navigationBar.tintColor = UIColor(hexString: "#F178B6")
 //        navigationController?.navigationBar.barTintColor = UIColor(hexString: "#F178B6")
+        
+        // text-color of title on navibar
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor(hexString: "#F178B6")!]
         navigationItem.rightBarButtonItem = showRecordButton
         

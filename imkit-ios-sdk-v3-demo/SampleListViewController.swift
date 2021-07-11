@@ -30,7 +30,8 @@ class SampleListViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         
 //        goChatInBankingScenarioChatroomList()
-        goNetworkingChatScenarioChatroomList()
+//        goNetworkingChatScenarioChatroomList()
+        goBusinessChatScenarioChatroomList()
     }
     
     
@@ -216,6 +217,24 @@ extension SampleListViewController {
                 ])
             }.done { rooms in
                 let rooms = NetworkingChatScenarioRoomsViewController()
+                self.navigationController?.pushViewController(rooms, animated: true)
+            }.catch { error in
+                print(error)
+            }
+    }
+    func goBusinessChatScenarioChatroomList() {
+        IMKit.clear()
+        IMFetchTokenTask().perform(uid: "sean135Business", nickname: "sean")
+            .then { token -> Promise<[IMRoom]> in
+                IMKit.token = token
+                IMKit.uid = "sean135Business"
+                return when(fulfilled: [
+                    IMCreateDirectChatTask().perform(invitee: "coco_id"),
+                    IMCreateDirectChatTask().perform(invitee: "lora_id"),
+                    IMCreateDirectChatTask().perform(invitee: "charle_id")
+                ])
+            }.done { rooms in
+                let rooms = BusinessChatScenarioRoomsViewController()
                 self.navigationController?.pushViewController(rooms, animated: true)
             }.catch { error in
                 print(error)
