@@ -21,7 +21,7 @@ class TradingPlatformProductViewController: UIViewController {
             .then({ token -> Promise<IMRoom> in
                 IMKit.token = token
                 IMKit.uid = user.uuid
-                return IMCreateDirectChatTask().perform(invitee: User.mockUserCoco.uuid)
+                return IMCreateDirectChatTask().perform(invitee: "trading_platform_id")
             })
             .done({ [weak self] room in
                 self?.navigationController?.pushViewController(
