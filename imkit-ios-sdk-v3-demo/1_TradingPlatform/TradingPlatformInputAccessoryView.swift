@@ -16,12 +16,13 @@ class TradingPlatformInputAccessoryView: IMInputAccessoryView {
         super.layoutUI()
         
         textBarLeftConstraint?.update(offset: 90.0)
-        Style.isSendButtonAudioButtonCombined = false
+        
         sendButton.setImage(UIImage(named: "tradingPlatformSend"), for: .normal)
         imageButton.setImage(UIImage(named: "tradingPlatformImage"), for: .normal)
         cameraButton.setImage(UIImage(named: "tradingPlatformCamera"), for: .normal)
 //        returnButton
-//        audioButton.isHidden = true
+        audioButton.isHidden = true
+        sendButton.isHidden = false
         stickerButton.isHidden = true
         
         // imkit-customized: 輸入框左邊少了 add button，要將其空間做平分。
@@ -45,6 +46,8 @@ class TradingPlatformInputAccessoryView: IMInputAccessoryView {
         textBarLeftConstraint?.update(offset: 90.0)
         cameraButton.isHidden = false
         imageButton.isHidden = false
+        audioButton.isHidden = true
+        sendButton.isHidden = false
     }
     override func expandTextBar() {
         super.expandTextBar()
@@ -52,5 +55,7 @@ class TradingPlatformInputAccessoryView: IMInputAccessoryView {
         textBarLeftConstraint?.update(offset: 50.0)
         cameraButton.isHidden = true
         imageButton.isHidden = true
+        audioButton.isHidden = true
+        sendButton.isHidden = false
     }
 }
