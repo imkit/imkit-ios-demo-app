@@ -17,12 +17,10 @@ class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
         
         // imkit-customized: 1. custom navigation bar color
         navigationController?.navigationBar.barTintColor = DemoScenarioType.tradingPlatform.subColor
-        
+        navigationController?.navigationBar.tintColor = .black
         // imkit-customized: 整個聊天室背景
         IMStyle.messages.backgroundColor = .white
-        IMStyle.messages.textCell.response.backgroundColor = .red
-        
-        IMStyle.navigationBar.tintColor = .black
+        IMStyle.messages.textCell.response.backgroundColor = .red                
         
         // imkit-customized: 對方的訊息泡泡
         IMStyle.messages.incomingCell.backgroundColor = DemoScenarioType.tradingPlatform.subColor
@@ -34,5 +32,4 @@ class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
         inputBarView.cameraButton.setImage(UIImage(named: "tradingPlatformCamera"), for: .normal)
         
     }
- 
 }

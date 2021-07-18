@@ -13,7 +13,18 @@ import PromiseKit
 class TradingPlatformProductViewController: UIViewController {
     
     var user: User?
+    var navBarDefaultColor: UIColor?
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Trading Platform"
+        navBarDefaultColor = navigationController?.navigationBar.tintColor
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.tintColor = navBarDefaultColor
+    }
     @IBAction func chatButtonPressed(_ sender: UIButton) {
         guard let user = user else { return }
         IMKit.clear()
