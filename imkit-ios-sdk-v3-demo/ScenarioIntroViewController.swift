@@ -67,7 +67,8 @@ extension ScenarioIntroViewController {
             return when(fulfilled: [
                 IMCreateDirectChatTask().perform(invitee: User.mockUserCoco.uuid),
                 IMCreateDirectChatTask().perform(invitee: User.mockUserLora.uuid),
-                IMCreateDirectChatTask().perform(invitee: User.mockUserCharle.uuid)
+                IMCreateDirectChatTask().perform(invitee: User.mockUserCharle.uuid),
+                IMCreateDirectChatTask().perform(invitee: "official_account_id")
             ])
         }.done { rooms in
             let rooms = ChatInBankingRoomsViewController()
