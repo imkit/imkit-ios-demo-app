@@ -20,7 +20,7 @@ class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
         navigationController?.navigationBar.tintColor = .black
         // imkit-customized: 整個聊天室背景
         IMStyle.messages.backgroundColor = .white
-        IMStyle.messages.textCell.response.backgroundColor = .red                
+        IMStyle.messages.textCell.response.backgroundColor = .red
         
         // imkit-customized: 對方的訊息泡泡
         IMStyle.messages.incomingCell.backgroundColor = DemoScenarioType.tradingPlatform.subColor
@@ -30,6 +30,9 @@ class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
         inputBarView.sendButton.setImage(UIImage(named: "tradingPlatformSend"), for: .normal)
         inputBarView.imageButton.setImage(UIImage(named: "tradingPlatformImage"), for: .normal)
         inputBarView.cameraButton.setImage(UIImage(named: "tradingPlatformCamera"), for: .normal)
+        inputBarView.addButton.isHidden = true
+        inputBarView.audioButton.isHidden = true
+        inputBarView.stickerButton.isHidden = true
         
     }
 }
