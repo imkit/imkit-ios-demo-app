@@ -27,12 +27,9 @@ class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
         // imkit-customized: 自己的訊息泡泡
         IMStyle.messages.outgoingCell.backgroundColor = UIColor(named: "tradingPlatformGrayColor")!
         
-        inputBarView.sendButton.setImage(UIImage(named: "tradingPlatformSend"), for: .normal)
-        inputBarView.imageButton.setImage(UIImage(named: "tradingPlatformImage"), for: .normal)
-        inputBarView.cameraButton.setImage(UIImage(named: "tradingPlatformCamera"), for: .normal)
-        inputBarView.addButton.isHidden = true
-        inputBarView.audioButton.isHidden = true
-        inputBarView.stickerButton.isHidden = true
+
         
+        inputBarView = TradingPlatformInputAccessoryView()
     }
+    
 }
