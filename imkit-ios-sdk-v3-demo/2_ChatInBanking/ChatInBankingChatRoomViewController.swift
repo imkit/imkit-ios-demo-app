@@ -104,6 +104,15 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
                 )
         )
     }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        // restore
+        IMStyle.messages.outgoingCell.backgroundColor = .white
+        IMStyle.messages.outgoingCell.borderColor = .clear
+        IMStyle.messages.outgoingCell.borderWidth = 1.0
+        IMStyle.messages.outgoingCell.isBorderHidden = true
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if viewModel.sections[indexPath.section][indexPath.row].messageType == "transfer" {
