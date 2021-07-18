@@ -73,6 +73,7 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
             $0.leading.bottom.equalToSuperview().inset(padding)
             $0.top.equalTo(contentLabel.snp.bottom).offset(padding)
         }
+        bubbleView.layer.borderColor = UIColor.clear.cgColor
     }
     override func updateUI() {
         super.updateUI()
