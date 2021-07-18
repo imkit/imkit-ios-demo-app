@@ -116,7 +116,16 @@ extension ScenarioIntroViewController {
                 IMCreateDirectChatTask().perform(invitee: User.mockUserLora.uuid),
                 IMCreateDirectChatTask().perform(invitee: User.mockUserCharle.uuid)
             ])
-        }.done { rooms in
+        }
+        .then { rooms -> Promise<IMRoom> in
+            return IMCreateGroupChatTask().perform(
+                roomID: "fixedGroupChat",
+                roomName: "Shopping Group",
+                invitees: [user.uuid, User.mockUserCoco.uuid, User.mockUserLora.uuid, User.mockUserCharle.uuid],
+                isSystemMessageEnabled: false,
+                needsInvitation: false
+            )
+        }.done { _ in
             let rooms = BusinessChatScenarioRoomsViewController()
             self.navigationController?.pushViewController(rooms, animated: true)
         }.catch { error in
