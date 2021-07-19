@@ -13,6 +13,7 @@ class SelectAvatarViewController: UIViewController {
     var user: User?
     private var selectedIndex: Int = 0
 
+    @IBOutlet weak var sceneTitleLabel: UILabel!
     @IBOutlet weak var check1: UIImageView!
     @IBOutlet weak var check2: UIImageView!
     @IBOutlet weak var check3: UIImageView!
@@ -21,6 +22,8 @@ class SelectAvatarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         selectAvatar(index: 0) // init
+        sceneTitleLabel.text = "SelectAvatarViewController_title".localized
+        nextButton.setTitle("SelectAvatarViewController_next_button_title".localized, for: .normal)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

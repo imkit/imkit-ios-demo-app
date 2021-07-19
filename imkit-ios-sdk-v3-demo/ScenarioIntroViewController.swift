@@ -15,9 +15,15 @@ class ScenarioIntroViewController: UIViewController {
     var model: ScenarioIntroDto?
     var user: User?
     
-    @IBOutlet weak var contentTextView: UITextView!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var contentTextView: UITextView!
+   
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        startButton.setTitle("ScenarioIntroViewController_start_button_title".localized, for: .normal)
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

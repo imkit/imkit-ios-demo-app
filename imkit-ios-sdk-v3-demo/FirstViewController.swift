@@ -19,6 +19,9 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var nicknameWrapper: UIView!
     @IBOutlet weak var clientIdWrapper: UIView!
     
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     private var clientIdUserTyped: String? {
         if let content = clientIdTextfield.text {
             return content.trimmed()
@@ -54,8 +57,10 @@ class FirstViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        signInButton.setTitle("FirstViewController_signin_button_title".localized, for: .normal)
+        titleLabel.text = "FirstViewController_title".localized
+        nicknameTextfield.placeholder = "FirstViewController_nickname_placeholder".localized
+        clientIdTextfield.placeholder = "FirstViewController_clientId_placeholder".localized
     }
     
     override func viewWillAppear(_ animated: Bool) {

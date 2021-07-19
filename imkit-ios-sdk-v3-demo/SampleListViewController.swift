@@ -12,8 +12,26 @@ class SampleListViewController: UIViewController {
 
     var user: User?
     @IBOutlet weak var signoutButton: UIButton!
+    @IBOutlet weak var sceneTitleLabel: UILabel!
+    @IBOutlet weak var sdkVersionLabel: UILabel!
+    @IBOutlet weak var scenario1TitleLabel: UILabel!
+    @IBOutlet weak var scenario2TitleLabel: UILabel!
+    @IBOutlet weak var scenario3TitleLabel: UILabel!
+    @IBOutlet weak var scenario4TitleLabel: UILabel!
+    
     private var selectedIndex: Int?
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        signoutButton.setTitle("SampleListViewController_signout_button_title".localized, for: .normal)
+        sceneTitleLabel.text = "SampleListViewController_title".localized
+        sdkVersionLabel.text = "SampleListViewController_sdk_version_title".localized //kimuranow
+        scenario1TitleLabel.text = "SampleListViewController_trading_platform_scenario_title".localized
+        scenario2TitleLabel.text = "SampleListViewController_chat_in_banking_scenario_title".localized
+        scenario3TitleLabel.text = "SampleListViewController_networking_chat_scenario_title".localized
+        scenario4TitleLabel.text = "SampleListViewController_business_chat_scenario_title".localized
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         signoutButton.layer.cornerRadius = 28.0
@@ -61,44 +79,25 @@ private extension SampleListViewController {
             ScenarioIntroDto(
                 type: .tradingPlatform,
                 title: "Trading platform",
-                content: """
-            1. custom navigation bar color
-            2. custom 訊息泡泡框顏色
-            3. 聊天室入框上方警語
-            """
+                content: "ScenarioIntroViewController_trading_platform_description".localized
             ),
             ScenarioIntroDto(
                 type: .chatInBanking,
                 title: "Chat in banking",
-                content: """
-                        1. 官方帳號聊天室
-                        2. custom 訊息泡泡框顏色邊框
-                        3. custom message type
-            """
+                content: "ScenarioIntroViewController_chat_in_banking_description".localized
             ),
             ScenarioIntroDto(
                 type: .networkingChat,
                 title: "Networking chat",
-                content: """
-                        1. custom navigation bar 內容
-                        2. custom 訊息泡泡框形狀
-            """
+                content: "ScenarioIntroViewController_networking_chat_description".localized
             ),
             ScenarioIntroDto(
                 type: .businessChat,
                 title: "Business chat",
-                content: """
-                1. Search bar
-                2. Folder
-                3. Tag
-                4. custom menu item （按＋之後顯示的選單按鈕們）
-                5. 訊息動作（複製、收回、轉傳、回覆）
-                6. 翻譯功能（請在這邊顯示預設開）
-            """
+                content: "ScenarioIntroViewController_business_chat_description".localized
             ),
         ]
     }
-    
 }
 
 struct ScenarioIntroDto {

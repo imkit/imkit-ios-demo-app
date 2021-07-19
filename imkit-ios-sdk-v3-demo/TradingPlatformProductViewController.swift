@@ -12,13 +12,24 @@ import PromiseKit
 
 class TradingPlatformProductViewController: UIViewController {
     
+    
+    @IBOutlet weak var productTitleLabel: UILabel!
+    @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var productDescLabel: UILabel!    
+    @IBOutlet weak var goChatroomButton: UIButton!
+    
     var user: User?
     var navBarDefaultColor: UIColor?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Trading Platform"
+        title = "TradingPlatformProductViewController_title".localized
         navBarDefaultColor = navigationController?.navigationBar.tintColor
+        
+        productTitleLabel.text = "TradingPlatformProductViewController_mock_product_title".localized
+        productPriceLabel.text = "TradingPlatformProductViewController_mock_product_price".localized
+        productDescLabel.text = "TradingPlatformProductViewController_mock_product_description".localized
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
