@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  imkit-ios-sdk-v3-demo
+
+  Created by Sean on 2021/7/19.
+  Copyright © 2021 Howard Sun. All rights reserved.
+*/
+
+"FirstViewController_signin_button_title" = "Sign in";
+"FirstViewController_title" = "IMKIT Sample";
+"FirstViewController_clientId_placeholder" = "Client ID";
+"FirstViewController_nickname_placeholder" = "Nickname";
+"SelectAvatarViewController_title" = "Choose your avatar";
+"SelectAvatarViewController_next_button_title" = "Next step";
+"SampleListViewController_title" = "Sample List";
+"SampleListViewController_signout_button_title" = "Sign out";
+"SampleListViewController_sdk_version_title" = "SDK";
+"SampleListViewController_trading_platform_scenario_title" = "Trading platform";
+"SampleListViewController_chat_in_banking_scenario_title" = "Chat in banking";
+"SampleListViewController_networking_chat_scenario_title" = "Networking chat";
+"SampleListViewController_business_chat_scenario_title" = "Business chat";
+"ScenarioIntroViewController_trading_platform_description" = "1. custom navigation bar color \n2. custom 訊息泡泡框顏色 \n3. 聊天室入框上方警語";
+"ScenarioIntroViewController_chat_in_banking_description" = "1. 官方帳號聊天室\n2. custom 訊息泡泡框顏色邊框\n3. custom message type";
+"ScenarioIntroViewController_networking_chat_description" = "1. custom navigation bar 內容\n2. custom 訊息泡泡框形狀";
+"ScenarioIntroViewController_business_chat_description" = "1. Search bar\n2. Folder\n3. Tag\n4. custom menu item （按＋之後顯示的選單按鈕們）\n5. 訊息動作（複製、收回、轉傳、回覆）\n6. 翻譯功能（請在這邊顯示預設開）";
+"ScenarioIntroViewController_trading_platform_title" = "Trading platform";
+"ScenarioIntroViewController_chat_in_banking_title" = "Chat in banking";
+"ScenarioIntroViewController_networking_chat_title" = "Networking chat";
+"ScenarioIntroViewController_business_chat_title" = "Business chat";
+"ScenarioIntroViewController_start_button_title" = "Start";
+"TradingPlatformProductViewController_title" = "Trading Platform";
+"TradingPlatformProductViewController_mock_product_title" = "Prosche 356 C";
+"TradingPlatformProductViewController_mock_product_price" = "NT$ 2,909,855";
+"TradingPlatformProductViewController_mock_product_description" = "Features Raised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional \" 90 \" // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing Cabriolet : Plastic rear window can be opened using a zip";
+"TradingPlatformProductViewController_go_chatroom_button_title" = "Talk to Seller";

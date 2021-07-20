@@ -1,0 +1,54 @@
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "0P3-OH-BaS"; */
+"0P3-OH-BaS.normalTitle" = "Start";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "6zh-De-DAG"; */
+"6zh-De-DAG.normalTitle" = "Sign in";
+
+/* Class = "UILabel"; text = "Features \nRaised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional \" 90 \" // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing \nCabriolet : Plastic rear window can be opened using a zipFeatures \nRaised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional \" 90 \" // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing \nCabriolet : Plastic rear window can be opened using a zipFeatures \nRaised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional \" 90 \" // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing \nCabriolet : Plastic rear window can be opened using a zipFeatures \nRaised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional \" 90 \" // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing \nCabriolet : Plastic rear window can be opened using a zip"; ObjectID = "Gh5-a1-Up4"; */
+"Gh5-a1-Up4.text" = "Features \nRaised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional \" 90 \" // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing \nCabriolet : Plastic rear window can be opened using a zipFeatures \nRaised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional \" 90 \" // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing \nCabriolet : Plastic rear window can be opened using a zipFeatures \nRaised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional \" 90 \" // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing \nCabriolet : Plastic rear window can be opened using a zipFeatures \nRaised bumpers with bumper guards with pronounced tapering at the top // One - piece curved windscreen // Flat hub caps // Logo on rear with additional \" 90 \" // Front luggage compartment lid slightly squared off // Air grille in front of windscreen // Filler flap in front right wing \nCabriolet : Plastic rear window can be opened using a zip";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "N5J-xF-hEa"; */
+"N5J-xF-hEa.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "NT$ 2,909,855"; ObjectID = "XNt-aK-ONN"; */
+"XNt-aK-ONN.text" = "NT$ 2,909,855";
+
+/* Class = "UILabel"; text = "Networking chat"; ObjectID = "Z1g-GL-Lnk"; */
+"Z1g-GL-Lnk.text" = "Networking chat";
+
+/* Class = "UIButton"; normalTitle = "Sign out"; ObjectID = "g27-5T-SuF"; */
+"g27-5T-SuF.normalTitle" = "Sign out";
+
+/* Class = "UILabel"; text = "Sample List"; ObjectID = "h7O-BL-1F1"; */
+"h7O-BL-1F1.text" = "Sample List";
+
+/* Class = "UILabel"; text = "Trading platform"; ObjectID = "heB-er-1HO"; */
+"heB-er-1HO.text" = "Trading platform";
+
+/* Class = "UITextField"; placeholder = "Client ID"; ObjectID = "k5L-0m-SHK"; */
+"k5L-0m-SHK.placeholder" = "Client ID";
+
+/* Class = "UILabel"; text = "IMKIT Sample"; ObjectID = "kKI-FM-Zze"; */
+"kKI-FM-Zze.text" = "IMKIT Sample";
+
+/* Class = "UILabel"; text = "SDK v3.1.0"; ObjectID = "krz-wj-SMd"; */
+"krz-wj-SMd.text" = "SDK v3.1.0";
+
+/* Class = "UILabel"; text = "Business chat"; ObjectID = "oXU-pP-tQf"; */
+"oXU-pP-tQf.text" = "Business chat";
+
+/* Class = "UILabel"; text = "Porsche 356 C"; ObjectID = "qiG-Wc-Bw7"; */
+"qiG-Wc-Bw7.text" = "Porsche 356 C";
+
+/* Class = "UILabel"; text = "Chat in banking"; ObjectID = "sYc-bc-ZId"; */
+"sYc-bc-ZId.text" = "Chat in banking";
+
+/* Class = "UIButton"; normalTitle = "Next step"; ObjectID = "uwS-JC-5vr"; */
+"uwS-JC-5vr.normalTitle" = "Next step";
+
+/* Class = "UILabel"; text = "Choose your avatar"; ObjectID = "wmS-em-kVm"; */
+"wmS-em-kVm.text" = "Choose your avatar";
+
+/* Class = "UITextField"; placeholder = "Nickname"; ObjectID = "z8h-28-maT"; */
+"z8h-28-maT.placeholder" = "Nickname";

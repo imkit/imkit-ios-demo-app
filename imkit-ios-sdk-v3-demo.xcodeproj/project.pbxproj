@@ -14,6 +14,8 @@
 		145885CB2682268900C17CA4 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */; };
 		145885CD26822DA900C17CA4 /* ScenarioIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885CC26822DA900C17CA4 /* ScenarioIntroViewController.swift */; };
 		1469450F26A4597E006A129B /* TradingPlatformInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469450E26A4597E006A129B /* TradingPlatformInputAccessoryView.swift */; };
+		1469451426A59E65006A129B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1469451626A59E65006A129B /* Localizable.strings */; };
+		1469451926A59F25006A129B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469451826A59F25006A129B /* String+Extensions.swift */; };
 		149EC69A269AF80000B37234 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149EC699269AF80000B37234 /* UIColor+Extensions.swift */; };
 		14EC7BE526838BB300C1CF20 /* TradingPlatformProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BE426838BB300C1CF20 /* TradingPlatformProductViewController.swift */; };
 		14EC7BE72684B12700C1CF20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BE62684B12700C1CF20 /* User.swift */; };
@@ -47,6 +49,11 @@
 		145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		145885CC26822DA900C17CA4 /* ScenarioIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioIntroViewController.swift; sourceTree = "<group>"; };
 		1469450E26A4597E006A129B /* TradingPlatformInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingPlatformInputAccessoryView.swift; sourceTree = "<group>"; };
+		1469451026A59E1E006A129B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		1469451126A59E1E006A129B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		1469451526A59E65006A129B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1469451726A59E74006A129B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1469451826A59F25006A129B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		149EC699269AF80000B37234 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		14EC7BE426838BB300C1CF20 /* TradingPlatformProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingPlatformProductViewController.swift; sourceTree = "<group>"; };
 		14EC7BE62684B12700C1CF20 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -156,6 +163,7 @@
 				891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */,
 				893000062152A51400FFD1E8 /* Main.storyboard */,
 				145885CC26822DA900C17CA4 /* ScenarioIntroViewController.swift */,
+				1469451826A59F25006A129B /* String+Extensions.swift */,
 				145885C8268222A000C17CA4 /* SampleListViewController.swift */,
 				149EC699269AF80000B37234 /* UIColor+Extensions.swift */,
 				145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */,
@@ -169,6 +177,7 @@
 				145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */,
 				145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */,
 				14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */,
+				1469451626A59E65006A129B /* Localizable.strings */,
 			);
 			path = "imkit-ios-sdk-v3-demo";
 			sourceTree = "<group>";
@@ -236,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 8930FFF62152A51400FFD1E8;
 			productRefGroup = 893000002152A51400FFD1E8 /* Products */;
@@ -255,6 +265,7 @@
 				14EC7C0226974D5500C1CF20 /* Nunito-Regular.ttf in Resources */,
 				8930000D2152A51500FFD1E8 /* LaunchScreen.storyboard in Resources */,
 				8930000A2152A51500FFD1E8 /* Assets.xcassets in Resources */,
+				1469451426A59E65006A129B /* Localizable.strings in Resources */,
 				893000082152A51400FFD1E8 /* Main.storyboard in Resources */,
 				145885C52680D01F00C17CA4 /* Nunito-ExtraBold.ttf in Resources */,
 				145885CB2682268900C17CA4 /* Nunito-SemiBold.ttf in Resources */,
@@ -310,6 +321,7 @@
 				1469450F26A4597E006A129B /* TradingPlatformInputAccessoryView.swift in Sources */,
 				145885C72682130B00C17CA4 /* SelectAvatarViewController.swift in Sources */,
 				145885CD26822DA900C17CA4 /* ScenarioIntroViewController.swift in Sources */,
+				1469451926A59F25006A129B /* String+Extensions.swift in Sources */,
 				14EC7BED269486C500C1CF20 /* ChatInBankingChatRoomViewController.swift in Sources */,
 				14EC7BE9269486B100C1CF20 /* TradingPlatformProductChatRoomViewController.swift in Sources */,
 				891F97842365B61F007BC5FD /* RoomsViewController.swift in Sources */,
@@ -335,10 +347,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1469451626A59E65006A129B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1469451526A59E65006A129B /* en */,
+				1469451726A59E74006A129B /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		893000062152A51400FFD1E8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				893000072152A51400FFD1E8 /* Base */,
+				1469451026A59E1E006A129B /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -347,6 +369,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8930000C2152A51500FFD1E8 /* Base */,
+				1469451126A59E1E006A129B /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -359,6 +382,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -420,6 +444,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

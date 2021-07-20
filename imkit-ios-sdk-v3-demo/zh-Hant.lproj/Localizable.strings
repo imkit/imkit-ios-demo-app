@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  imkit-ios-sdk-v3-demo
+
+  Created by Sean on 2021/7/19.
+  Copyright © 2021 Howard Sun. All rights reserved.
+*/
+
+"FirstViewController_signin_button_title" = "登入";
+"FirstViewController_title" = "IMKIT Sample";
+"FirstViewController_clientId_placeholder" = "用戶 ID";
+"FirstViewController_nickname_placeholder" = "暱稱";
+"SelectAvatarViewController_title" = "請選擇頭像";
+"SelectAvatarViewController_next_button_title" = "下一步";
+"SampleListViewController_title" = "情境範例清單";
+"SampleListViewController_signout_button_title" = "登出";
+"SampleListViewController_sdk_version_title" = "SDK";
+"SampleListViewController_trading_platform_scenario_title" = "交易平台";
+"SampleListViewController_chat_in_banking_scenario_title" = "銀行 App 對談";
+"SampleListViewController_networking_chat_scenario_title" = "交友對談";
+"SampleListViewController_business_chat_scenario_title" = "商務對談";
+"ScenarioIntroViewController_trading_platform_description" = "1. custom navigation bar color \n2. custom 訊息泡泡框顏色 \n3. 聊天室入框上方警語";
+"ScenarioIntroViewController_chat_in_banking_description" = "1. 官方帳號聊天室\n2. custom 訊息泡泡框顏色邊框\n3. custom message type";
+"ScenarioIntroViewController_networking_chat_description" = "1. custom navigation bar 內容\n2. custom 訊息泡泡框形狀";
+"ScenarioIntroViewController_business_chat_description" = "1. Search bar\n2. Folder\n3. Tag\n4. custom menu item （按＋之後顯示的選單按鈕們）\n5. 訊息動作（複製、收回、轉傳、回覆）\n6. 翻譯功能（請在這邊顯示預設開）";
+"ScenarioIntroViewController_trading_platform_title" = "交易平台";
+"ScenarioIntroViewController_chat_in_banking_title" = "銀行 App 對談";
+"ScenarioIntroViewController_networking_chat_title" = "交友對談";
+"ScenarioIntroViewController_business_chat_title" = "商務對談";
+"ScenarioIntroViewController_start_button_title" = "開始試用";
+"TradingPlatformProductViewController_title" = "二手車交易平台";
+"TradingPlatformProductViewController_mock_product_title" = "保時捷 356 C";
+"TradingPlatformProductViewController_mock_product_price" = "NT$ 2,909,855";
+"TradingPlatformProductViewController_mock_product_description" = "保時捷 365 是第一部被以「Porsche」命名的車型，也被譽為保時捷跑車的始祖。是保時捷家族中最具收藏價值的車型之一。車主保養仔細，車況良好，歡迎私訊詢問車主賣家。";
+"TradingPlatformProductViewController_go_chatroom_button_title" = "詢問賣家";
