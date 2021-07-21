@@ -65,6 +65,11 @@ class FirstViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate, appDelegate.hasUserPressedSignoutButton {
+            nicknameTextfield.text = nil
+            clientIdTextfield.text = nil
+            appDelegate.hasUserPressedSignoutButton = false // init
+        }
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = false
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true

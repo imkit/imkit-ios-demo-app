@@ -60,7 +60,10 @@ class SampleListViewController: UIViewController {
         selectedScenario(index: 3)
     }
     @IBAction func signOutButtonPressed(_ sender: UIButton) {
-        //kimuranow
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.hasUserPressedSignoutButton = true
+        }
+        navigationController?.dismiss(animated: false)
     }
     
     func selectedScenario(index: Int) {
