@@ -38,6 +38,8 @@ class SampleListViewController: UIViewController {
         signoutButton.layer.borderWidth = 1.0
         signoutButton.layer.borderColor = UIColor(named: "themeColor")?.cgColor
         navigationController?.isNavigationBarHidden = true
+        
+        signoutButton.setTitleColor(UIColor(hexString: "#0077AD"), for: .normal)
     }
         
     override func viewWillDisappear(_ animated: Bool) {
