@@ -13,7 +13,11 @@ class BusinessChatScenarioRoomsViewController: IMRoomsViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Business Chat"
+        title = "ScenarioIntroViewController_business_chat_title".localized
+        
+        BusinessChatScenarioRoomsViewController.rightActions = [
+            .hide, .tag
+        ]
     }
     
  
