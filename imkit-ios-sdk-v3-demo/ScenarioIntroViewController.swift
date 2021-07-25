@@ -27,6 +27,7 @@ class ScenarioIntroViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        IMRoomsViewController.searchBarEnabled = false
         startButton.layer.cornerRadius = startButton.bounds.height / 2.0
         if let model = model {
             title = model.title
@@ -132,6 +133,7 @@ extension ScenarioIntroViewController {
                 needsInvitation: false
             )
         }.done { _ in
+            IMRoomsViewController.searchBarEnabled = true
             let rooms = BusinessChatScenarioRoomsViewController()
             self.navigationController?.pushViewController(rooms, animated: true)
         }.catch { error in
