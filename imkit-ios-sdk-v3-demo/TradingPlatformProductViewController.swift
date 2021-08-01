@@ -39,10 +39,14 @@ class TradingPlatformProductViewController: UIViewController {
     @IBAction func chatButtonPressed(_ sender: UIButton) {
         guard let user = user else { return }
         IMKit.clear()
-        IMFetchTokenTask().perform(uid: user.uuid, nickname: user.nickname)
-            .then({ token -> Promise<IMRoom> in
-                IMKit.token = token
-                IMKit.uid = user.uuid
+        // Empty access token is for sandbox/development purpose only.
+        // For production, the token should be obtained via secure way
+        let accessToken: String? = nil
+        IMKit.connect(uid: user.uuid, token: accessToken)
+            .then({ result -> Promise<IMUser> in
+                return IMUpdateMyProfileTask().perform(nickname: user.nickname, avatarURL: nil, description: nil)
+            })
+            .then({ user -> Promise<IMRoom> in
                 return IMCreateDirectChatTask().perform(invitee: "trading_platform_id")
             })
             .done({ [weak self] room in

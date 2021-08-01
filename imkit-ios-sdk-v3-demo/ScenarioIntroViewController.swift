@@ -64,13 +64,10 @@ extension ScenarioIntroViewController {
         guard let user = user else { return }
         let normalizedUserId: String = "\(user.uuid)chatInBanking"
         IMKit.clear()
-        IMFetchTokenTask().perform(
-            uid: normalizedUserId,
-            nickname: user.nickname
-        )
-        .then { token -> Promise<[IMRoom]> in
-            IMKit.token = token
-            IMKit.uid = normalizedUserId
+        IMKit.connect(uid: normalizedUserId, token: nil)
+        .then { result -> Promise<IMUser> in
+            return IMUpdateMyProfileTask().perform(nickname: user.nickname, avatarURL: nil, description: nil)
+        }.then { user -> Promise<[IMRoom]> in
             return when(fulfilled: [
                 IMCreateDirectChatTask().perform(invitee: User.mockUserCoco.uuid),
                 IMCreateDirectChatTask().perform(invitee: User.mockUserLora.uuid),
@@ -88,13 +85,11 @@ extension ScenarioIntroViewController {
         guard let user = user else { return }
         let normalizedUserId: String = "\(user.uuid)networkingChat"
         IMKit.clear()
-        IMFetchTokenTask().perform(
-            uid: normalizedUserId,
-            nickname: user.nickname
-        )
-        .then { token -> Promise<[IMRoom]> in
-            IMKit.token = token
-            IMKit.uid = normalizedUserId
+        IMKit.connect(uid: normalizedUserId, token: nil)
+        .then { result -> Promise<IMUser> in
+            return IMUpdateMyProfileTask().perform(nickname: user.nickname, avatarURL: nil, description: nil)
+        }
+        .then { user -> Promise<[IMRoom]> in
             return when(fulfilled: [
                 IMCreateDirectChatTask().perform(invitee: User.mockUserCoco.uuid),
 //                IMCreateDirectChatTask().perform(invitee: User.mockUserLora.uuid),
@@ -111,13 +106,11 @@ extension ScenarioIntroViewController {
         guard let user = user else { return }
         let normalizedUserId: String = "\(user.uuid)businessChat"
         IMKit.clear()
-        IMFetchTokenTask().perform(
-            uid: normalizedUserId,
-            nickname: user.nickname
-        )
-        .then { token -> Promise<[IMRoom]> in
-            IMKit.token = token
-            IMKit.uid = normalizedUserId
+        IMKit.connect(uid: normalizedUserId, token: nil)
+        .then { result -> Promise<IMUser> in
+            return IMUpdateMyProfileTask().perform(nickname: user.nickname, avatarURL: nil, description: nil)
+        }
+        .then { user -> Promise<[IMRoom]> in
             return when(fulfilled: [
                 IMCreateDirectChatTask().perform(invitee: User.mockUserCoco.uuid),
                 IMCreateDirectChatTask().perform(invitee: User.mockUserLora.uuid),

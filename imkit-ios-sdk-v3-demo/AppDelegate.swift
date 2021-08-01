@@ -30,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .normal)
         BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .highlighted)
         
-        IMKit.authServerURL = URL(string: "https://chat.fangho.com/auth")!
         IMKit.configure(
             clientKey: "fangho_imkit_0412_2018_001_clientkey",
             chatServerURL: URL(string: "https://chat.fangho.com")!
