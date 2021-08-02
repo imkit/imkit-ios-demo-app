@@ -15,9 +15,6 @@ class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // imkit-customized: 1. custom navigation bar color
-        navigationController?.navigationBar.barTintColor = DemoScenarioType.tradingPlatform.subColor
-        navigationController?.navigationBar.tintColor = .black
         // imkit-customized: 整個聊天室背景
         IMStyle.messages.backgroundColor = .clear // background-color of cell
         IMStyle.messages.inputAccessory.isSendButtonAudioButtonCombined = false
@@ -34,6 +31,10 @@ class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
         super.viewWillAppear(animated)
         
         tableView.backgroundColor = .white
+        // imkit-customized: 1. custom navigation bar color
+        navigationController?.navigationBar.barTintColor = DemoScenarioType.tradingPlatform.subColor
+        navigationController?.navigationBar.tintColor = .black
+
     }
     
     override func viewDidDisappear(_ animated: Bool) {

@@ -20,13 +20,12 @@ class TradingPlatformInputAccessoryView: IMInputAccessoryView {
         sendButton.setImage(UIImage(named: "tradingPlatformSend"), for: .normal)
         imageButton.setImage(UIImage(named: "tradingPlatformImage"), for: .normal)
         cameraButton.setImage(UIImage(named: "tradingPlatformCamera"), for: .normal)
-//        returnButton
+
         audioButton.isHidden = true
         sendButton.isHidden = false
         stickerButton.isHidden = true
         
         // imkit-customized: 輸入框左邊少了 add button，要將其空間做平分。
-        //        inputBarView.addButton.isHidden = true
         addButton.snp.updateConstraints {
             $0.width.equalTo(0.0)
         }
