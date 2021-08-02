@@ -12,7 +12,7 @@ PODS:
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
-  - IMKit (0.333.0):
+  - IMKit (0.337.0):
     - ActiveLabel (~> 1.1.0)
     - Alamofire (~> 4.9.1)
     - DifferenceKit (= 1.2.0)
@@ -59,7 +59,6 @@ PODS:
   - TagListView (1.4.1)
 
 DEPENDENCIES:
-  - IGListKit (from `https://github.com/imkit/IGListKit.git`)
   - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.4`)
   - IQKeyboardManagerSwift (= 6.5.6)
   - SwiftLinkPreview (from `https://github.com/imkit/SwiftLinkPreview.git`)
@@ -72,6 +71,7 @@ SPEC REPOS:
     - FloatingPanel
     - Hero
     - IGListDiffKit
+    - IGListKit
     - IQKeyboardManagerSwift
     - Kingfisher
     - Moya
@@ -86,8 +86,6 @@ SPEC REPOS:
     - TagListView
 
 EXTERNAL SOURCES:
-  IGListKit:
-    :git: https://github.com/imkit/IGListKit.git
   IMKit:
     :branch: swift5.4
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
@@ -95,11 +93,8 @@ EXTERNAL SOURCES:
     :git: https://github.com/imkit/SwiftLinkPreview.git
 
 CHECKOUT OPTIONS:
-  IGListKit:
-    :commit: aad468b6de8315ae7403410f17724c8f8d5eff20
-    :git: https://github.com/imkit/IGListKit.git
   IMKit:
-    :commit: b198cc1838839ea15c7a3e692353cda81633873b
+    :commit: 7c446aad6a8c1d81ee70fd3fc5c7c881162734c6
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: 78b04c34d7940b759f451f7b46db4490c008ef24
@@ -113,7 +108,7 @@ SPEC CHECKSUMS:
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IMKit: 0c56f064f0c24af5400e586baa827ea65ab6ff39
+  IMKit: 29944c3ff1bb109f91888a2ba9480e266d7a7f1d
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
@@ -128,6 +123,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: 786a3ae44cd1970120c3979b0a6a3837b3d6021d
+PODFILE CHECKSUM: 867b6228908d4011a25ed5cef375046061a5b12b
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.2
