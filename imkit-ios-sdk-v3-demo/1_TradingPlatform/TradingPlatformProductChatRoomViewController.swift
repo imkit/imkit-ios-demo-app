@@ -28,6 +28,7 @@ class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
         IMStyle.messages.outgoingCell.backgroundColor = UIColor(named: "tradingPlatformGrayColor")!
         
         inputBarView = TradingPlatformInputAccessoryView()
+        inputBarView.viewController = self
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
