@@ -1,4 +1,4 @@
-# Quick Start: Send Your First Message
+# [IMKIT] Quick Start: Send Your First Message
 
 
 
@@ -117,7 +117,6 @@ We also created another user id (called `otherUserId`) to join the chatroom with
 Every time you use the IMKIT API, the IMKIT chat server will verify the accessToken which is generated or issued from it previously. For production mode, there are two ways to generate your access token for IMKIT chat server. One way is to get your own access token from your app server, and the other way is to generate one from the IMKIT chat server. In this section, we will use a null access token to indicate that we are runing under sandbox mode, which is for demo purpose only. DO NOT USE A NULL ACCESS TOKEN FOR PRODUCTION MODE.
 
 If you need more details on access token, please check out this tutorial.
-> ❌ 補上有關 access token 的文件連結
 
 After fetching the access token from your app server, provide it with `userId` through `connect` method of IMKIT.
 
