@@ -48,7 +48,7 @@ $ pod install --repo-update
 
 ### Step 3 - Initialize IMKIT
 
-To integrate and run IMKIT in your app, we recommend you to initialize it in AppDelegate, especially in `didFinishLaunchingWithOptions` method.
+To integrate and run IMKIT in your app, we recommend you to initialize it in `AppDelegate.swift`, especially in `didFinishLaunchingWithOptions` method.
 
 
 Before initializing IMKIT, you need to have two things ready.
@@ -99,39 +99,31 @@ We implemented multiple default scenes in IMKIT SDK, and you don't need generate
 Choose a view controller you want to show the chat room list from, and implement the following code to it.
 
 #### 1. Prepare user data
-First, we need users to get the chat started. To start, we need three things:
+First, we need users to get the chat started. To start, we need two things:
     
     1. userId
     2. username
-    3. accessToken
     
-`userId` & `username` are string type, and `accessToken` is optional string type. So we created `currentUserId`, `currentUserNickname` and `accessToken` for demo purpose.
+Both are string type, hence we created `currentUserId` & `currentUserNickname` for demo purpose.
 
 (It is also completely fine to use the user data from your app)
 
 We also created another user id (called `otherUserId`) to join the chatroom with the first user.
 
 
-#### 2. Prepare Access Token
+#### 2. Start Connecting to Chat Server
 
-Every time you use the IMKIT API, the IMKIT chat server will verify the accessToken which is generated or issued from it previously. For production mode, there are two ways to generate your access token for IMKIT chat server. One way is to get your own access token from your app server, and the other way is to generate one from the IMKIT chat server. In this section, we will use a null access token to indicate that we are runing under sandbox mode, which is for demo purpose only. DO NOT USE A NULL ACCESS TOKEN FOR PRODUCTION MODE.
-
-If you need more details on access token, please check out this tutorial.
-
-After fetching the access token from your app server, provide it with `userId` through `connect` method of IMKIT.
+To connect to chat server with `userId` through `connect` method of IMKIT. Please make `userId` unique, because we need it to identify different users.
 
 ```swift=
-IMKit.connect(
-  uid: <USER_ID>,
-  token: <ACCESS_TOKEN>
-)
+IMKit.connect(uid: <USER_ID>)
 ```
 
 As for the access token from IMKIT, it will be stored permanently and the IMKIT iOS SDK will help handle it until you log out from IMKIT.
 
 #### 3. Update User Info
 
-After successfully connecting to IMKIT server with access token and userId, try to update your user data including the nickname, avatar, and description, in the IMKIT server through `IMUpdateMyProfileTask` promise-style method.
+After successfully connecting to IMKIT server with `userId`, try to update your user data including the nickname, avatar, and description, in the IMKIT server through `IMUpdateMyProfileTask` promise-style method.
 
 ```swift=
 IMUpdateMyProfileTask().perform(
