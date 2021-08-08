@@ -39,10 +39,8 @@ class TradingPlatformProductViewController: UIViewController {
     @IBAction func chatButtonPressed(_ sender: UIButton) {
         guard let user = user else { return }
         IMKit.clear()
-        // Empty access token is for sandbox/development purpose only.
-        // For production, the token should be obtained via secure way
-        let accessToken: String? = nil
-        IMKit.connect(uid: user.uuid, token: accessToken)
+        
+        IMKit.connect(uid: user.uuid)
             .then({ result -> Promise<IMUser> in
                 return IMUpdateMyProfileTask().perform(nickname: user.nickname, avatarURL: nil, description: nil)
             })

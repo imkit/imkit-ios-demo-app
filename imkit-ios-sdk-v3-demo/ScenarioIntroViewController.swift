@@ -64,7 +64,7 @@ extension ScenarioIntroViewController {
         guard let user = user else { return }
         let normalizedUserId: String = "\(user.uuid)chatInBanking"
         IMKit.clear()
-        IMKit.connect(uid: normalizedUserId, token: nil)
+        IMKit.connect(uid: normalizedUserId)
         .then { result -> Promise<IMUser> in
             return IMUpdateMyProfileTask().perform(nickname: user.nickname, avatarURL: nil, description: nil)
         }.then { user -> Promise<[IMRoom]> in
@@ -85,7 +85,7 @@ extension ScenarioIntroViewController {
         guard let user = user else { return }
         let normalizedUserId: String = "\(user.uuid)networkingChat"
         IMKit.clear()
-        IMKit.connect(uid: normalizedUserId, token: nil)
+        IMKit.connect(uid: normalizedUserId)
         .then { result -> Promise<IMUser> in
             return IMUpdateMyProfileTask().perform(nickname: user.nickname, avatarURL: nil, description: nil)
         }
@@ -106,7 +106,7 @@ extension ScenarioIntroViewController {
         guard let user = user else { return }
         let normalizedUserId: String = "\(user.uuid)businessChat"
         IMKit.clear()
-        IMKit.connect(uid: normalizedUserId, token: nil)
+        IMKit.connect(uid: normalizedUserId)
         .then { result -> Promise<IMUser> in
             return IMUpdateMyProfileTask().perform(nickname: user.nickname, avatarURL: nil, description: nil)
         }
