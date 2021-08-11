@@ -10,17 +10,13 @@ import Foundation
 import IMKit
 
 class BusinessChatScenarioRoomsViewController: IMRoomsViewController {
- 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "ScenarioIntroViewController_business_chat_title".localized
-        
         BusinessChatScenarioRoomsViewController.rightActions = [
             .hide, .tag
         ]
     }
-    
- 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
              
@@ -28,7 +24,6 @@ class BusinessChatScenarioRoomsViewController: IMRoomsViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.tintColor = .black
     }
-    
     override func didSelectRoom(room: IMRoom) {
         let room = BusinessChatScenarioChatRoomViewController(roomID: room.id)
         navigationController?.pushViewController(room, animated: true)

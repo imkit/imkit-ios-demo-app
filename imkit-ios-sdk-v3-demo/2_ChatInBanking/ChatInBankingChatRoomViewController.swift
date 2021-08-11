@@ -65,13 +65,10 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBar.tintColor = UIColor(hexString: "#F178B6")
-//        navigationController?.navigationBar.barTintColor = UIColor(hexString: "#F178B6")
         
         // text-color of title on navibar
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor(hexString: "#F178B6")!]
         navigationItem.rightBarButtonItem = showRecordButton
-        
-        
 
         // imkit-customized: 對方的訊息泡泡
         IMStyle.messages.incomingCell.backgroundColor = DemoScenarioType.chatInBanking.subColor

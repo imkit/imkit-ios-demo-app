@@ -92,8 +92,6 @@ extension ScenarioIntroViewController {
         .then { user -> Promise<[IMRoom]> in
             return when(fulfilled: [
                 IMCreateDirectChatTask().perform(invitee: User.mockUserCoco.uuid),
-//                IMCreateDirectChatTask().perform(invitee: User.mockUserLora.uuid),
-//                IMCreateDirectChatTask().perform(invitee: User.mockUserCharle.uuid)
             ])
         }.done { rooms in
             let rooms = NetworkingChatScenarioRoomsViewController()
