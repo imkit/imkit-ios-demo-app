@@ -50,6 +50,9 @@ class NetworkingChatScenarioChatRoomViewController: IMChatRoomViewController {
         iv.layer.cornerRadius = 40.0 / 2.0
         return iv
     }()
+    
+    private var originalOutgoingCellTextColor: UIColor? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.titleView = topUserView
@@ -69,6 +72,7 @@ class NetworkingChatScenarioChatRoomViewController: IMChatRoomViewController {
         IMStyle.messages.incomingCell.backgroundColor = UIColor(hexString: "#F2F9FF")!
         // imkit-customized: 自己的訊息泡泡
         IMStyle.messages.outgoingCell.backgroundColor = UIColor(hexString: "#5BBFED")!
+        originalOutgoingCellTextColor = IMStyle.messages.outgoingCell.textColor
         IMStyle.messages.outgoingCell.textColor = .white
     }
     override func viewWillDisappear(_ animated: Bool) {
@@ -77,6 +81,9 @@ class NetworkingChatScenarioChatRoomViewController: IMChatRoomViewController {
         // restore
         navigationController?.navigationBar.tintColor = .black
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.black]
+        if let originalOutgoingCellTextColor = originalOutgoingCellTextColor {
+            IMStyle.messages.outgoingCell.textColor = originalOutgoingCellTextColor
+        }        
     }
     override func chatRoomDidUpdate(room: IMRoom) {
         super.chatRoomDidUpdate(room: room)
