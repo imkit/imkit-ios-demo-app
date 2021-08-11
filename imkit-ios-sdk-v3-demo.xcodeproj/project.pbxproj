@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F2CE7D81E4D0DCF7FC80640 /* Pods_imkit_ios_sdk_v3_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125358B8D7CAD24FDC55F30C /* Pods_imkit_ios_sdk_v3_demo.framework */; };
+		142206B426C419170008EAE6 /* NetworkingChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142206B326C419170008EAE6 /* NetworkingChatInputAccessoryView.swift */; };
 		145885C52680D01F00C17CA4 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */; };
 		145885C72682130B00C17CA4 /* SelectAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */; };
 		145885C9268222A000C17CA4 /* SampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885C8268222A000C17CA4 /* SampleListViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		125358B8D7CAD24FDC55F30C /* Pods_imkit_ios_sdk_v3_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imkit_ios_sdk_v3_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		142206B326C419170008EAE6 /* NetworkingChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
 		145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAvatarViewController.swift; sourceTree = "<group>"; };
 		145885C8268222A000C17CA4 /* SampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				14EC7BEE269486CC00C1CF20 /* NetworkingChatScenarioRoomsViewController.swift */,
 				14EC7BF0269486D300C1CF20 /* NetworkingChatScenarioChatRoomViewController.swift */,
+				142206B326C419170008EAE6 /* NetworkingChatInputAccessoryView.swift */,
 			);
 			path = 3_NetworkingChat;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				14EC7BE9269486B100C1CF20 /* TradingPlatformProductChatRoomViewController.swift in Sources */,
 				891F97842365B61F007BC5FD /* RoomsViewController.swift in Sources */,
 				14EC7BFC26949C4400C1CF20 /* ChatInBankingInputAccessoryView.swift in Sources */,
+				142206B426C419170008EAE6 /* NetworkingChatInputAccessoryView.swift in Sources */,
 				893000052152A51400FFD1E8 /* FirstViewController.swift in Sources */,
 				14EC7BF3269486DB00C1CF20 /* BusinessChatScenarioRoomsViewController.swift in Sources */,
 				891F97882365B6DA007BC5FD /* UtilityInputViewController.swift in Sources */,

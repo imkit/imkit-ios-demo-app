@@ -57,16 +57,13 @@ class NetworkingChatScenarioChatRoomViewController: IMChatRoomViewController {
         super.viewDidLoad()
         navigationItem.titleView = topUserView
         
-        
+        inputBarView = NetworkingChatInputAccessoryView()
+        inputBarView.viewController = self
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        inputBarView.sendButton.setImage(UIImage(named: "networkingChatSendButtonIcon"), for: .normal)
-        inputBarView.audioButton.setImage(UIImage(named: "networkingChatAudioButtonIcon"), for: .normal)
-        inputBarView.imageButton.setImage(UIImage(named: "networkingChatImageButtonIcon"), for: .normal)
-        inputBarView.cameraButton.setImage(UIImage(named: "networkingChatCameraButtonIcon"), for: .normal)
-        inputBarView.stickerButton.isHidden = true
+
         
         // imkit-customized: 對方的訊息泡泡
         IMStyle.messages.incomingCell.backgroundColor = UIColor(hexString: "#F2F9FF")!
