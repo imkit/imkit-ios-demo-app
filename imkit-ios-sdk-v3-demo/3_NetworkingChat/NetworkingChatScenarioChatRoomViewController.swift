@@ -71,6 +71,13 @@ class NetworkingChatScenarioChatRoomViewController: IMChatRoomViewController {
         IMStyle.messages.outgoingCell.backgroundColor = UIColor(hexString: "#5BBFED")!
         IMStyle.messages.outgoingCell.textColor = .white
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // restore
+        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.black]
+    }
     override func chatRoomDidUpdate(room: IMRoom) {
         super.chatRoomDidUpdate(room: room)
         
