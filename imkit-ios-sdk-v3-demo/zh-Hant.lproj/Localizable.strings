@@ -19,10 +19,10 @@
 "SampleListViewController_chat_in_banking_scenario_title" = "銀行 App 對談";
 "SampleListViewController_networking_chat_scenario_title" = "交友對談";
 "SampleListViewController_business_chat_scenario_title" = "商務對談";
-"ScenarioIntroViewController_trading_platform_description" = "1. custom navigation bar color \n2. custom 訊息泡泡框顏色 \n3. 聊天室入框上方警語";
-"ScenarioIntroViewController_chat_in_banking_description" = "1. 官方帳號聊天室\n2. custom 訊息泡泡框顏色邊框\n3. custom message type";
-"ScenarioIntroViewController_networking_chat_description" = "1. custom navigation bar 內容\n2. custom 訊息泡泡框形狀";
-"ScenarioIntroViewController_business_chat_description" = "1. Search bar\n2. Folder\n3. Tag\n4. custom menu item （按＋之後顯示的選單按鈕們）\n5. 訊息動作（複製、收回、轉傳、回覆）\n6. 翻譯功能（請在這邊顯示預設開）";
+"ScenarioIntroViewController_trading_platform_description" = "1. 客製化 navigation bar 底色 \n2. 客製化訊息泡泡框顏色";
+"ScenarioIntroViewController_chat_in_banking_description" = "1. 官方帳號聊天室\n2. 客製化訊息泡泡框邊框顏色\n3. 客製化訊息(Ex: 紅包訊息)";
+"ScenarioIntroViewController_networking_chat_description" = "1. 客製化 navigation bar 內容\n2. 客製化訊息泡泡框形狀";
+"ScenarioIntroViewController_business_chat_description" = "1. 聊天室列表的搜尋功能\n2. 聊天室列表的資料夾功能\n3. 聊天室列表的標籤功能\n4. 客製化加號按鈕，呈現更多客製化功能\n5. 訊息動作（複製、收回、轉傳、回覆）\n6. 翻譯功能";
 "ScenarioIntroViewController_trading_platform_title" = "交易平台";
 "ScenarioIntroViewController_chat_in_banking_title" = "銀行 App 對談";
 "ScenarioIntroViewController_networking_chat_title" = "交友對談";

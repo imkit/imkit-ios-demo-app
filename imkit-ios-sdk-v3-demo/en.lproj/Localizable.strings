@@ -19,10 +19,10 @@
 "SampleListViewController_chat_in_banking_scenario_title" = "Chat in banking";
 "SampleListViewController_networking_chat_scenario_title" = "Networking chat";
 "SampleListViewController_business_chat_scenario_title" = "Business chat";
-"ScenarioIntroViewController_trading_platform_description" = "1. custom navigation bar color \n2. custom 訊息泡泡框顏色 \n3. 聊天室入框上方警語";
-"ScenarioIntroViewController_chat_in_banking_description" = "1. 官方帳號聊天室\n2. custom 訊息泡泡框顏色邊框\n3. custom message type";
-"ScenarioIntroViewController_networking_chat_description" = "1. custom navigation bar 內容\n2. custom 訊息泡泡框形狀";
-"ScenarioIntroViewController_business_chat_description" = "1. Search bar\n2. Folder\n3. Tag\n4. custom menu item （按＋之後顯示的選單按鈕們）\n5. 訊息動作（複製、收回、轉傳、回覆）\n6. 翻譯功能（請在這邊顯示預設開）";
+"ScenarioIntroViewController_trading_platform_description" = "1. customized navigation bar background color \n2. customized message cell background color";
+"ScenarioIntroViewController_chat_in_banking_description" = "1. official account chatroom\n2. customized message cell border color\n3. customized new message type(Ex: red-envelop message)";
+"ScenarioIntroViewController_networking_chat_description" = "1. show customized contents on navigation bar\n2. customized message cell shape";
+"ScenarioIntroViewController_business_chat_description" = "1. searching in chatroom list\n2. folders in chatroom list\n3. tagging in chatroom list\n4. customized plus button contents with multiple customized buttons\n5. message action（copy、recall、forward、respond）\n6. translation";
 "ScenarioIntroViewController_trading_platform_title" = "Trading platform";
 "ScenarioIntroViewController_chat_in_banking_title" = "Chat in banking";
 "ScenarioIntroViewController_networking_chat_title" = "Networking chat";
