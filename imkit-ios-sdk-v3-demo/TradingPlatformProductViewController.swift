@@ -19,6 +19,9 @@ class TradingPlatformProductViewController: UIViewController {
     @IBOutlet weak var productDescLabel: UILabel!    
     @IBOutlet weak var goChatroomButton: UIButton!
     
+    @IBOutlet weak var goChatroomButtonWrapper: UIView!
+    @IBOutlet weak var goChatroomButtonTitleLabel: UILabel!
+    
     var user: User?
     var navBarDefaultColor: UIColor?
 
@@ -36,6 +39,9 @@ class TradingPlatformProductViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.tintColor = navBarDefaultColor
+        
+        goChatroomButtonTitleLabel.text = "TradingPlatformProductViewController_go_chatroom_button_title".localized
+        goChatroomButtonWrapper.layer.cornerRadius = goChatroomButtonWrapper.bounds.height / 2.0
     }
     @IBAction func chatButtonPressed(_ sender: UIButton) {
         guard let user = user else { return }

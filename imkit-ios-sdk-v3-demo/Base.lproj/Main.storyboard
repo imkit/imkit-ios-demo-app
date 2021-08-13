@@ -560,13 +560,52 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="Jnz-UJ-ocD"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="uOn-uq-7HF"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDF-2J-BtZ">
-                                <rect key="frame" x="155" y="545" width="170" height="62"/>
-                                <state key="normal" image="chatButton"/>
-                                <connections>
-                                    <action selector="chatButtonPressed:" destination="2XY-tB-HmD" eventType="touchUpInside" id="a2l-ad-CFv"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdT-ez-34p">
+                                <rect key="frame" x="150.5" y="553" width="164.5" height="54"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="VYI-e8-EX8">
+                                        <rect key="frame" x="16" y="12" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="6JV-Bo-9w1"/>
+                                            <constraint firstAttribute="height" constant="30" id="R0f-hW-sZM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk to Seller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpG-Ui-j0g">
+                                        <rect key="frame" x="52" y="12" width="96.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDF-2J-BtZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="164.5" height="54"/>
+                                        <connections>
+                                            <action selector="chatButtonPressed:" destination="2XY-tB-HmD" eventType="touchUpInside" id="a2l-ad-CFv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="tradingPlatformSubColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FpG-Ui-j0g" secondAttribute="trailing" constant="16" id="0Y2-P1-hjp"/>
+                                    <constraint firstItem="FpG-Ui-j0g" firstAttribute="height" secondItem="VYI-e8-EX8" secondAttribute="height" id="9o5-08-7gM"/>
+                                    <constraint firstItem="sDF-2J-BtZ" firstAttribute="centerX" secondItem="vdT-ez-34p" secondAttribute="centerX" id="AYS-Ss-w1V"/>
+                                    <constraint firstItem="FpG-Ui-j0g" firstAttribute="centerY" secondItem="VYI-e8-EX8" secondAttribute="centerY" id="Gyo-0a-cVh"/>
+                                    <constraint firstItem="VYI-e8-EX8" firstAttribute="leading" secondItem="vdT-ez-34p" secondAttribute="leading" constant="16" id="VgL-th-hcZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="VYI-e8-EX8" secondAttribute="bottom" constant="12" id="d2P-5h-Gxm"/>
+                                    <constraint firstItem="FpG-Ui-j0g" firstAttribute="leading" secondItem="VYI-e8-EX8" secondAttribute="trailing" constant="6" id="f5K-My-ju4"/>
+                                    <constraint firstItem="VYI-e8-EX8" firstAttribute="top" secondItem="vdT-ez-34p" secondAttribute="top" constant="12" id="isB-ee-YJG"/>
+                                    <constraint firstItem="sDF-2J-BtZ" firstAttribute="width" secondItem="vdT-ez-34p" secondAttribute="width" id="q6w-1G-XPw"/>
+                                    <constraint firstItem="sDF-2J-BtZ" firstAttribute="height" secondItem="vdT-ez-34p" secondAttribute="height" id="qRV-I6-h35"/>
+                                    <constraint firstItem="sDF-2J-BtZ" firstAttribute="centerY" secondItem="vdT-ez-34p" secondAttribute="centerY" id="qnv-eu-lGG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FB2-xC-6vF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -577,13 +616,15 @@
                             <constraint firstItem="zP8-ue-pKy" firstAttribute="top" secondItem="FB2-xC-6vF" secondAttribute="top" id="9c0-3m-g8k"/>
                             <constraint firstItem="Zqy-zh-QAd" firstAttribute="centerX" secondItem="FB2-xC-6vF" secondAttribute="centerX" id="K42-TD-8NQ"/>
                             <constraint firstItem="zP8-ue-pKy" firstAttribute="width" secondItem="9yx-Cy-LnU" secondAttribute="width" id="O7p-q2-B3h"/>
-                            <constraint firstItem="FB2-xC-6vF" firstAttribute="trailing" secondItem="sDF-2J-BtZ" secondAttribute="trailing" constant="50" id="WFo-0c-M3e"/>
-                            <constraint firstItem="FB2-xC-6vF" firstAttribute="bottom" secondItem="sDF-2J-BtZ" secondAttribute="bottom" constant="60" id="wHn-3C-kpi"/>
+                            <constraint firstItem="FB2-xC-6vF" firstAttribute="bottom" secondItem="vdT-ez-34p" secondAttribute="bottom" constant="60" id="f0v-OP-TKi"/>
+                            <constraint firstItem="vdT-ez-34p" firstAttribute="trailing" secondItem="FB2-xC-6vF" secondAttribute="trailing" constant="-60" id="h4p-4d-kp6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xPk-6s-PL8"/>
                     <connections>
                         <outlet property="goChatroomButton" destination="sDF-2J-BtZ" id="5QK-7r-Mcd"/>
+                        <outlet property="goChatroomButtonTitleLabel" destination="FpG-Ui-j0g" id="127-9R-Y7q"/>
+                        <outlet property="goChatroomButtonWrapper" destination="vdT-ez-34p" id="goH-xy-BGz"/>
                         <outlet property="productDescLabel" destination="Gh5-a1-Up4" id="P18-nH-Rdo"/>
                         <outlet property="productPriceLabel" destination="XNt-aK-ONN" id="J3O-tE-KNE"/>
                         <outlet property="productTitleLabel" destination="qiG-Wc-Bw7" id="m92-9u-BbP"/>
@@ -598,7 +639,6 @@
         <image name="avatar1" width="80" height="80"/>
         <image name="avatar2" width="80" height="80"/>
         <image name="avatar3" width="80" height="80"/>
-        <image name="chatButton" width="170" height="62"/>
         <image name="check" width="20" height="20"/>
         <image name="logo" width="100" height="100"/>
         <image name="sampleButton1" width="301" height="62"/>
@@ -617,6 +657,9 @@
         </namedColor>
         <namedColor name="themeColor">
             <color red="0.0" green="0.46666666666666667" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tradingPlatformSubColor">
+            <color red="0.99599999189376831" green="0.98799997568130493" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="tradingPlatformThemeColor">
             <color red="0.80784313725490198" green="0.77647058823529413" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
