@@ -9,6 +9,7 @@
 import UIKit
 import IMKit
 import PromiseKit
+import ProgressHUD
 
 class TradingPlatformProductViewController: UIViewController {
     
@@ -38,6 +39,9 @@ class TradingPlatformProductViewController: UIViewController {
     }
     @IBAction func chatButtonPressed(_ sender: UIButton) {
         guard let user = user else { return }
+        
+        goChatroomButton.isEnabled = false
+        ProgressHUD.show()
         IMKit.clear()
         
         IMKit.connect(uid: user.uuid)
@@ -48,12 +52,16 @@ class TradingPlatformProductViewController: UIViewController {
                 return IMCreateDirectChatTask().perform(invitee: "trading_platform_id")
             })
             .done({ [weak self] room in
+                ProgressHUD.dismiss()
                 self?.navigationController?.pushViewController(
                     TradingPlatformProductChatRoomViewController(roomID: room.id),
                     animated: true
                 )
+                self?.goChatroomButton.isEnabled = true
             })
-            .catch({ error in
+            .catch({ [weak self] error in
+                ProgressHUD.dismiss()
+                self?.goChatroomButton.isEnabled = true
                 print(error)
             })
     }
