@@ -35,6 +35,7 @@ PODS:
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - ProgressHUD (2.70)
   - PromiseKit (6.15.3):
     - PromiseKit/CorePromise (= 6.15.3)
     - PromiseKit/Foundation (= 6.15.3)
@@ -61,6 +62,7 @@ PODS:
 DEPENDENCIES:
   - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.4`)
   - IQKeyboardManagerSwift (= 6.5.6)
+  - ProgressHUD
   - SwiftLinkPreview (from `https://github.com/imkit/SwiftLinkPreview.git`)
 
 SPEC REPOS:
@@ -75,6 +77,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - Kingfisher
     - Moya
+    - ProgressHUD
     - PromiseKit
     - Realm
     - RealmSwift
@@ -112,6 +115,7 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  ProgressHUD: e603e8b8622c47d8818b9fb38b3cfe9d3e7ca421
   PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
   Realm: 9feef41ab8230ed706c4dc503fc292594915bf9a
   RealmSwift: 91246183b772e0ea1bf777116c4b8d9939f983b3
@@ -123,6 +127,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: 867b6228908d4011a25ed5cef375046061a5b12b
+PODFILE CHECKSUM: 17571b1bae3452876413909da11ef61ac9f969fa
 
 COCOAPODS: 1.10.2
