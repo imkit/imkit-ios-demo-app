@@ -22,36 +22,47 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
         inputBarView = ChatInBankingInputAccessoryView()
         let chatInBankingUtilityInputViewController = ChatInBankingUtilityInputViewController()
         chatInBankingUtilityInputViewController.transferButtonAction = { [weak self] in
-            guard let self = self else { return }
+            guard let self = self else { return }            
             let msg = IMMessage(
                 from: [
                     "_id": UUID().uuidString,
+                    "message": "您已成功轉帳。",
                     "messageType": "transfer",
                     "room": self.viewModel.roomID,
                     "sender": ["_id": "sean111"],
                     "createdAtMS": Date().timeIntervalSince1970,
-                    "extraString": 199 // money
+                    "extraString": "{ \"money\": 199}"
                 ]
             )
-            msg.status = .delivered
-            self.viewModel.messageDidAdd(
-                message: msg
+            
+            msg.status = .undelivered
+
+            IMMessagesManager.shared.sendMessage(
+                message: msg,
+                parameters: [
+                    "extra": "{ \"money\": 199}"
+                ]
             )
         }
         chatInBankingUtilityInputViewController.paymentRequestButtonAction = { [weak self] in
             guard let self = self else { return }
-            self.viewModel.messageDidAdd(
-                message:
-                    IMMessage(
-                        from: [
-                            "_id": UUID().uuidString,
-                            "messageType": "paymentRequest",
-                            "room": self.viewModel.roomID,
-                            "sender": ["_id": "sean111"],
-                            "createdAtMS": Date().timeIntervalSince1970,
-                            "extraString": 199 // money
-                        ]
-                    )
+            let msg = IMMessage(
+                from: [
+                    "_id": UUID().uuidString,
+                    "message": "您已發出轉帳要求。",
+                    "messageType": "paymentRequest",
+                    "room": self.viewModel.roomID,
+                    "sender": ["_id": "sean111"],
+                    "createdAtMS": Date().timeIntervalSince1970,
+                    "extraString": "{ \"money\": 199}"
+                ]
+            )
+            msg.status = .undelivered
+            IMMessagesManager.shared.sendMessage(
+                message: msg,
+                parameters: [
+                    "extra": "{ \"money\": 199}"
+                ]
             )
         }
         utilityInputViewController = chatInBankingUtilityInputViewController
