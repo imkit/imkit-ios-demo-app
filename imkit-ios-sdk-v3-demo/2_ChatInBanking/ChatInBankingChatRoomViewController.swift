@@ -26,32 +26,47 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
             let msg = IMMessage(
                 from: [
                     "_id": UUID().uuidString,
+                    "message": "您已成功轉帳。",
                     "messageType": "transfer",
                     "room": self.viewModel.roomID,
                     "sender": ["_id": "sean111"],
                     "createdAtMS": Date().timeIntervalSince1970,
-                    "extraString": 199 // money
+                    "extraString": "{ \"money\": 199}"
                 ]
             )
-            msg.status = .delivered
-            self.viewModel.messageDidAdd(
-                message: msg
+            let params: [String: String] = [
+                "messageType": "transfer",
+                "message": "您已成功轉帳。",
+                "extra": "{ \"money\": 199}"
+            ]
+            msg.status = .undelivered
+            IMMessagesManager.shared.sendMessage(
+                message: msg,
+                parameters: params
             )
         }
         chatInBankingUtilityInputViewController.paymentRequestButtonAction = { [weak self] in
             guard let self = self else { return }
-            self.viewModel.messageDidAdd(
-                message:
-                    IMMessage(
-                        from: [
-                            "_id": UUID().uuidString,
-                            "messageType": "paymentRequest",
-                            "room": self.viewModel.roomID,
-                            "sender": ["_id": "sean111"],
-                            "createdAtMS": Date().timeIntervalSince1970,
-                            "extraString": 199 // money
-                        ]
-                    )
+            let msg = IMMessage(
+                from: [
+                    "_id": UUID().uuidString,
+                    "message": "您已發出轉帳要求。",
+                    "messageType": "paymentRequest",
+                    "room": self.viewModel.roomID,
+                    "sender": ["_id": "sean111"],
+                    "createdAtMS": Date().timeIntervalSince1970,
+                    "extraString": "{ \"money\": 199}"
+                ]
+            )
+            let params: [String: String] = [
+                "messageType": "paymentRequest",
+                "message": "您已發出轉帳要求。",
+                "extra": "{ \"money\": 199}"
+            ]
+            msg.status = .undelivered
+            IMMessagesManager.shared.sendMessage(
+                message: msg,
+                parameters: params
             )
         }
         utilityInputViewController = chatInBankingUtilityInputViewController
@@ -88,24 +103,6 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.black]
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        // mock message
-        self.viewModel.messageDidAdd(
-            message:
-                IMMessage(
-                    from: [
-                        "_id": UUID().uuidString,
-                        "messageType": "transfer",
-                        "room": self.viewModel.roomID,
-                        "sender": ["_id": "sean111"],
-                        "createdAtMS": 1625678468,
-                        "extraString": 199 // money
-                    ]
-                )
-        )
-    }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
@@ -117,11 +114,14 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         if viewModel.sections[indexPath.section][indexPath.row].messageType == "transfer" {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OutgoingChatInBankingMessageTableViewCellOutgoing", for: indexPath) as! ChatInBankingMessageTableViewCellOutgoing
+            cell.setupRedEnvelopType(.transfer)
             return cell
         } else if viewModel.sections[indexPath.section][indexPath.row].messageType == "paymentRequest" {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OutgoingChatInBankingMessageTableViewCellOutgoing", for: indexPath) as! ChatInBankingMessageTableViewCellOutgoing
+            cell.setupRedEnvelopType(.paymentReq)
             return cell
         } else {
             return super.tableView(tableView, cellForRowAt: indexPath)
