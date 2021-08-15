@@ -19,14 +19,12 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
     }()
     lazy var iconImageView: UIImageView = {
         let iconImageView = UIImageView()
-        iconImageView.image = UIImage(named: "chatInBankingRequestMsgIcon")
         iconImageView.contentMode = .scaleAspectFit
         return iconImageView
     }()
     
     lazy var contentLabel: UILabel = {
         let contentLabel = UILabel()
-        contentLabel.text = "You have sent a payment request on May 18, 2021 3:22 PM" //kimuranow
         contentLabel.font = .demoApp400(size: 14.0)
         contentLabel.numberOfLines = 0
         return contentLabel
@@ -80,6 +78,18 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
             $0.top.equalToSuperview().inset(6.0)
         }
     }
+    func setupRedEnvelopType(_ type: ChatInBankingRedEnvelopType) {
+        switch type {
+        case .transfer:
+            iconImageView.image = UIImage(named: "chatInBankingTransferMsgIcon")
+            contentLabel.text = "You have transferred $1 on May 18, 2021 3:22 PM"
+            break
+        case .paymentReq:
+            iconImageView.image = UIImage(named: "chatInBankingRequestMsgIcon")
+            contentLabel.text = "You have sent a payment request on May 18, 2021 3:22 PM"
+            break
+        }
+    }
     override func updateUI() {
         super.updateUI()
     }
@@ -107,4 +117,9 @@ extension UIFont {
     static func demoApp800(size: CGFloat) -> UIFont {
         UIFont(name: "Nunito-ExtraBold", size: size)!
     }
+}
+
+enum ChatInBankingRedEnvelopType {
+    case transfer
+    case paymentReq
 }
