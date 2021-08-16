@@ -41,13 +41,7 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
     
     override func setupUI(_ reuseIdentifier: String?) {
         super.setupUI(reuseIdentifier)
-        if let reuseId = reuseIdentifier {
-            if reuseId.starts(with: "Incoming") {
-                
-            } else if reuseId.starts(with: "Outgoing") {
-                
-            }
-        }
+
         let padding: CGFloat = 12.0
         bubbleView.addSubview(iconImageViewWrapper)
         iconImageViewWrapper.addSubview(iconImageView)
@@ -56,7 +50,7 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
         
         iconImageViewWrapper.snp.makeConstraints {
             $0.top.leading.trailing.equalToSuperview()
-            $0.height.equalTo(158.0) //kimuranow
+            $0.height.equalTo(158.0)
         }
         iconImageView.snp.makeConstraints {
             $0.center.equalToSuperview()
@@ -65,7 +59,7 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
         contentLabel.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(padding)
             $0.top.equalTo(iconImageViewWrapper.snp.bottom).offset(padding)
-            $0.height.greaterThanOrEqualTo(38.0) //kimuranow
+            $0.height.greaterThanOrEqualTo(38.0)
         }
         detailButton.snp.makeConstraints {
             $0.leading.bottom.equalToSuperview().inset(padding)
@@ -90,17 +84,13 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
             break
         }
     }
-    override func updateUI() {
-        super.updateUI()
-    }
     
     @objc func detailButtonTapped() {
-        //kimuranow
+        // TODO:
     }
 }
 
 class ChatInBankingMessageTableViewCellOutgoing: ChatInBankingMessageTableViewCell {
-    
     override func setupUI(_ reuseIdentifier: String?) {
         super.setupUI(reuseIdentifier)
     }

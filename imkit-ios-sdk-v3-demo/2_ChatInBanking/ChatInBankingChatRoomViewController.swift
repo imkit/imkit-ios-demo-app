@@ -29,7 +29,7 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
                     "message": "您已成功轉帳。",
                     "messageType": "transfer",
                     "room": self.viewModel.roomID,
-                    "sender": ["_id": "sean111"],
+                    "sender": ["_id": "sean111"], //kimuranow
                     "createdAtMS": Date().timeIntervalSince1970,
                     "extraString": "{ \"money\": 199}"
                 ]
@@ -53,7 +53,7 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
                     "message": "您已發出轉帳要求。",
                     "messageType": "paymentRequest",
                     "room": self.viewModel.roomID,
-                    "sender": ["_id": "sean111"],
+                    "sender": ["_id": "sean111"], //kimuranow
                     "createdAtMS": Date().timeIntervalSince1970,
                     "extraString": "{ \"money\": 199}"
                 ]
@@ -73,8 +73,6 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
         
         tableView.register(ChatInBankingMessageTableViewCell.self, forCellReuseIdentifier: "ChatInBankingMessageTableViewCell")
         tableView.register(ChatInBankingMessageTableViewCellOutgoing.self, forCellReuseIdentifier: "OutgoingChatInBankingMessageTableViewCellOutgoing")
-//        tableView.register(ChatInBankingMessageTableViewCellOutgoing.self, forCellReuseIdentifier: "OutgoingChatInBankingMessageTableViewCellOutgoing")
-        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
