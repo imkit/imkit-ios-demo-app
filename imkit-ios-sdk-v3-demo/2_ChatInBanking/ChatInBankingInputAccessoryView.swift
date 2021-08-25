@@ -25,6 +25,10 @@ class ChatInBankingInputAccessoryView: IMInputAccessoryView {
             $0.width.equalTo(0.0)
         }
         
+        imageButton.clipsToBounds = true
+        cameraButton.clipsToBounds = true
+        audioButton.clipsToBounds = true
+        
         textBarLeftConstraint?.update(offset: 50)
         
         stickerButton.setImage(
