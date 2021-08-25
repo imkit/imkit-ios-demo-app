@@ -39,6 +39,13 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
         return detailButton
     }()
     
+    lazy var sendTimeLabel: UILabel = {
+        let lb = UILabel()
+        lb.textColor = .lightGray
+        lb.font = .demoApp400(size: 12.0)
+        return lb
+    }()
+    
     override func setupUI(_ reuseIdentifier: String?) {
         super.setupUI(reuseIdentifier)
 
@@ -47,10 +54,12 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
         iconImageViewWrapper.addSubview(iconImageView)
         bubbleView.addSubview(contentLabel)
         bubbleView.addSubview(detailButton)
+        contentView.addSubview(sendTimeLabel)
         
         iconImageViewWrapper.snp.makeConstraints {
-            $0.top.leading.trailing.equalToSuperview()
+            $0.top.trailing.equalToSuperview()
             $0.height.equalTo(158.0)
+            $0.leading.equalTo(timeLabel.snp.trailing)
         }
         iconImageView.snp.makeConstraints {
             $0.center.equalToSuperview()
@@ -65,6 +74,11 @@ class ChatInBankingMessageTableViewCell: IMMessageTableViewCell {
             $0.leading.bottom.equalToSuperview().inset(padding)
             $0.top.equalTo(contentLabel.snp.bottom).offset(padding)
         }
+        sendTimeLabel.snp.makeConstraints {
+            $0.bottom.equalToSuperview()
+            $0.trailing.equalTo(bubbleView.snp.leading).offset(-6.0)
+        }
+        
         bubbleView.layer.borderColor = UIColor.clear.cgColor
         
         // add gap between cells

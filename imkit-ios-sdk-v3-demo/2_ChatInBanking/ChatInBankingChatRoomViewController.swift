@@ -112,14 +112,20 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "a h:mm"
 
         if viewModel.sections[indexPath.section][indexPath.row].messageType == "transfer" {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OutgoingChatInBankingMessageTableViewCellOutgoing", for: indexPath) as! ChatInBankingMessageTableViewCellOutgoing
             cell.setupRedEnvelopType(.transfer)
+            cell.sendTimeLabel.text = formatter.string(from: viewModel.sections[indexPath.section][indexPath.row].createTime)
             return cell
         } else if viewModel.sections[indexPath.section][indexPath.row].messageType == "paymentRequest" {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OutgoingChatInBankingMessageTableViewCellOutgoing", for: indexPath) as! ChatInBankingMessageTableViewCellOutgoing
             cell.setupRedEnvelopType(.paymentReq)
+            
+            cell.sendTimeLabel.text = formatter.string(from: viewModel.sections[indexPath.section][indexPath.row].createTime)
             return cell
         } else {
             return super.tableView(tableView, cellForRowAt: indexPath)
