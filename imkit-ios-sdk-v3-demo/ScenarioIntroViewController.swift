@@ -14,7 +14,7 @@ class ScenarioIntroViewController: UIViewController {
 
     var model: ScenarioIntroDto?
     var user: User?
-    
+    private var hasStartButtonBeenPressed: Bool = false
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var contentTextView: UITextView!
    
@@ -43,9 +43,15 @@ class ScenarioIntroViewController: UIViewController {
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
         guard let model = model else { return }
+        guard !hasStartButtonBeenPressed else {
+            return
+        }
+        hasStartButtonBeenPressed = true
+        
         switch model.type {
         case .tradingPlatform:
             performSegue(withIdentifier: "goTradingPlatform", sender: nil)
+            hasStartButtonBeenPressed = false
             break
         case .chatInBanking:
             goChatInBankingScenarioChatroomList()
@@ -77,8 +83,10 @@ extension ScenarioIntroViewController {
         }.done { rooms in
             let rooms = ChatInBankingRoomsViewController()
             self.navigationController?.pushViewController(rooms, animated: true)
+            self.hasStartButtonBeenPressed = false
         }.catch { error in
             print(error)
+            self.hasStartButtonBeenPressed = false
         }
     }
     func goNetworkingChatScenarioChatroomList() {
@@ -96,11 +104,13 @@ extension ScenarioIntroViewController {
         }.done { rooms in
             let rooms = NetworkingChatScenarioRoomsViewController()
             self.navigationController?.pushViewController(rooms, animated: true)
+            self.hasStartButtonBeenPressed = false
         }.catch { error in
             print(error)
+            self.hasStartButtonBeenPressed = false
         }
     }
-    func goBusinessChatScenarioChatroomList() {
+    func goBusinessChatScenarioChatroomList() {        
         guard let user = user else { return }
         let normalizedUserId: String = "\(user.uuid)businessChat"
         IMKit.clear()
@@ -127,8 +137,10 @@ extension ScenarioIntroViewController {
             IMRoomsViewController.searchBarEnabled = true
             let rooms = BusinessChatScenarioRoomsViewController()
             self.navigationController?.pushViewController(rooms, animated: true)
+            self.hasStartButtonBeenPressed = false
         }.catch { error in
             print(error)
+            self.hasStartButtonBeenPressed = false
         }
     }
 }
