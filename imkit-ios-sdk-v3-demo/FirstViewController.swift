@@ -11,7 +11,7 @@ import IMKit
 import PromiseKit
 import IQKeyboardManagerSwift
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var clientIdTextfield: UITextField!
     @IBOutlet weak var nicknameTextfield: UITextField!
@@ -61,6 +61,8 @@ class FirstViewController: UIViewController {
         titleLabel.text = "FirstViewController_title".localized
         nicknameTextfield.placeholder = "FirstViewController_nickname_placeholder".localized
         clientIdTextfield.placeholder = "FirstViewController_clientId_placeholder".localized
+        nicknameTextfield.delegate = self
+        clientIdTextfield.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,7 +81,7 @@ class FirstViewController: UIViewController {
         clientIdWrapper.layer.cornerRadius = 28.0
         clientIdWrapper.layer.borderWidth = 1.0
         clientIdWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
-        nicknameWrapper.layer.cornerRadius = 28.0
+        nicknameWrapper.layer.cornerRadius = 28.0   
         nicknameWrapper.layer.borderWidth = 1.0
         nicknameWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
         
@@ -91,7 +93,10 @@ class FirstViewController: UIViewController {
         IQKeyboardManager.shared.shouldResignOnTouchOutside = false
     }
     
-        
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
     @IBAction func signinButtonPressed(_ sender: UIButton) {
         clientIdWrapper.layer.borderColor = UIColor(named: "themeColor")?.cgColor
