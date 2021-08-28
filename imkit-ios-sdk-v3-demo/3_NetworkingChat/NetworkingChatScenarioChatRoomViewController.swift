@@ -75,8 +75,8 @@ class NetworkingChatScenarioChatRoomViewController: IMChatRoomViewController {
         tableView.backgroundColor = .white
     }
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
+        super.viewWillDisappear(animated)
+
         // restore
         navigationController?.navigationBar.tintColor = .black
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.black]

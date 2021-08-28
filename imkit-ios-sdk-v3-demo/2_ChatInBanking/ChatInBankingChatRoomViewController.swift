@@ -94,7 +94,7 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
         tableView.backgroundColor = UIColor(hexString: "FFF6FB")!
     }
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillDisappear(animated)
         
         // restore
         navigationController?.navigationBar.tintColor = .black

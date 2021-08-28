@@ -29,8 +29,8 @@ class BusinessChatScenarioChatRoomViewController: IMChatRoomViewController {
 //        IMStyle.messages.outgoingCell.textColor = .white
     }
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
+        super.viewWillDisappear(animated)
+
         // restore
         navigationController?.navigationBar.tintColor = .black
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.black]
