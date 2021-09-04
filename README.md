@@ -33,8 +33,15 @@ Open `Podfile` in project, then paste these:
 platform :ios, '11.0'
 target YOUR_PROJECT_TARGET do  
   use_frameworks!  
-  pod 'IMKit', :git => 'https://github.com/imkit/imkit-ios-framework-v3.git', :branch => 'swift5.4'  
+  pod 'IMKit', :git => 'https://github.com/imkit/imkit-ios-framework-v3.git'
   pod 'SwiftLinkPreview', :git => 'https://github.com/imkit/SwiftLinkPreview.git'
+  
+  post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+    end
+  end
 end
 ```
 
