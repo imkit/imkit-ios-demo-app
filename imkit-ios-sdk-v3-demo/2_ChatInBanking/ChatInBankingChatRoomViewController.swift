@@ -131,9 +131,6 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
             return super.tableView(tableView, cellForRowAt: indexPath)
         }
     }
-}
-
-extension ChatInBankingChatRoomViewController {
     @objc func showRecordButtonTapped() {
         self.navigationController?.pushViewController(ChatInBankingRecordListViewController(), animated: true)
     }

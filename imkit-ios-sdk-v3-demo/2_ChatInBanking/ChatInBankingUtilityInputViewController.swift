@@ -9,7 +9,7 @@
 import Foundation
 import IMKit
 
-@objc public class ChatInBankingUtilityInputViewController: IMUtilityInputViewController {
+public class ChatInBankingUtilityInputViewController: IMUtilityInputViewController {
     
     var transferButtonAction: (() -> Void)?
     var paymentRequestButtonAction: (() -> Void)?
@@ -38,8 +38,8 @@ import IMKit
     override public func viewDidLayoutSubviews() {
         view.frame.size.height = 85 + view.safeAreaInsets.bottom
     }
-}
-extension ChatInBankingUtilityInputViewController {
+
+
     override public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = utilityItems[indexPath.row]
             switch item {
