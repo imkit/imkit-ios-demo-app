@@ -43,6 +43,10 @@ class ChatInBankingInputAccessoryView: IMInputAccessoryView {
             UIImage(named: "chatInBankSendButtonIcon"),
             for: .normal
         )
+        returnButton.setImage(
+            UIImage(named: "chatInBankPlusButtonIcon"),
+            for: .normal
+        )
         
     }
 
