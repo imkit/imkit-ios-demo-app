@@ -77,14 +77,12 @@ public class ChatInBankingUtilityInputViewController: IMUtilityInputViewControll
     }
 }
 extension ChatInBankingUtilityInputViewController {
-    func transferButtonPressed() {
-        //kimuranow
+    func transferButtonPressed() {      
         if let action = transferButtonAction {
             action()
         }
     }
     func paymentRequestButtonPressed() {
-        //kimuranow
         if let action = paymentRequestButtonAction {
             action()
         }

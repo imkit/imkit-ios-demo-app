@@ -14,12 +14,7 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
         let btn = UIBarButtonItem(image: UIImage(named: "chatInBankingShowRecordButtonIcon"), style: .done, target: self, action: #selector(showRecordButtonTapped))
         return btn
     }()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        IMStyle.messages.backgroundColor = UIColor(hexString: "FFF6FB")!
-        IMStyle.messages.inputAccessory.isSendButtonAudioButtonCombined = false
-        
-        inputBarView = ChatInBankingInputAccessoryView()
+    private lazy var chatInBankingUtilityInputViewController: ChatInBankingUtilityInputViewController = {
         let chatInBankingUtilityInputViewController = ChatInBankingUtilityInputViewController()
         chatInBankingUtilityInputViewController.transferButtonAction = { [weak self] in
             guard let self = self else { return }
@@ -69,6 +64,15 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
                 parameters: params
             )
         }
+        return chatInBankingUtilityInputViewController
+    }()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        IMStyle.messages.backgroundColor = UIColor(hexString: "FFF6FB")!
+        IMStyle.messages.inputAccessory.isSendButtonAudioButtonCombined = false
+        
+        inputBarView = ChatInBankingInputAccessoryView()
+        
         utilityInputViewController = chatInBankingUtilityInputViewController
         
         tableView.register(ChatInBankingMessageTableViewCell.self, forCellReuseIdentifier: "ChatInBankingMessageTableViewCell")
