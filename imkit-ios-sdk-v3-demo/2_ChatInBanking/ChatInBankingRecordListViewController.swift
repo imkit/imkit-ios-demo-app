@@ -28,6 +28,10 @@ class ChatInBankingRecordListViewController: UIViewController {
             $0.edges.equalToSuperview()
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNoBackButtonTitleOnNavibar()
+    }
 }
 
 extension ChatInBankingRecordListViewController: UITableViewDelegate, UITableViewDataSource {

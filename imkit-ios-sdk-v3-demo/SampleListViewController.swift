@@ -34,6 +34,7 @@ class SampleListViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupNoBackButtonTitleOnNavibar()
         signoutButton.layer.cornerRadius = 28.0
         signoutButton.layer.borderWidth = 1.0
         signoutButton.layer.borderColor = UIColor(named: "themeColor")?.cgColor

@@ -27,6 +27,7 @@ class SelectAvatarViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupNoBackButtonTitleOnNavibar()
         nextButton.layer.cornerRadius = nextButton.bounds.height / 2.0
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate, appDelegate.hasUserPressedSignoutButton {
             dismiss(animated: false)

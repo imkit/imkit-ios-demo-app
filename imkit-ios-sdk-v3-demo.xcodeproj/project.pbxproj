@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F2CE7D81E4D0DCF7FC80640 /* Pods_imkit_ios_sdk_v3_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125358B8D7CAD24FDC55F30C /* Pods_imkit_ios_sdk_v3_demo.framework */; };
 		142206B426C419170008EAE6 /* NetworkingChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142206B326C419170008EAE6 /* NetworkingChatInputAccessoryView.swift */; };
+		143334E726EF8CA000F1C877 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143334E626EF8CA000F1C877 /* UIViewController+Extensions.swift */; };
 		145885C52680D01F00C17CA4 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */; };
 		145885C72682130B00C17CA4 /* SelectAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */; };
 		145885C9268222A000C17CA4 /* SampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145885C8268222A000C17CA4 /* SampleListViewController.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		125358B8D7CAD24FDC55F30C /* Pods_imkit_ios_sdk_v3_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imkit_ios_sdk_v3_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		142206B326C419170008EAE6 /* NetworkingChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingChatInputAccessoryView.swift; sourceTree = "<group>"; };
+		143334E626EF8CA000F1C877 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
 		145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAvatarViewController.swift; sourceTree = "<group>"; };
 		145885C8268222A000C17CA4 /* SampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143334E826EF8CB600F1C877 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				143334E626EF8CA000F1C877 /* UIViewController+Extensions.swift */,
+				1469451826A59F25006A129B /* String+Extensions.swift */,
+				149EC699269AF80000B37234 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		143334E926EF8CD100F1C877 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */,
+				145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */,
+				14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		14EC7BF7269486F300C1CF20 /* 4_BusinessChat */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,10 +188,9 @@
 				891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */,
 				893000062152A51400FFD1E8 /* Main.storyboard */,
 				145885CC26822DA900C17CA4 /* ScenarioIntroViewController.swift */,
-				1469451826A59F25006A129B /* String+Extensions.swift */,
 				145885C8268222A000C17CA4 /* SampleListViewController.swift */,
-				149EC699269AF80000B37234 /* UIColor+Extensions.swift */,
 				145885C62682130B00C17CA4 /* SelectAvatarViewController.swift */,
+				143334E826EF8CB600F1C877 /* Extensions */,
 				14EC7BFA2694872400C1CF20 /* 1_TradingPlatform */,
 				14EC7BF92694871A00C1CF20 /* 2_ChatInBanking */,
 				14EC7BF82694871100C1CF20 /* 3_NetworkingChat */,
@@ -177,9 +198,7 @@
 				893000092152A51500FFD1E8 /* Assets.xcassets */,
 				8930000B2152A51500FFD1E8 /* LaunchScreen.storyboard */,
 				8930000E2152A51500FFD1E8 /* Info.plist */,
-				145885C42680D01F00C17CA4 /* Nunito-ExtraBold.ttf */,
-				145885CA2682268300C17CA4 /* Nunito-SemiBold.ttf */,
-				14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */,
+				143334E926EF8CD100F1C877 /* Fonts */,
 				1469451626A59E65006A129B /* Localizable.strings */,
 			);
 			path = "imkit-ios-sdk-v3-demo";
@@ -322,6 +341,7 @@
 			files = (
 				14EC7BE526838BB300C1CF20 /* TradingPlatformProductViewController.swift in Sources */,
 				1469450F26A4597E006A129B /* TradingPlatformInputAccessoryView.swift in Sources */,
+				143334E726EF8CA000F1C877 /* UIViewController+Extensions.swift in Sources */,
 				145885C72682130B00C17CA4 /* SelectAvatarViewController.swift in Sources */,
 				145885CD26822DA900C17CA4 /* ScenarioIntroViewController.swift in Sources */,
 				1469451926A59F25006A129B /* String+Extensions.swift in Sources */,

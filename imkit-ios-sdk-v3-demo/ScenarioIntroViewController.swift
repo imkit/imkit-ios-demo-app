@@ -23,9 +23,11 @@ class ScenarioIntroViewController: UIViewController {
         super.viewDidLoad()
         
         startButton.setTitle("ScenarioIntroViewController_start_button_title".localized, for: .normal)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupNoBackButtonTitleOnNavibar()
         
         IMRoomsViewController.searchBarEnabled = false
         startButton.layer.cornerRadius = startButton.bounds.height / 2.0
@@ -64,6 +66,7 @@ class ScenarioIntroViewController: UIViewController {
             break
         }
     }
+    
 }
 extension ScenarioIntroViewController {
     func goChatInBankingScenarioChatroomList() {
@@ -144,3 +147,4 @@ extension ScenarioIntroViewController {
         }
     }
 }
+

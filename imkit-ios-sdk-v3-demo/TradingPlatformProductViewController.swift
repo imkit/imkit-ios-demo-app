@@ -37,11 +37,12 @@ class TradingPlatformProductViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupNoBackButtonTitleOnNavibar()
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.tintColor = navBarDefaultColor
         
         goChatroomButtonTitleLabel.text = "TradingPlatformProductViewController_go_chatroom_button_title".localized
-        goChatroomButtonWrapper.layer.cornerRadius = goChatroomButtonWrapper.bounds.height / 2.0
+        goChatroomButtonWrapper.layer.cornerRadius = goChatroomButtonWrapper.bounds.height / 2.0        
     }
     @IBAction func chatButtonPressed(_ sender: UIButton) {
         guard let user = user else { return }

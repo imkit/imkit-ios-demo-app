@@ -22,13 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // remove back-button-title of navi-bar
         // ref: https://stackoverflow.com/a/29912585
-        let BarButtonItemAppearance = UIBarButtonItem.appearance()
-        let attributes = [
-            NSAttributedString.Key.font:  UIFont(name: "Helvetica-Bold", size: 0.1)!,
-            NSAttributedString.Key.foregroundColor: UIColor.clear
-        ]
-        BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .normal)
-        BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .highlighted)
+//        let BarButtonItemAppearance = UIBarButtonItem.appearance()
+//        let attributes = [
+//            NSAttributedString.Key.font:  UIFont(name: "Helvetica-Bold", size: 0.1)!,
+//            NSAttributedString.Key.foregroundColor: UIColor.clear
+//        ]
+//        BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .normal)
+//        BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .highlighted)
         
         IMKit.configure(
             clientKey: "fangho_imkit_0412_2018_001_clientkey",
