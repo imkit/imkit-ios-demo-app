@@ -47,7 +47,6 @@ class ChatInBankingInputAccessoryView: IMInputAccessoryView {
             UIImage(named: "chatInBankPlusButtonIcon"),
             for: .normal
         )
-        
     }
 
     override func foldTextBar() {
@@ -56,5 +55,21 @@ class ChatInBankingInputAccessoryView: IMInputAccessoryView {
         // avoid textBar been folded after textViewDidEndEditing
         // imkit_refactor
         textBarLeftConstraint?.update(offset: 50)
+    }
+
+    override func addButtonTapped() {
+        super.addButtonTapped()
+        addButton.setImage(
+            UIImage(named: "close"),
+            for: .normal
+        )
+    }
+    
+    override func resignAllFirstResponder() {
+        super.resignAllFirstResponder()
+        addButton.setImage(
+            UIImage(named: "chatInBankPlusButtonIcon"),
+            for: .normal
+        )
     }
 }
