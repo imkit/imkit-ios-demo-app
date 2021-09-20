@@ -14,6 +14,10 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
         let btn = UIBarButtonItem(image: UIImage(named: "chatInBankingShowRecordButtonIcon"), style: .done, target: self, action: #selector(showRecordButtonTapped))
         return btn
     }()
+    
+    /*
+     More detail please checking comments in `ViewDidLoad` method of this file.
+     */
     private lazy var chatInBankingUtilityInputViewController: ChatInBankingUtilityInputViewController = {
         let chatInBankingUtilityInputViewController = ChatInBankingUtilityInputViewController()
         chatInBankingUtilityInputViewController.transferButtonAction = { [weak self] in
@@ -73,6 +77,15 @@ class ChatInBankingChatRoomViewController: IMChatRoomViewController {
         
         inputBarView = ChatInBankingInputAccessoryView()
         
+        /*
+             utilityInputViewController is a property of IMChatRoomViewController to indicating more
+         functional buttons for chatting in IMKIT. If you try to customize it, just create a new
+         ViewController to inherented from `IMUtilityInputViewController`, and set it to this property.
+         It will be overrided for your customization. For this case, we demo a `ChatInBankingUtilityInputViewController`
+         for you which is setup as private variable as coded below in Line 17 in this file.
+         
+             More detail please checking `ChatInBankingUtilityInputViewController` swift file.
+         */
         utilityInputViewController = chatInBankingUtilityInputViewController
         
         tableView.register(ChatInBankingMessageTableViewCell.self, forCellReuseIdentifier: "ChatInBankingMessageTableViewCell")

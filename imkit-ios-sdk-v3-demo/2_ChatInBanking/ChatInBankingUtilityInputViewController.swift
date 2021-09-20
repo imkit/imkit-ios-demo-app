@@ -9,6 +9,20 @@
 import Foundation
 import IMKit
 
+/*
+ For demo of customized IMUtilityInputViewController, we created `ChatInBankingUtilityInputViewController`.
+ Including two features, transfering money & sending payment request. After setup these features, it
+ will be setup in `ChatInBankingChatRoomViewController`.
+ 
+ There are 2 parts for customization:
+ 1) feature implementation
+ 2) UI rendering
+ 
+ This file will focus on second parts, including rendering two buttons on UICollectionView of
+ IMUtilityInputViewController as you see source code below. Button functions will be implemented
+ as closures `transferButtonAction` & `paymentRequestButtonAction` in `ChatInBankingChatRoomViewController`.
+ */
+
 public class ChatInBankingUtilityInputViewController: IMUtilityInputViewController {
     
     var transferButtonAction: (() -> Void)?
