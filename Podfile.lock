@@ -7,12 +7,12 @@ PODS:
   - DifferenceKit/Core (1.2.0)
   - DifferenceKit/UIKitExtension (1.2.0):
     - DifferenceKit/Core
-  - FloatingPanel (2.4.0)
+  - FloatingPanel (2.5.0)
   - Hero (1.6.1)
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
-  - IMKit (0.350.0):
+  - IMKit (0.351.0):
     - ActiveLabel (~> 1.1)
     - Alamofire (~> 5)
     - DifferenceKit (~> 1.2)
@@ -93,7 +93,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   IMKit:
-    :commit: 298312842915f87d62a4c81e1d3bfdc670057c47
+    :commit: b7b1971498b3bf3ad16fccab6c6b3c78d540575d
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: 75a62bb806d7b9d7be4e2877569bcb34591a10e0
@@ -103,11 +103,11 @@ SPEC CHECKSUMS:
   ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
-  FloatingPanel: fa60183672ed86313b9e241e34465e82211260e8
+  FloatingPanel: ddb1c8cbbacd164cfee651c449febe867a28e2cb
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IMKit: eb71ff40f197a35bf26b0b578777ba1bc8335699
+  IMKit: 558eccfe7b5e8536258ccea99d1bba4beecdd971
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
