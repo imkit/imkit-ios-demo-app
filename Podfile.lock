@@ -12,7 +12,7 @@ PODS:
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
-  - IMKit (0.351.0):
+  - IMKit (0.352.0):
     - ActiveLabel (~> 1.1)
     - Alamofire (~> 5)
     - DifferenceKit (~> 1.2)
@@ -44,11 +44,11 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.15.3):
     - PromiseKit/CorePromise
-  - Realm (10.15.1):
-    - Realm/Headers (= 10.15.1)
-  - Realm/Headers (10.15.1)
-  - RealmSwift (10.15.1):
-    - Realm (= 10.15.1)
+  - Realm (10.16.0):
+    - Realm/Headers (= 10.16.0)
+  - Realm/Headers (10.16.0)
+  - RealmSwift (10.16.0):
+    - Realm (= 10.16.0)
   - SnapKit (5.0.1)
   - Socket.IO-Client-Swift (16.0.1):
     - Starscream (~> 4.0)
@@ -93,7 +93,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   IMKit:
-    :commit: b7b1971498b3bf3ad16fccab6c6b3c78d540575d
+    :commit: a604b6c4909a05fb68cfb0fbbe062c0320d67a65
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: 75a62bb806d7b9d7be4e2877569bcb34591a10e0
@@ -107,14 +107,14 @@ SPEC CHECKSUMS:
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IMKit: 558eccfe7b5e8536258ccea99d1bba4beecdd971
+  IMKit: 2381d7672cd7cd67e8cbc1df30dc860bffaa9fa1
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   ProgressHUD: e603e8b8622c47d8818b9fb38b3cfe9d3e7ca421
   PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
-  Realm: fbcbde2620d51623cc5b18e28f5b165c39abef52
-  RealmSwift: e4bea8e42efad3d543aea23b56504069c6faaea2
+  Realm: b6027801398f3743fc222f096faa85281b506e6c
+  RealmSwift: b02a3d0e4947955da960b642c98ad3a461fc4e70
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
