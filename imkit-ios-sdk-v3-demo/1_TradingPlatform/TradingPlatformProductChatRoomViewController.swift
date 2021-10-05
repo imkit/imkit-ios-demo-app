@@ -11,10 +11,11 @@ import IMKit
 
 class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
     
-    
+    private var defaultIMStyleMsgBgColor: UIColor?
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        defaultIMStyleMsgBgColor = IMStyle.messages.backgroundColor
         // imkit-customized: 整個聊天室背景
         IMStyle.messages.backgroundColor = .clear // background-color of cell
         IMStyle.messages.inputAccessory.isSendButtonAudioButtonCombined = false
@@ -42,5 +43,8 @@ class TradingPlatformProductChatRoomViewController: IMChatRoomViewController {
         
         // restore
         IMStyle.messages.inputAccessory.isSendButtonAudioButtonCombined = true
+        if let bgColor = defaultIMStyleMsgBgColor {
+            IMStyle.messages.backgroundColor = bgColor
+        }
     }
 }
