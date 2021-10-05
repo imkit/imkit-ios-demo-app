@@ -26,11 +26,13 @@ class SampleListViewController: UIViewController {
         
         signoutButton.setTitle("SampleListViewController_signout_button_title".localized, for: .normal)
         sceneTitleLabel.text = "SampleListViewController_title".localized
-        sdkVersionLabel.text = "SampleListViewController_sdk_version_title".localized //kimuranow
         scenario1TitleLabel.text = "SampleListViewController_trading_platform_scenario_title".localized
         scenario2TitleLabel.text = "SampleListViewController_chat_in_banking_scenario_title".localized
         scenario3TitleLabel.text = "SampleListViewController_networking_chat_scenario_title".localized
         scenario4TitleLabel.text = "SampleListViewController_business_chat_scenario_title".localized
+        
+        // before implement fetching version number from Podfile.lock, must typing it manually
+        sdkVersionLabel.text = "\("SampleListViewController_sdk_version_title".localized ) v0.351.0"
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
