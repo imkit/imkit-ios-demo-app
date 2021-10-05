@@ -14,10 +14,10 @@ class UtilityInputViewController: IMUtilityInputViewController {
     // UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        switch IMUtilityType.allCases[indexPath.row] {
-        case .Location:
+        switch IMUtilityInputViewController.utilities[indexPath.row] {
+        case .location:
            (viewController as? IMMessagesViewController)?.presentLocationPicker()
-        case .File:
+        case .file:
            (viewController as? IMMessagesViewController)?.presentDocumentPicker()
         default:
             break
@@ -31,12 +31,12 @@ class UtilityInputViewController: IMUtilityInputViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // you can add extra data source for additional utilities
-        return IMUtilityType.allCases.count
+        return IMUtilityInputViewController.utilities.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IMUtilityCollectionViewCell", for: indexPath) as! IMUtilityCollectionViewCell
-        cell.type = IMUtilityType.allCases[indexPath.row]
+        cell.type = IMUtilityInputViewController.utilities[indexPath.row]
         
         // for your own customized cell
         cell.imageView.image = UIImage(named: "icon_pin_w24_h24", in: IMKit.bundle, compatibleWith: nil)

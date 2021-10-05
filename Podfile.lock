@@ -12,7 +12,7 @@ PODS:
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
-  - IMKit (0.352.0):
+  - IMKit (0.353.0):
     - ActiveLabel (~> 1.1)
     - Alamofire (~> 5)
     - DifferenceKit (~> 1.2)
@@ -93,7 +93,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   IMKit:
-    :commit: a604b6c4909a05fb68cfb0fbbe062c0320d67a65
+    :commit: 3ad80fcb4f2e88a95342b2707c40e5448170ea5c
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: 75a62bb806d7b9d7be4e2877569bcb34591a10e0
@@ -107,7 +107,7 @@ SPEC CHECKSUMS:
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IMKit: 2381d7672cd7cd67e8cbc1df30dc860bffaa9fa1
+  IMKit: ee931a25e29b640cae76f385d8a0d013558eebac
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
