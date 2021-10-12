@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             clientKey: "fangho_imkit_0412_2018_001_clientkey",
             chatServerURL: URL(string: "https://chat.fangho.com")!
         )
+        IMKit.translationAPIKey = "AIzaSyDwdYjqeA5YBiTZD4X8LUmvjl2ZEacs4cY"
         return true
     }
 
