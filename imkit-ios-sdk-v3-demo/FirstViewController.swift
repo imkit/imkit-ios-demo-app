@@ -33,7 +33,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     private var isClientIdValid: Bool {
         //kimuranow
         if let clientId = clientIdUserTyped {
-            return clientId.count >= 4
+            return clientId.count >= 3
         } else {
             return false
         }
@@ -50,7 +50,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     private var isNicknameValid: Bool {
         //kimuranow
         if let nickname = nicknameUserTyped {
-            return nickname.count >= 4
+            return nickname.count >= 3
         } else {
             return false
         }

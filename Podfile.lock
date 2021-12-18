@@ -1,13 +1,14 @@
 PODS:
   - ActiveLabel (1.1.0)
-  - Alamofire (5.4.4)
+  - Alamofire (5.5.0)
   - DifferenceKit (1.2.0):
     - DifferenceKit/Core (= 1.2.0)
     - DifferenceKit/UIKitExtension (= 1.2.0)
   - DifferenceKit/Core (1.2.0)
   - DifferenceKit/UIKitExtension (1.2.0):
     - DifferenceKit/Core
-  - FloatingPanel (2.5.0)
+  - FloatingPanel (2.5.1)
+  - GoogleWebRTC (1.1.31999)
   - Hero (1.6.1)
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
@@ -17,6 +18,7 @@ PODS:
     - Alamofire (~> 5)
     - DifferenceKit (~> 1.2)
     - FloatingPanel (~> 2.4)
+    - GoogleWebRTC
     - Hero (~> 1.6)
     - IGListKit (~> 4)
     - Kingfisher (~> 6)
@@ -44,11 +46,11 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.15.3):
     - PromiseKit/CorePromise
-  - Realm (10.17.0):
-    - Realm/Headers (= 10.17.0)
-  - Realm/Headers (10.17.0)
-  - RealmSwift (10.17.0):
-    - Realm (= 10.17.0)
+  - Realm (10.20.1):
+    - Realm/Headers (= 10.20.1)
+  - Realm/Headers (10.20.1)
+  - RealmSwift (10.20.1):
+    - Realm (= 10.20.1)
   - SnapKit (5.0.1)
   - Socket.IO-Client-Swift (16.0.1):
     - Starscream (~> 4.0)
@@ -58,7 +60,7 @@ PODS:
   - TagListView (1.4.1)
 
 DEPENDENCIES:
-  - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.4`)
+  - IMKit (from `../imkit-ios-framework-v3`)
   - IQKeyboardManagerSwift (= 6.5.6)
   - ProgressHUD
   - SwiftLinkPreview (from `https://github.com/imkit/SwiftLinkPreview.git`)
@@ -69,6 +71,7 @@ SPEC REPOS:
     - Alamofire
     - DifferenceKit
     - FloatingPanel
+    - GoogleWebRTC
     - Hero
     - IGListDiffKit
     - IGListKit
@@ -87,35 +90,32 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   IMKit:
-    :branch: swift5.4
-    :git: https://github.com/imkit/imkit-ios-framework-v3.git
+    :path: "../imkit-ios-framework-v3"
   SwiftLinkPreview:
     :git: https://github.com/imkit/SwiftLinkPreview.git
 
 CHECKOUT OPTIONS:
-  IMKit:
-    :commit: ead2526a47afc15025b8c84c5b9ce79c65632b0e
-    :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: 75a62bb806d7b9d7be4e2877569bcb34591a10e0
     :git: https://github.com/imkit/SwiftLinkPreview.git
 
 SPEC CHECKSUMS:
   ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
-  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
-  FloatingPanel: ddb1c8cbbacd164cfee651c449febe867a28e2cb
+  FloatingPanel: 523cb50f490f151fc03fabf24a8322e44d22f65f
+  GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IMKit: 69d5484c97c270db9b904b50fcec7d2a90791976
+  IMKit: 8d680c9c2dcae1032503698cbbce1cf0bff75df1
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   ProgressHUD: e603e8b8622c47d8818b9fb38b3cfe9d3e7ca421
   PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
-  Realm: 9533276bd76f66aa2fd0d3ffe700c1f6023dcab6
-  RealmSwift: 57f5d59aa29852587aad1e861989e7af139894b5
+  Realm: fac5ecd031fcb81171627b74944c885662d4b266
+  RealmSwift: 9b02d25acb46a14756bde9893abb99e2e3675923
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
@@ -123,6 +123,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: 14c57a2afbd73c27933061a38e346cbc3666cd22
+PODFILE CHECKSUM: 802b68e0dd921e42b98b07cab48a3dc1c8c501c4
 
 COCOAPODS: 1.11.2
