@@ -33,6 +33,9 @@
 		14EC7C00269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BFF269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift */; };
 		14EC7C0226974D5500C1CF20 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */; };
 		14EC7C042699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7C032699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift */; };
+		28E3641327F0328A00918D35 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3641227F0328A00918D35 /* Product.swift */; };
+		28E3641527F0340900918D35 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3641427F0340900918D35 /* ProductView.swift */; };
+		28E3641727F0341100918D35 /* ProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E3641627F0341100918D35 /* ProductView.xib */; };
 		891F97842365B61F007BC5FD /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97832365B61F007BC5FD /* RoomsViewController.swift */; };
 		891F97862365B69A007BC5FD /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97852365B69A007BC5FD /* MessagesViewController.swift */; };
 		891F97882365B6DA007BC5FD /* UtilityInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */; };
@@ -74,6 +77,9 @@
 		14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		14EC7C032699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInBankingRecordListViewController.swift; sourceTree = "<group>"; };
 		1B7847CACECE0D905668580C /* Pods-imkit-ios-sdk-v3-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imkit-ios-sdk-v3-demo/Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		28E3641227F0328A00918D35 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		28E3641427F0340900918D35 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		28E3641627F0341100918D35 /* ProductView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductView.xib; sourceTree = "<group>"; };
 		891F97832365B61F007BC5FD /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		891F97852365B69A007BC5FD /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityInputViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +166,16 @@
 			path = 1_TradingPlatform;
 			sourceTree = "<group>";
 		};
+		28481F7527EDB9E700FDD9D0 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				28E3641227F0328A00918D35 /* Product.swift */,
+				28E3641427F0340900918D35 /* ProductView.swift */,
+				28E3641627F0341100918D35 /* ProductView.xib */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		5E0D5E412AE57EF700349655 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +195,7 @@
 		893000012152A51400FFD1E8 /* imkit-ios-sdk-v3-demo */ = {
 			isa = PBXGroup;
 			children = (
+				28481F7527EDB9E700FDD9D0 /* Product */,
 				893000022152A51400FFD1E8 /* AppDelegate.swift */,
 				893000042152A51400FFD1E8 /* FirstViewController.swift */,
 				14EC7BE426838BB300C1CF20 /* TradingPlatformProductViewController.swift */,
@@ -288,6 +305,7 @@
 				8930000D2152A51500FFD1E8 /* LaunchScreen.storyboard in Resources */,
 				8930000A2152A51500FFD1E8 /* Assets.xcassets in Resources */,
 				1469451426A59E65006A129B /* Localizable.strings in Resources */,
+				28E3641727F0341100918D35 /* ProductView.xib in Resources */,
 				893000082152A51400FFD1E8 /* Main.storyboard in Resources */,
 				145885C52680D01F00C17CA4 /* Nunito-ExtraBold.ttf in Resources */,
 				145885CB2682268900C17CA4 /* Nunito-SemiBold.ttf in Resources */,
@@ -343,6 +361,7 @@
 				1469450F26A4597E006A129B /* TradingPlatformInputAccessoryView.swift in Sources */,
 				143334E726EF8CA000F1C877 /* UIViewController+Extensions.swift in Sources */,
 				145885C72682130B00C17CA4 /* SelectAvatarViewController.swift in Sources */,
+				28E3641527F0340900918D35 /* ProductView.swift in Sources */,
 				145885CD26822DA900C17CA4 /* ScenarioIntroViewController.swift in Sources */,
 				1469451926A59F25006A129B /* String+Extensions.swift in Sources */,
 				14EC7BED269486C500C1CF20 /* ChatInBankingChatRoomViewController.swift in Sources */,
@@ -359,6 +378,7 @@
 				14EC7BEB269486BC00C1CF20 /* ChatInBankingRoomsViewController.swift in Sources */,
 				14EC7C042699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift in Sources */,
 				14EC7BE72684B12700C1CF20 /* User.swift in Sources */,
+				28E3641327F0328A00918D35 /* Product.swift in Sources */,
 				893000032152A51400FFD1E8 /* AppDelegate.swift in Sources */,
 				14EC7BF1269486D300C1CF20 /* NetworkingChatScenarioChatRoomViewController.swift in Sources */,
 				14EC7BFE2694B9B500C1CF20 /* ChatInBankingUtilityInputViewController.swift in Sources */,
@@ -454,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -510,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -529,7 +549,7 @@
 				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = AF94M5UF46;
 				INFOPLIST_FILE = "imkit-ios-sdk-v3-demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -551,7 +571,7 @@
 				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = AF94M5UF46;
 				INFOPLIST_FILE = "imkit-ios-sdk-v3-demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

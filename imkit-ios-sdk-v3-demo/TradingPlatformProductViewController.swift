@@ -24,15 +24,17 @@ class TradingPlatformProductViewController: UIViewController {
     
     var user: User?
     var navBarDefaultColor: UIColor?
+    
+    let product: Product = Product.sample
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "TradingPlatformProductViewController_title".localized
         navBarDefaultColor = navigationController?.navigationBar.tintColor
         
-        productTitleLabel.text = "TradingPlatformProductViewController_mock_product_title".localized
-        productPriceLabel.text = "TradingPlatformProductViewController_mock_product_price".localized
-        productDescLabel.text = "TradingPlatformProductViewController_mock_product_description".localized
+        productTitleLabel.text = product.title
+        productPriceLabel.text = product.price
+        productDescLabel.text = product.desc
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -59,12 +61,13 @@ class TradingPlatformProductViewController: UIViewController {
                 return IMCreateDirectChatTask().perform(invitee: "trading_platform_id")
             })
             .done({ [weak self] room in
+                guard let self = self else { return }
                 ProgressHUD.dismiss()
-                self?.navigationController?.pushViewController(
-                    TradingPlatformProductChatRoomViewController(roomID: room.id),
+                self.navigationController?.pushViewController(
+                    TradingPlatformProductChatRoomViewController(product: self.product,roomID: room.id),
                     animated: true
                 )
-                self?.goChatroomButton.isEnabled = true
+                self.goChatroomButton.isEnabled = true
             })
             .catch({ [weak self] error in
                 ProgressHUD.dismiss()
@@ -73,3 +76,6 @@ class TradingPlatformProductViewController: UIViewController {
             })
     }
 }
+
+
+

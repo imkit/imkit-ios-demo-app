@@ -12,7 +12,9 @@ import IMKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    public static var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
     var hasUserPressedSignoutButton: Bool = false
     var window: UIWindow?
 
