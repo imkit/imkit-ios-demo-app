@@ -33,6 +33,7 @@
 		14EC7C00269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BFF269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift */; };
 		14EC7C0226974D5500C1CF20 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */; };
 		14EC7C042699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7C032699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift */; };
+		28DE728827F1A97D00B43EAE /* IMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE728627F1A97D00B43EAE /* IMNavigationController.swift */; };
 		28E3641327F0328A00918D35 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3641227F0328A00918D35 /* Product.swift */; };
 		28E3641527F0340900918D35 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3641427F0340900918D35 /* ProductView.swift */; };
 		28E3641727F0341100918D35 /* ProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E3641627F0341100918D35 /* ProductView.xib */; };
@@ -77,6 +78,7 @@
 		14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		14EC7C032699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInBankingRecordListViewController.swift; sourceTree = "<group>"; };
 		1B7847CACECE0D905668580C /* Pods-imkit-ios-sdk-v3-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imkit-ios-sdk-v3-demo/Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		28DE728627F1A97D00B43EAE /* IMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMNavigationController.swift; sourceTree = "<group>"; };
 		28E3641227F0328A00918D35 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		28E3641427F0340900918D35 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		28E3641627F0341100918D35 /* ProductView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductView.xib; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				8930000E2152A51500FFD1E8 /* Info.plist */,
 				143334E926EF8CD100F1C877 /* Fonts */,
 				1469451626A59E65006A129B /* Localizable.strings */,
+				28DE728627F1A97D00B43EAE /* IMNavigationController.swift */,
 			);
 			path = "imkit-ios-sdk-v3-demo";
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				145885C72682130B00C17CA4 /* SelectAvatarViewController.swift in Sources */,
 				28E3641527F0340900918D35 /* ProductView.swift in Sources */,
 				145885CD26822DA900C17CA4 /* ScenarioIntroViewController.swift in Sources */,
+				28DE728827F1A97D00B43EAE /* IMNavigationController.swift in Sources */,
 				1469451926A59F25006A129B /* String+Extensions.swift in Sources */,
 				14EC7BED269486C500C1CF20 /* ChatInBankingChatRoomViewController.swift in Sources */,
 				14EC7BE9269486B100C1CF20 /* TradingPlatformProductChatRoomViewController.swift in Sources */,
@@ -546,7 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = AF94M5UF46;
 				INFOPLIST_FILE = "imkit-ios-sdk-v3-demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -568,7 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = AF94M5UF46;
 				INFOPLIST_FILE = "imkit-ios-sdk-v3-demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
