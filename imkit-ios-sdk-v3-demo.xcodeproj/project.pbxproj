@@ -33,6 +33,17 @@
 		14EC7C00269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BFF269620FA00C1CF20 /* ChatInBankingMessageTableViewCell.swift */; };
 		14EC7C0226974D5500C1CF20 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */; };
 		14EC7C042699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7C032699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift */; };
+		21972C07D2EF88B2266E4ED4 /* Pods_ShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4052AA5C33760890DCD02F6A /* Pods_ShareExtension.framework */; };
+		28878FA927F5B0B800217E11 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 28878F9F27F5B0B800217E11 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		28878FB727F5B19600217E11 /* CustomShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28878FAF27F5B19600217E11 /* CustomShareViewController.xib */; };
+		28878FB827F5B19600217E11 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28878FB027F5B19600217E11 /* MainInterface.storyboard */; };
+		28878FB927F5B19600217E11 /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28878FB127F5B19600217E11 /* ShareModel.swift */; };
+		28878FBA27F5B19600217E11 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28878FB227F5B19600217E11 /* Extensions.swift */; };
+		28878FBB27F5B19600217E11 /* CustomShareNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28878FB327F5B19600217E11 /* CustomShareNavigationController.swift */; };
+		28878FBC27F5B19600217E11 /* ShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28878FB427F5B19600217E11 /* ShareManager.swift */; };
+		28878FBD27F5B19600217E11 /* CustomShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28878FB527F5B19600217E11 /* CustomShareViewController.swift */; };
+		28878FBE27F5B19600217E11 /* IMKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28878FB627F5B19600217E11 /* IMKitManager.swift */; };
+		288F36A027FB501F004C928F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7BE62684B12700C1CF20 /* User.swift */; };
 		28DE728827F1A97D00B43EAE /* IMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE728627F1A97D00B43EAE /* IMNavigationController.swift */; };
 		28E3641327F0328A00918D35 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3641227F0328A00918D35 /* Product.swift */; };
 		28E3641527F0340900918D35 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3641427F0340900918D35 /* ProductView.swift */; };
@@ -46,6 +57,30 @@
 		8930000A2152A51500FFD1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893000092152A51500FFD1E8 /* Assets.xcassets */; };
 		8930000D2152A51500FFD1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8930000B2152A51500FFD1E8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28878FA727F5B0B800217E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8930FFF72152A51400FFD1E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28878F9E27F5B0B800217E11;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		28878FAA27F5B0B900217E11 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				28878FA927F5B0B800217E11 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		125358B8D7CAD24FDC55F30C /* Pods_imkit_ios_sdk_v3_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imkit_ios_sdk_v3_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,10 +113,23 @@
 		14EC7C0126974D5400C1CF20 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		14EC7C032699AF2800C1CF20 /* ChatInBankingRecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInBankingRecordListViewController.swift; sourceTree = "<group>"; };
 		1B7847CACECE0D905668580C /* Pods-imkit-ios-sdk-v3-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imkit-ios-sdk-v3-demo/Pods-imkit-ios-sdk-v3-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		28878F9F27F5B0B800217E11 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		28878FA627F5B0B800217E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28878FAF27F5B19600217E11 /* CustomShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomShareViewController.xib; sourceTree = "<group>"; };
+		28878FB027F5B19600217E11 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		28878FB127F5B19600217E11 /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
+		28878FB227F5B19600217E11 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		28878FB327F5B19600217E11 /* CustomShareNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShareNavigationController.swift; sourceTree = "<group>"; };
+		28878FB427F5B19600217E11 /* ShareManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareManager.swift; sourceTree = "<group>"; };
+		28878FB527F5B19600217E11 /* CustomShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShareViewController.swift; sourceTree = "<group>"; };
+		28878FB627F5B19600217E11 /* IMKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMKitManager.swift; sourceTree = "<group>"; };
 		28DE728627F1A97D00B43EAE /* IMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMNavigationController.swift; sourceTree = "<group>"; };
 		28E3641227F0328A00918D35 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		28E3641427F0340900918D35 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		28E3641627F0341100918D35 /* ProductView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductView.xib; sourceTree = "<group>"; };
+		4052AA5C33760890DCD02F6A /* Pods_ShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C823B20D14A1F052DEF1E78 /* Pods-ShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		7AEE348EAF84DC5DEF3C1B7B /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 		891F97832365B61F007BC5FD /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		891F97852365B69A007BC5FD /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		891F97872365B6DA007BC5FD /* UtilityInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityInputViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +144,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		28878F9C27F5B0B800217E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21972C07D2EF88B2266E4ED4 /* Pods_ShareExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8930FFFC2152A51400FFD1E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,10 +234,27 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
+		28878FA027F5B0B800217E11 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				28878FB327F5B19600217E11 /* CustomShareNavigationController.swift */,
+				28878FB527F5B19600217E11 /* CustomShareViewController.swift */,
+				28878FAF27F5B19600217E11 /* CustomShareViewController.xib */,
+				28878FB227F5B19600217E11 /* Extensions.swift */,
+				28878FB627F5B19600217E11 /* IMKitManager.swift */,
+				28878FB027F5B19600217E11 /* MainInterface.storyboard */,
+				28878FB427F5B19600217E11 /* ShareManager.swift */,
+				28878FB127F5B19600217E11 /* ShareModel.swift */,
+				28878FA627F5B0B800217E11 /* Info.plist */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
 		5E0D5E412AE57EF700349655 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				125358B8D7CAD24FDC55F30C /* Pods_imkit_ios_sdk_v3_demo.framework */,
+				4052AA5C33760890DCD02F6A /* Pods_ShareExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				8930FFFF2152A51400FFD1E8 /* imkit-ios-sdk-v3-demo.app */,
+				28878F9F27F5B0B800217E11 /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				893000012152A51400FFD1E8 /* imkit-ios-sdk-v3-demo */,
+				28878FA027F5B0B800217E11 /* ShareExtension */,
 				893000002152A51400FFD1E8 /* Products */,
 				F087DC4F0A23C438D53E9E16 /* Pods */,
 				5E0D5E412AE57EF700349655 /* Frameworks */,
@@ -239,6 +314,8 @@
 			children = (
 				1B7847CACECE0D905668580C /* Pods-imkit-ios-sdk-v3-demo.debug.xcconfig */,
 				DFEF1199C44C4A61A37DB841 /* Pods-imkit-ios-sdk-v3-demo.release.xcconfig */,
+				4C823B20D14A1F052DEF1E78 /* Pods-ShareExtension.debug.xcconfig */,
+				7AEE348EAF84DC5DEF3C1B7B /* Pods-ShareExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -246,6 +323,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		28878F9E27F5B0B800217E11 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28878FAD27F5B0B900217E11 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				F9BBB375E5A4029DFB6B1ECF /* [CP] Check Pods Manifest.lock */,
+				28878F9B27F5B0B800217E11 /* Sources */,
+				28878F9C27F5B0B800217E11 /* Frameworks */,
+				28878F9D27F5B0B800217E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 28878F9F27F5B0B800217E11 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8930FFFE2152A51400FFD1E8 /* imkit-ios-sdk-v3-demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 893000112152A51500FFD1E8 /* Build configuration list for PBXNativeTarget "imkit-ios-sdk-v3-demo" */;
@@ -255,10 +350,12 @@
 				8930FFFC2152A51400FFD1E8 /* Frameworks */,
 				8930FFFD2152A51400FFD1E8 /* Resources */,
 				8FA9AB0A80B049227E7F7120 /* [CP] Embed Pods Frameworks */,
+				28878FAA27F5B0B900217E11 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				28878FA827F5B0B800217E11 /* PBXTargetDependency */,
 			);
 			name = "imkit-ios-sdk-v3-demo";
 			productName = "imkit-ios-sdk-v3-demo";
@@ -271,10 +368,14 @@
 		8930FFF72152A51400FFD1E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Howard Sun";
 				TargetAttributes = {
+					28878F9E27F5B0B800217E11 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
 					8930FFFE2152A51400FFD1E8 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -295,11 +396,21 @@
 			projectRoot = "";
 			targets = (
 				8930FFFE2152A51400FFD1E8 /* imkit-ios-sdk-v3-demo */,
+				28878F9E27F5B0B800217E11 /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		28878F9D27F5B0B800217E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28878FB727F5B19600217E11 /* CustomShareViewController.xib in Resources */,
+				28878FB827F5B19600217E11 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8930FFFD2152A51400FFD1E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,9 +464,45 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-imkit-ios-sdk-v3-demo/Pods-imkit-ios-sdk-v3-demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F9BBB375E5A4029DFB6B1ECF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		28878F9B27F5B0B800217E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28878FBE27F5B19600217E11 /* IMKitManager.swift in Sources */,
+				28878FBB27F5B19600217E11 /* CustomShareNavigationController.swift in Sources */,
+				28878FB927F5B19600217E11 /* ShareModel.swift in Sources */,
+				28878FBA27F5B19600217E11 /* Extensions.swift in Sources */,
+				28878FBC27F5B19600217E11 /* ShareManager.swift in Sources */,
+				28878FBD27F5B19600217E11 /* CustomShareViewController.swift in Sources */,
+				288F36A027FB501F004C928F /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8930FFFB2152A51400FFD1E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +541,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		28878FA827F5B0B800217E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28878F9E27F5B0B800217E11 /* ShareExtension */;
+			targetProxy = 28878FA727F5B0B800217E11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		1469451626A59E65006A129B /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -425,6 +580,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		28878FAB27F5B0B900217E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C823B20D14A1F052DEF1E78 /* Pods-ShareExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF94M5UF46;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Howard Sun. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.funtek.imkit-ios-sdk-v3-demo-app.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28878FAC27F5B0B900217E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEE348EAF84DC5DEF3C1B7B /* Pods-ShareExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF94M5UF46;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Howard Sun. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.funtek.imkit-ios-sdk-v3-demo-app.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8930000F2152A51500FFD1E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,6 +768,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B7847CACECE0D905668580C /* Pods-imkit-ios-sdk-v3-demo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
@@ -569,6 +791,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DFEF1199C44C4A61A37DB841 /* Pods-imkit-ios-sdk-v3-demo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +813,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		28878FAD27F5B0B900217E11 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28878FAB27F5B0B900217E11 /* Debug */,
+				28878FAC27F5B0B900217E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		893000112152A51500FFD1E8 /* Build configuration list for PBXNativeTarget "imkit-ios-sdk-v3-demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
