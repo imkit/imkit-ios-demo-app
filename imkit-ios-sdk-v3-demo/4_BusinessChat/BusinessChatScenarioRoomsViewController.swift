@@ -24,7 +24,7 @@ class BusinessChatScenarioRoomsViewController: IMRoomsViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.tintColor = .black
     }
-    override func didSelectRoom(room: IMRoom) {
+    func didSelectRoom(room: IMRoom) {
         let room = BusinessChatScenarioChatRoomViewController(roomID: room.id)
         navigationController?.pushViewController(room, animated: true)
     }

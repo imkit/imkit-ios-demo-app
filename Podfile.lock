@@ -1,18 +1,18 @@
 PODS:
   - ActiveLabel (1.1.0)
-  - Alamofire (5.5.0)
-  - DifferenceKit (1.2.0):
-    - DifferenceKit/Core (= 1.2.0)
-    - DifferenceKit/UIKitExtension (= 1.2.0)
-  - DifferenceKit/Core (1.2.0)
-  - DifferenceKit/UIKitExtension (1.2.0):
+  - Alamofire (5.6.2)
+  - DifferenceKit (1.3.0):
+    - DifferenceKit/Core (= 1.3.0)
+    - DifferenceKit/UIKitExtension (= 1.3.0)
+  - DifferenceKit/Core (1.3.0)
+  - DifferenceKit/UIKitExtension (1.3.0):
     - DifferenceKit/Core
-  - FloatingPanel (2.5.2)
+  - FloatingPanel (2.5.3)
   - Hero (1.6.1)
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
-  - IMKit (0.367.0):
+  - IMKit (0.370.0):
     - ActiveLabel (~> 1.1)
     - Alamofire (~> 5)
     - DifferenceKit (~> 1.2)
@@ -21,46 +21,48 @@ PODS:
     - IGListKit (~> 4)
     - Kingfisher (~> 7)
     - Moya (~> 15)
+    - Parchment (~> 3.2)
     - PromiseKit (~> 6)
     - RealmSwift (~> 10.20.1)
-    - SnapKit (~> 5)
+    - SnapKit (~> 5.6)
     - Socket.IO-Client-Swift (~> 16)
-    - Stipop (= 0.3.0)
+    - Stipop (= 0.3.1)
     - SwiftLinkPreview (~> 3)
     - SwiftyJSON (~> 5)
     - TagListView (~> 1.4)
   - IQKeyboardManagerSwift (6.5.6)
-  - Kingfisher (7.2.0)
+  - Kingfisher (7.3.1)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
+  - Parchment (3.2.0)
   - ProgressHUD (2.70)
-  - PromiseKit (6.17.0):
-    - PromiseKit/CorePromise (= 6.17.0)
-    - PromiseKit/Foundation (= 6.17.0)
-    - PromiseKit/UIKit (= 6.17.0)
-  - PromiseKit/CorePromise (6.17.0)
-  - PromiseKit/Foundation (6.17.0):
+  - PromiseKit (6.18.0):
+    - PromiseKit/CorePromise (= 6.18.0)
+    - PromiseKit/Foundation (= 6.18.0)
+    - PromiseKit/UIKit (= 6.18.0)
+  - PromiseKit/CorePromise (6.18.0)
+  - PromiseKit/Foundation (6.18.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.17.0):
+  - PromiseKit/UIKit (6.18.0):
     - PromiseKit/CorePromise
   - Realm (10.20.1):
     - Realm/Headers (= 10.20.1)
   - Realm/Headers (10.20.1)
   - RealmSwift (10.20.1):
     - Realm (= 10.20.1)
-  - SnapKit (5.0.1)
+  - SnapKit (5.6.0)
   - Socket.IO-Client-Swift (16.0.1):
     - Starscream (~> 4.0)
   - Starscream (4.0.4)
-  - Stipop (0.3.0)
+  - Stipop (0.3.1)
   - SwiftLinkPreview (3.4.0)
   - SwiftyJSON (5.0.1)
   - TagListView (1.4.1)
 
 DEPENDENCIES:
-  - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.5.2`)
+  - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.6`)
   - IQKeyboardManagerSwift (= 6.5.6)
   - ProgressHUD
   - SwiftLinkPreview (from `https://github.com/imkit/SwiftLinkPreview.git`)
@@ -77,6 +79,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - Kingfisher
     - Moya
+    - Parchment
     - ProgressHUD
     - PromiseKit
     - Realm
@@ -90,14 +93,14 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   IMKit:
-    :branch: swift5.5.2
+    :branch: swift5.6
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :git: https://github.com/imkit/SwiftLinkPreview.git
 
 CHECKOUT OPTIONS:
   IMKit:
-    :commit: 170d945edfdfcd20245b9052908687ddb45fcf51
+    :commit: 4988f7fbacab2e8506a45e2ef1c53fbfb386bcfc
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: 75a62bb806d7b9d7be4e2877569bcb34591a10e0
@@ -105,28 +108,29 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
-  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
-  DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
-  FloatingPanel: 935712d7a8076630135fbbd47f717700913efef9
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  DifferenceKit: ab185c4d7f9cef8af3fcf593e5b387fb81e999ca
+  FloatingPanel: 3cee815e9ded75b632543fa73ab655a1ef941452
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IMKit: 2f8b0cc39a442e356cf9aef0e119d40f0cbc3eb0
+  IMKit: f2a84dec479be390804bc24c9c029e0c46237c4c
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
-  Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
+  Kingfisher: f411ab4902e733fc0c40522920fb5a236d7a7334
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Parchment: a43c440b22c8a60f7e0196b74339446d4d1d18ea
   ProgressHUD: e603e8b8622c47d8818b9fb38b3cfe9d3e7ca421
-  PromiseKit: 996202d4cae72b7801b312abef4cd2f995b2978a
+  PromiseKit: 879fa89b55fcb8f11ade9aad0c9721850bb71b9f
   Realm: fac5ecd031fcb81171627b74944c885662d4b266
   RealmSwift: 9b02d25acb46a14756bde9893abb99e2e3675923
-  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
-  Stipop: 52fbf336c3a89d13a28d0dd2b756ecab1579bd7f
+  Stipop: 8a03ecd47930c22cb82366d84b9c9146756e26c9
   SwiftLinkPreview: c1bc5b2cb3cd42f2865137c1a61f5d788dcf5c9c
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: 4ca21a50ff9523f5ecb3b2883ef39c85e4c7fd59
+PODFILE CHECKSUM: b15cd60e7f08cfbd10d01ed4b0ab6850412959e7
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

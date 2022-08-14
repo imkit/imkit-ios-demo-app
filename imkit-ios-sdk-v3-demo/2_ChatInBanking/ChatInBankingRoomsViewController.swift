@@ -22,7 +22,7 @@ class ChatInBankingRoomsViewController: IMRoomsViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.tintColor = .black
     }
-    override func didSelectRoom(room: IMRoom) {
+    func didSelectRoom(room: IMRoom) {
         let room = ChatInBankingChatRoomViewController(roomID: room.id)
         navigationController?.pushViewController(room, animated: true)
     }
