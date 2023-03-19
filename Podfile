@@ -7,7 +7,7 @@ target 'imkit-ios-sdk-v3-demo' do
 
   pod 'IQKeyboardManagerSwift', '6.5.6'
 #  pod 'IMKit', :git => 'https://github.com/imkit/imkit-ios-framework-v3.git', :branch => 'swift5.5.2'
-  pod 'IMKit', :git => 'https://github.com/imkit/imkit-ios-framework-v3.git', :branch => 'swift5.6'
+  pod 'IMKit', :git => 'https://github.com/imkit/imkit-ios-framework-v3.git', :branch => 'swift5.7'
   pod 'SwiftLinkPreview', :git => 'https://github.com/imkit/SwiftLinkPreview.git'
   pod 'ProgressHUD'
 
