@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IMKit
 
 class SampleListViewController: UIViewController {
 
@@ -32,7 +33,7 @@ class SampleListViewController: UIViewController {
         scenario4TitleLabel.text = "SampleListViewController_business_chat_scenario_title".localized
         
         // before implement fetching version number from Podfile.lock, must typing it manually
-        sdkVersionLabel.text = "\("SampleListViewController_sdk_version_title".localized ) v0.353.0"
+        sdkVersionLabel.text = "\("SampleListViewController_sdk_version_title".localized ) v\(IMKit.version)"
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
