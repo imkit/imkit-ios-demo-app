@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IMKit.configure(
             clientKey: "fangho_imkit_0412_2018_001_clientkey",
-            chatServerURL: URL(string: "https://chat.fangho.com")!
+            chatServerURL: URL(string: "https://imkit-dev.funtek.io")!
         )
         IMKit.translationAPIKey = "AIzaSyDwdYjqeA5YBiTZD4X8LUmvjl2ZEacs4cY"
         return true
