@@ -1,18 +1,18 @@
 PODS:
   - ActiveLabel (1.1.0)
-  - Alamofire (5.7.1)
+  - Alamofire (5.9.1)
   - DifferenceKit (1.3.0):
     - DifferenceKit/Core (= 1.3.0)
     - DifferenceKit/UIKitExtension (= 1.3.0)
   - DifferenceKit/Core (1.3.0)
   - DifferenceKit/UIKitExtension (1.3.0):
     - DifferenceKit/Core
-  - FloatingPanel (2.6.5)
-  - Hero (1.6.2)
+  - FloatingPanel (2.6.6)
+  - Hero (1.6.3)
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
-  - IMKit (0.397.0):
+  - IMKit (0.398.0):
     - ActiveLabel (~> 1.1)
     - Alamofire (~> 5)
     - DifferenceKit (~> 1.2)
@@ -31,12 +31,12 @@ PODS:
     - SwiftyJSON (~> 5)
     - TagListView (~> 1.4)
   - IQKeyboardManagerSwift (6.5.6)
-  - Kingfisher (7.9.0)
+  - Kingfisher (7.11.0)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
-  - Parchment (3.2.0)
+  - Parchment (3.3.0)
   - ProgressHUD (2.70)
   - PromiseKit (6.18.1):
     - PromiseKit/CorePromise (= 6.18.1)
@@ -52,17 +52,17 @@ PODS:
   - Realm/Headers (10.20.1)
   - RealmSwift (10.20.1):
     - Realm (= 10.20.1)
-  - SnapKit (5.6.0)
-  - Socket.IO-Client-Swift (16.0.1):
-    - Starscream (~> 4.0)
-  - Starscream (4.0.4)
+  - SnapKit (5.7.1)
+  - Socket.IO-Client-Swift (16.1.0):
+    - Starscream (~> 4.0.6)
+  - Starscream (4.0.8)
   - Stipop (0.3.1)
   - SwiftLinkPreview (3.4.0)
   - SwiftyJSON (5.0.1)
   - TagListView (1.4.1)
 
 DEPENDENCIES:
-  - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.8`)
+  - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.10`)
   - IQKeyboardManagerSwift (= 6.5.6)
   - ProgressHUD
   - SwiftLinkPreview (from `https://github.com/imkit/SwiftLinkPreview.git`)
@@ -93,14 +93,14 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   IMKit:
-    :branch: swift5.8
+    :branch: swift5.10
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :git: https://github.com/imkit/SwiftLinkPreview.git
 
 CHECKOUT OPTIONS:
   IMKit:
-    :commit: bcecb0f6d8d8014ec20bc2d03e8755e606b71572
+    :commit: 95ba77c37396061d9ec7778cc25a49e9e879afa6
     :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: 75a62bb806d7b9d7be4e2877569bcb34591a10e0
@@ -108,29 +108,29 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
-  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   DifferenceKit: ab185c4d7f9cef8af3fcf593e5b387fb81e999ca
-  FloatingPanel: cd924b71f05f14586260e83b3b52edbf5eb73340
-  Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
+  FloatingPanel: 667860b0346a683f136d7048a91999b73b66907a
+  Hero: 419d43384355b3168512bd8ac6a33aadd3dc575b
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IMKit: 950e302905d94ce16f5fef8d952207d7d2958df8
+  IMKit: 3f9ea8b0909775b6839d2876c7316d2d70a9d4c5
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
-  Kingfisher: 59f908b6d2f403b0a3e539debb0eec05cb27002c
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
-  Parchment: a43c440b22c8a60f7e0196b74339446d4d1d18ea
+  Parchment: 7678853fa5d28d38d31baaa466fa5d6ebaa6843c
   ProgressHUD: e603e8b8622c47d8818b9fb38b3cfe9d3e7ca421
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
   Realm: fac5ecd031fcb81171627b74944c885662d4b266
   RealmSwift: 9b02d25acb46a14756bde9893abb99e2e3675923
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
-  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  Socket.IO-Client-Swift: ee4b8f80a3db18dd7f32b266ddf273310609443c
+  Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
   Stipop: 8a03ecd47930c22cb82366d84b9c9146756e26c9
   SwiftLinkPreview: c1bc5b2cb3cd42f2865137c1a61f5d788dcf5c9c
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: ed59bcc157a9ccd8fa28e1781725768220548b29
+PODFILE CHECKSUM: 673447938b91ba9396e5e90296b5ded373e4405a
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2
